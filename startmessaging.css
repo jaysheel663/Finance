@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+}
+.dashboard-header{
+    padding:35px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.8);
+}
+.header-left h1{
+    font-size:38px;
+    color:#0f2545;
+}
+.header-left p{
+    color:#5d7ca5;
+}
+.messaging-container{
+    max-width:900px;
+    margin:45px auto;
+    padding:0 25px;
+}
+.chat-card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-radius:26px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,20,40,.07);
+}
+.chat-header{
+    padding:22px 25px;
+    background:#edf4ff;
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+.chat-header i{
+    width:45px;
+    height:45px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#1f5bc9;
+    color:#fff;
+}
+.chat-header h2{
+    font-size:19px;
+}
+.chat-body{
+    min-height:350px;
+    padding:25px;
+}
+.message{
+    max-width:70%;
+    padding:13px 17px;
+    border-radius:18px;
+    margin-bottom:15px;
+}
+.message.support{
+    background:#edf4ff;
+    color:#496887;
+}
+.message.user{
+    margin-left:auto;
+    background:#1f5bc9;
+    color:#fff;
+}
+.message-box{
+    display:flex;
+    gap:12px;
+    padding:20px;
+    border-top:1px solid #e1e8f2;
+}
+.message-box input{
+    flex:1;
+    border:1px solid #dce6f3;
+    border-radius:16px;
+    padding:14px;
+    outline:none;
+}
+.message-box button{
+    width:50px;
+    border:none;
+    border-radius:15px;
+    background:#1f5bc9;
+    color:#fff;
+    cursor:pointer;
+}
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+font-size:15px;
+letter-spacing:.5px;
+}

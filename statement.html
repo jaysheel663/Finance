@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statement|Financial Dashboard</title>
+    <link rel="stylesheet" href="statement.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <h1>Financial Statement</h1>
+        <p>Review your recent financial transactions,income and expenses in one place.</p>
+    </div>
+    <div class="header-right">
+        <button class="secondary-btn" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>Back</button>
+        <button class="primary-btn">
+            <i class="fas fa-download"></i>Download Statement</button>
+    </div>
+</header>
+<main>
+<section class="section-title">
+    <h2>Transaction Statement</h2>
+    <p>Review your financial activity for the selected period.</p>
+</section>
+<section class="statement-summary">
+    <div class="summary-card">
+        <i class="fas fa-arrow-down"></i>
+        <h3>Total Income</h3>
+        <h2>₹75,000</h2>
+    </div>
+    <div class="summary-card">
+        <i class="fas fa-arrow-up"></i>
+        <h3>Total Expenses</h3>
+        <h2>₹42,500</h2>
+    </div>
+    <div class="summary-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Net Balance</h3>
+        <h2>₹32,500</h2>
+    </div>
+</section>
+<section class="statement-section">
+    <div class="statement-card">
+        <div class="statement-header">
+            <div>
+                <h2>Transaction History</h2>
+                <p>August 2026</p>
+            </div>
+            <select>
+                <option>August 2026</option>
+                <option>July 2026</option>
+                <option>June 2026</option>
+            </select>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01 Aug</td>
+                        <td>Monthly Salary</td>
+                        <td>Income</td>
+                        <td>Credit</td>
+                        <td>+₹60,000</td>
+                    </tr>
+                    <tr>
+                        <td>03 Aug</td>
+                        <td>Electricity Bill</td>
+                        <td>Utilities</td>
+                        <td>Debit</td>
+                        <td>-₹3,500</td>
+                    </tr>
+                    <tr>
+                        <td>05 Aug</td>
+                        <td>Grocery Shopping</td>
+                        <td>Food</td>
+                        <td>Debit</td>
+                        <td>-₹5,000</td>
+                    </tr>
+                    <tr>
+                        <td>08 Aug</td>
+                        <td>Freelance Payment</td>
+                        <td>Other Income</td>
+                        <td>Credit</td>
+                        <td>+₹10,000</td>
+                    </tr>
+                    <tr>
+                        <td>10 Aug</td>
+                        <td>Internet Bill</td>
+                        <td>Utilities</td>
+                        <td>Debit</td>
+                        <td>-₹1,500</td>
+                    </tr>
+                    <tr>
+                        <td>12 Aug</td>
+                        <td>Investment</td>
+                        <td>Savings</td>
+                        <td>Debit</td>
+                        <td>-₹8,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <p>© 2026 Financehub.All rights reserved.</p>
+</footer>
+</body>
+</html>

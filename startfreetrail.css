@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+    line-height:1.6;
+}
+.dashboard-header{
+    padding:35px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.8);
+    box-shadow:0 12px 28px rgba(0,20,40,.06);
+}
+.header-left h1{
+    font-size:38px;
+    color:#0f2545;
+}
+.header-left p{
+    color:#5d7ca5;
+    margin-top:8px;
+}
+.trial-section{
+    min-height:600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 8%;
+}
+.trial-card{
+    width:100%;
+    max-width:650px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-radius:28px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 18px 40px rgba(0,20,40,.08);
+}
+.trial-card i{
+    width:80px;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#edf4ff;
+    color:#1f5bc9;
+    font-size:32px;
+}
+.trial-card h2{
+    font-size:30px;
+    color:#142b4b;
+    margin-bottom:10px;
+}
+.trial-card > p{
+    color:#6d88ab;
+    margin-bottom:30px;
+}
+.trial-benefits{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-bottom:30px;
+}
+.benefit{
+    background:#f5f8fd;
+    border-radius:15px;
+    padding:15px;
+    color:#496887;
+}
+.benefit i{
+    width:auto;
+    height:auto;
+    margin:0 8px 0 0;
+    display:inline;
+    background:none;
+    font-size:15px;
+    color:#28b463;
+}
+.primary-btn{
+    border:none;
+    padding:16px 30px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 12px 25px rgba(31,91,201,.25);
+    transition:.35s;
+}
+.primary-btn:hover{
+    transform:translateY(-4px);
+}
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+font-size:15px;
+letter-spacing:.5px;
+}
+@media(max-width:600px){
+    .trial-card{
+        padding:25px;
+    }
+    .trial-benefits{
+        grid-template-columns:1fr;
+    }
+    .trial-card h2{
+        font-size:25px;
+    }
+}

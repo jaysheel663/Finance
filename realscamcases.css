@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+.dashboard-header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.8);
+    box-shadow:0 12px 28px rgba(0,20,40,.06);
+}
+.header-left h1{
+    font-size:38px;
+    font-weight:700;
+    color:#0f2545;
+    margin-bottom:8px;
+}
+.header-left p{
+    font-size:16px;
+    color:#5d7ca5;
+    max-width:760px;
+}
+.header-right{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.primary-btn,
+.secondary-btn{
+    border:none;
+    padding:15px 24px;
+    border-radius:18px;
+    font-size:15px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.35s;
+}
+.primary-btn{
+    background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+    color:#fff;
+    box-shadow:0 12px 25px rgba(31,91,201,.25);
+}
+.primary-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 35px rgba(31,91,201,.30);
+}
+.secondary-btn{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(16px);
+    color:#1f5bc9;
+    border:1px solid rgba(31,91,201,.12);
+    box-shadow:0 10px 22px rgba(0,20,40,.05);
+}
+.secondary-btn:hover{
+    background:#1f5bc9;
+    color:#fff;
+    transform:translateY(-4px);
+}
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:45px 8% 25px;
+    flex-wrap:wrap;
+}
+.section-title h2{
+    font-size:30px;
+    color:#142b4b;
+    font-weight:700;
+}
+.section-title p{
+    font-size:15px;
+    color:#6d88ab;
+    margin-top:6px;
+}
+.overview-section{
+    margin-bottom:45px;
+}
+.overview-grid{
+    padding:0 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.overview-card{
+    position:relative;
+    overflow:hidden;
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.overview-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.overview-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 45px rgba(31,91,201,.12);
+}
+.overview-card i{
+    width:70px;
+    height:70px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#edf4ff;
+    color:#1f5bc9;
+    font-size:30px;
+    margin-bottom:18px;
+}
+.overview-card h3{
+    font-size:20px;
+    color:#1f3a6b;
+    margin-bottom:10px;
+}
+.overview-card p{
+    font-size:15px;
+    color:#6b88aa;
+    line-height:24px;
+}
+.scam-cases{
+    margin-bottom:45px;
+}
+.case-grid{
+    padding:0 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.case-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+    border-left:5px solid #ef4444;
+}
+.case-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 45px rgba(239,68,68,.18);
+}
+.case-card i{
+    width:70px;
+    height:70px;
+    margin-bottom:18px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fee2e2;
+    color:#ef4444;
+    font-size:30px;
+}
+.case-card h3{
+    font-size:20px;
+    color:#1f3a6b;
+    margin-bottom:12px;
+}
+.case-card p{
+    font-size:15px;
+    color:#6b88aa;
+    line-height:24px;
+}
+.warning-section{
+    margin-bottom:45px;
+}
+.warning-grid{
+    padding:0 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.warning-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.warning-card:hover{
+    transform:translateY(-8px);
+}
+.warning-card i{
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:18px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff4e5;
+    color:#f59e0b;
+    font-size:30px;
+}
+.warning-card h3{
+    font-size:20px;
+    color:#1f3a6b;
+    margin-bottom:10px;
+}
+.warning-card p{
+    font-size:15px;
+    color:#6b88aa;
+    line-height:24px;
+}
+.lesson-section{
+    margin-bottom:45px;
+}
+.lesson-grid{
+    padding:0 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.lesson-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.lesson-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 45px rgba(31,91,201,.12);
+}
+.lesson-card i{
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:18px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#dcfce7;
+    color:#16a34a;
+    font-size:30px;
+}
+.lesson-card h3{
+    font-size:20px;
+    color:#1f3a6b;
+    margin-bottom:10px;
+}
+.lesson-card p{
+    font-size:15px;
+    color:#6b88aa;
+    line-height:24px;
+}
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    font-size:15px;
+    letter-spacing:.5px;
+}
+footer p{
+    font-size:15px;
+    letter-spacing:.5px;
+}

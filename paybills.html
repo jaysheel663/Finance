@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pay Bills|Financial Dashboard</title>
+    <link rel="stylesheet" href="paybills.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <h1>Pay Bills</h1>
+        <p>Pay your upcoming bills securely and keep your financial commitments on track.</p>
+    </div>
+    <div class="header-right">
+        <button class="secondary-btn" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>Back</button>    
+    </div>
+</header>
+<main>
+<section class="section-title">
+    <h2>Bill Payment</h2>
+    <p>Select a bill and complete your payment.</p>
+</section>
+<section class="payment-container">
+    <div class="payment-card">
+        <div class="payment-icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+        </div>
+        <label for="bill">Select Bill</label>
+        <select id="bill">
+            <option>Electricity Bill</option>
+            <option>Water Bill</option>
+            <option>Internet Bill</option>
+            <option>Mobile Bill</option>
+            <option>Insurance Premium</option>
+        </select>
+        <label for="amount">Amount</label>
+        <input id="amount"type="number"placeholder="Enter amount"min="1"required>
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method">
+            <option>UPI</option>
+            <option>Debit Card</option>
+            <option>Credit Card</option>
+            <option>Net Banking</option>
+        </select>
+        <button class="primary-btn">
+            <i class="fas fa-lock"></i>Pay Securely</button>
+    </div>
+</section>
+</main>
+<footer>
+    <p>© 2026 Financehub.All rights reserved.</p>
+</footer>
+</body>
+</html>

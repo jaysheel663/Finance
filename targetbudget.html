@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Target Budget|Financial Dashboard</title>
+    <link rel="stylesheet" href="targetbudget.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <h1>Target Budget</h1>
+        <p>Set a monthly spending target and manage your expenses within your planned budget.</p>
+    </div>
+    <div class="header-right">
+        <button class="secondary-btn" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>Back</button>
+    </div>
+</header>
+<main>
+<section class="section-title">
+    <h2>Set Your Budget Target</h2>
+    <p>Define how much you want to spend each month.</p>
+</section>
+<section class="target-container">
+    <div class="target-card">
+        <div class="target-icon">
+            <i class="fas fa-bullseye"></i>
+        </div>
+        <h2>Monthly Budget Target</h2>
+        <form>
+            <label for="target-amount">Target Amount</label>
+            <input id="target-amount"type="number"placeholder="₹50,000"min="1"required>
+            <label for="budget-month">Month</label>
+            <input id="budget-month"type="month"required>
+            <label for="budget-category">Category</label>
+            <select id="budget-category">
+                <option>Overall Budget</option>
+                <option>Food</option>
+                <option>Shopping</option>
+                <option>Transport</option>
+                <option>Entertainment</option>
+                <option>Utilities</option>
+            </select>
+            <button type="submit" class="primary-btn">
+                <i class="fas fa-check"></i>Set Budget Target</button>
+        </form>
+    </div>
+</section>
+</main>
+<footer>
+    <p>© 2026 Financehub.All rights reserved.</p>
+</footer>
+</body>
+</html>
