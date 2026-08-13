@@ -1,0 +1,167 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+background:#f2f6fd;
+color:#142b4b;
+line-height:1.6;
+overflow-x:hidden;
+}
+.dashboard-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:35px 8%;
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.8);
+box-shadow:0 12px 28px rgba(0,20,40,.06);
+}
+.header-left h1{
+font-size:38px;
+font-weight:700;
+color:#0f2545;
+margin-bottom:8px;
+}
+.header-left p{
+font-size:16px;
+color:#5d7ca5;
+max-width:760px;
+}
+.header-right{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+.primary-btn,
+.secondary-btn{
+border:none;
+padding:15px 24px;
+border-radius:18px;
+font-size:15px;
+font-weight:600;
+display:flex;
+align-items:center;
+gap:10px;
+cursor:pointer;
+transition:.35s;
+}
+.primary-btn{
+background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+color:#fff;
+}
+.secondary-btn{
+background:#fff;
+color:#1f5bc9;
+border:1px solid rgba(31,91,201,.12);
+}
+.primary-btn:hover,
+.secondary-btn:hover{
+transform:translateY(-4px);
+}
+.section-title{
+margin:45px 8% 25px;
+}
+.section-title h2{
+font-size:30px;
+color:#142b4b;
+margin-bottom:8px;
+}
+.section-title p{
+font-size:15px;
+color:#6d88ab;
+}
+.report-grid,
+.steps-grid,
+.emergency-grid,
+.contact-grid,
+.support-grid{
+padding:0 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+.report-card,
+.steps-card,
+.emergency-card,
+.contact-card,
+.support-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+border-radius:24px;
+padding:30px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+}
+.report-card:hover,
+.steps-card:hover,
+.emergency-card:hover,
+.contact-card:hover,
+.support-card:hover{
+transform:translateY(-8px);
+}
+.report-card i,
+.steps-card i,
+.emergency-card i,
+.contact-card i,
+.support-card i{
+width:70px;
+height:70px;
+margin:auto;
+margin-bottom:18px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:30px;
+background:#fee2e2;
+color:#ef4444;
+}
+.steps-card i{
+background:#edf4ff;
+color:#1f5bc9;
+}
+.emergency-card i{
+background:#dcfce7;
+color:#16a34a;
+}
+.contact-card i{
+background:#ede9fe;
+color:#7c3aed;
+}
+.support-card i{
+background:#fef3c7;
+color:#f59e0b;
+}
+.report-card h3,
+.steps-card h3,
+.emergency-card h3,
+.contact-card h3,
+.support-card h3{
+font-size:20px;
+color:#1f3a6b;
+margin-bottom:10px;
+}
+.report-card p,
+.steps-card p,
+.emergency-card p,
+.contact-card p,
+.support-card p{
+font-size:15px;
+color:#6b88aa;
+line-height:24px;
+}
+footer{
+margin-top:50px;
+background:#0f172a;
+color:#fff;
+text-align:center;
+padding:28px;
+}
+footer p{
+font-size:15px;
+}
