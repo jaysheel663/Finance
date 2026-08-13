@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FinanceHub-Settings</title>
+<link rel="stylesheet" href="services.css">
+</head>
+<body>
+<header>
+<div class="logo">
+    <h2>FinanceHub</h2>
+</div>
+<nav>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="income.html">Income</a>
+    <a href="expenses.html">Expenses</a>
+    <a href="reports.html">Reports</a>
+    <a href="settings.html">Settings</a>
+</nav>
+<div class="header-icons">
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-user-circle"></i>
+</div>
+</header>
+<section class="settings-hero">
+    <div class="hero-content">
+    <h1>Account Settings</h1>
+    <p>Manage your profile,security,preferences,notifications,and financial application settings from one place.</p>
+    <button>Save All Changes</button>
+</div>
+<div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"alt="Settings">
+</div>
+</section>
+<section class="profile-settings">
+<div class="section-title">
+    <h2>Profile Information</h2>
+</div>
+<div class="settings-form">
+    <div class="input-group">
+        <label>Full Name</label>
+        <input type="text"value="Jaysheel T.N">
+    </div>
+    <div class="input-group">
+        <label>Email Address</label>
+        <input type="email"value="jay@email.com">
+    </div>
+    <div class="input-group">
+        <label>Phone Number</label>
+        <input type="text"value="+91 9876543210">
+    </div>
+    <div class="input-group">
+        <label>Date Of Birth</label>
+        <input type="date">
+    </div>
+    <div class="input-group">
+        <label>Occupation</label>
+        <input type="text"value="Software Engineer">
+    </div>
+    <div class="input-group">
+        <label>Country</label>
+        <select>
+            <option>India</option>
+            <option>USA</option>
+            <option>Canada</option>
+            <option>Australia</option>
+        </select>
+    </div>
+</div>
+</section>
+<section class="preferences-section">
+<div class="section-title">
+<h2>Account Preferences</h2>
+</div>
+<div class="preferences-grid">
+    <div class="preference-card">
+        <i class="fas fa-globe"></i>
+        <h3>Language</h3>
+        <select>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Telugu</option>
+        </select>
+    </div>
+    <div class="preference-card">
+        <i class="fas fa-money-bill-wave"></i>
+        <h3>Currency</h3>
+        <select>
+            <option>Indian Rupee(₹)</option>
+            <option>US Dollar($)</option>
+            <option>Euro(€)</option>
+        </select>
+    </div>
+    <div class="preference-card">
+        <i class="fas fa-calendar"></i>
+        <h3>Date Format</h3>
+        <select>
+            <option>DD/MM/YYYY</option>
+            <option>MM/DD/YYYY</option>
+        </select>
+    </div>
+</div>
+</section>
+<section class="security-section">
+<div class="section-title">
+    <h2>Security Settings</h2>
+</div>
+<div class="security-grid">
+    <div class="security-card">
+        <i class="fas fa-lock"></i>
+        <h3>Change Password</h3>
+        <div class="security-form">
+            <input type="password"placeholder="Current Password">
+            <input type="password"placeholder="New Password">
+            <input type="password" placeholder="Confirm Password">
+            <button>Update Password</button>
+        </div>
+    </div>
+    <div class="security-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Two-Factor Authentication</h3>
+        <p>Add an extra layer of security to protect your FinanceHub account.</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+</div>
+</section>
+<section class="login-activity">
+<div class="section-title">
+ <h2>Recent Login Activity</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Device</th>
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>24-Jun-2026</td>
+            <td>Chrome Browser</td>
+            <td>Tirupati, India</td>
+            <td class="success">Successful</td>
+        </tr>
+        <tr>
+            <td>22-Jun-2026</td>
+            <td>Android App</td>
+            <td>Hyderabad, India</td>
+            <td class="success">Successful</td>
+        </tr>
+        <tr>
+            <td>20-Jun-2026</td>
+            <td>Windows PC</td>
+            <td>Bangalore, India</td>
+            <td class="success">Successful</td>
+        </tr>
+        <tr>
+            <td>18-Jun-2026</td>
+            <td>Unknown Device</td>
+            <td>Mumbai,India</td>
+            <td class="warning">Review Required</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+<section class="privacy-section">
+<div class="section-title">
+    <h2>Privacy Settings</h2>
+</div>
+<div class="privacy-grid">
+    <div class="privacy-card">
+        <i class="fas fa-user-secret"></i>
+        <h3>Profile Visibility</h3>
+        <p>Control who can view your account information.</p>
+        <select>
+            <option>Private</option>
+            <option>Public</option>
+            <option>Only Me</option>
+        </select>
+    </div>
+    <div class="privacy-card">
+        <i class="fas fa-database"></i>
+        <h3>Data Sharing</h3>
+        <p>Manage data usage and analytics permissions.</p>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="privacy-card">
+        <i class="fas fa-download"></i>
+        <h3>Download Data</h3>
+        <p>Export all your financial records and account details.</p>
+        <button>Download Data</button>
+    </div>
+</div>
+</section>
+<section class="notification-settings">
+<div class="section-title">
+    <h2>Notification Preferences</h2>
+</div>
+<div class="notification-grid">
+    <div class="notification-card">
+        <i class="fas fa-bell"></i>
+        <h3>Bill Reminders</h3>
+        <p>Receive reminders for upcoming bill payments.</p>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="notification-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Budget Alerts</h3>
+        <p>Get notified when spending exceeds budget limits.</p>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="notification-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Investment Updates</h3>
+        <p>Receive portfolio growth and investment alerts.</p>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+</div>
+</section>
+<section class="appearance-section">
+<div class="section-title">
+<h2>Appearance Settings</h2>
+</div>
+<div class="appearance-grid">
+    <div class="appearance-card">
+        <i class="fas fa-sun"></i>
+        <h3>Light Theme</h3>
+        <button>Select Theme</button>
+    </div>
+    <div class="appearance-card">
+        <i class="fas fa-moon"></i>
+        <h3>Dark Theme</h3>
+        <button>Select Theme</button>
+    </div>
+    <div class="appearance-card">
+        <i class="fas fa-desktop"></i>
+        <h3>System Default</h3>
+        <button>Select Theme</button>
+    </div>
+</div>
+</section>
+<section class="financial-preferences">
+<div class="section-title">
+<h2>Financial Preferences</h2>
+</div>
+<div class="financial-grid">
+    <div class="financial-card">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>Monthly Savings Goal</h3>
+        <input type="number"placeholder="Enter Savings Goal">
+    </div>
+    <div class="financial-card">
+        <i class="fas fa-bullseye"></i>
+        <h3>Investment Target</h3>
+        <input type="number"placeholder="Enter Investment Target">
+    </div>
+    <div class="financial-card">
+        <i class="fas fa-coins"></i>
+        <h3>Emergency Fund Goal</h3>
+        <input type="number" placeholder="Enter Emergency Fund Goal">
+    </div>
+</div>
+</section>
+<section class="connected-accounts"><div class="section-title">
+    <h2>Connected Accounts</h2>
+</div>
+<div class="accounts-grid">
+    <div class="account-card">
+        <i class="fab fa-google"></i>
+        <h3>Google Account</h3>
+        <p>Connected Successfully</p>
+        <button>Manage</button>
+    </div>
+    <div class="account-card">
+        <i class="fab fa-paypal"></i>
+        <h3>PayPal</h3>
+        <p>Connected Successfully</p>
+        <button>Manage</button>
+    </div>
+    <div class="account-card">
+        <i class="fas fa-university"></i>
+        <h3>Bank Account</h3>
+        <p>Linked For Transactions</p>
+        <button>Manage</button>
+    </div>
+</div>
+</section>
+<section class="save-settings">
+<button class="save-btn">Save All Settings</button>
+<button class="reset-btn">Reset Changes</button>
+</section>
+<footer>
+    <p>© 2026 FinanceHub Settings. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

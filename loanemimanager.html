@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+<title>Loan & EMI Manager|FinanceHub</title>
+<link rel="stylesheet" href="loanemimanager.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">
+    <h2>FinanceHub</h2>
+</div>
+<nav>
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <a href="../loans/loanemimanager.html" class="active">Loan & EMI</a>
+    <a href="../financetools/financialcalculator.html">Calculator</a>
+    <a href="../investments/investmentportfolio.html">Investments</a>
+    <a href="../financetools/reportsanalytics.html">Reports</a>
+    <a href="../profile/profile.html">Profile</a>
+</nav>
+</header>
+<section class="hero-section">
+<div class="hero-content">
+    <h1>Loan &<span>EMI Manager</span></h1>
+    <p>Easily manage your loans,monitor EMI payments,track outstanding balances,and stay updated with upcoming due dates.</p>
+    <div class="hero-buttons">
+        <button class="primary-btn">
+            <i class="fas fa-plus-circle"></i>Add Loan</button>
+        <button class="secondary-btn">
+            <i class="fas fa-calendar-check"></i>EMI Schedule</button>
+    </div>
+</div>
+<div class="hero-image">
+    <img src="https://play-lh.googleusercontent.com/sRScUbRJ5PKoKBmnGSAX9wC_EPmn0gERYOKSJ5kJzo4XGHMuvF2eOdOtdrVyV2EzNmKX5NcXa5sMEq711HwFmPk"alt="Loan EMI Manager">
+</div>
+</section>
+<section class="loan-overview">
+<div class="section-title">
+    <h2>Loan Overview</h2>
+    <p>View a quick summary of all your active loans and monthly EMI details.</p>
+</div>
+<div class="overview-grid">
+    <div class="overview-card">
+        <i class="fas fa-money-check-dollar"></i>
+        <h3>Active Loans</h3>
+        <h2>3</h2>
+        <p>Currently running loans</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Total Outstanding</h3>
+        <h2>₹8.5L</h2>
+        <p>Remaining loan amount</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-calendar-days"></i>
+        <h3>Monthly EMI</h3>
+        <h2>₹28,500</h2>
+        <p>Total monthly payment</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-circle-check"></i>
+        <h3>EMIs Paid</h3>
+        <h2>48</h2>
+        <p>Successfully completed</p>
+    </div>
+</div>
+</section>
+<section class="active-loans">
+<div class="section-title">
+    <h2>Active Loans</h2>
+    <p>Monitor all your active loans and their repayment progress.</p>
+</div>
+<div class="loan-grid">
+    <div class="loan-card">
+        <i class="fas fa-house"></i>
+        <h3>Home Loan</h3>
+        <p>Outstanding:₹6,20,000</p>
+        <p>EMI:₹18,500/Month</p>
+        <button>View Details</button>
+    </div>
+    <div class="loan-card">
+        <i class="fas fa-car"></i>
+        <h3>Car Loan</h3>
+        <p>Outstanding:₹1,50,000</p>
+        <p>EMI:₹7,000/Month</p>
+        <button>View Details</button>
+    </div>
+    <div class="loan-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Education Loan</h3>
+        <p>Outstanding:₹80,000</p>
+        <p>EMI:₹3,000/Month</p>
+        <button>View Details</button>
+    </div>
+</div>
+</section>
+<section class="emi-schedule">
+<div class="section-title">
+    <h2>Upcoming EMI Schedule</h2>
+    <p>Stay informed about your upcoming EMI payment dates.</p>
+</div>
+<div class="schedule-grid">
+    <div class="schedule-card">
+        <i class="fas fa-calendar-day"></i>
+        <h3>Home Loan EMI</h3>
+        <p>Due Date:05 Aug 2026</p>
+        <p>Amount:₹18,500</p>
+    </div>
+    <div class="schedule-card">
+        <i class="fas fa-calendar-day"></i>
+        <h3>Car Loan EMI</h3>
+        <p>Due Date:10 Aug 2026</p>
+        <p>Amount:₹7,000</p>
+    </div>
+    <div class="schedule-card">
+        <i class="fas fa-calendar-day"></i>
+        <h3>Education Loan EMI</h3>
+        <p>Due Date:15 Aug 2026</p>
+        <p>Amount:₹3,000</p>
+    </div>
+</div>
+</section>
+<section class="payment-history">
+<div class="section-title">
+    <h2>EMI Payment History</h2>
+    <p>Review your previous EMI payments and repayment records.</p>
+</div>
+<div class="history-grid">
+    <div class="history-card">
+        <i class="fas fa-circle-check"></i>
+        <h3>Home Loan EMI</h3>
+        <p>Paid on:05 Jul 2026</p>
+        <p>Amount:₹18,500</p>
+        <span class="paid">Status:Paid</span>
+    </div>
+    <div class="history-card">
+        <i class="fas fa-circle-check"></i>
+        <h3>Car Loan EMI</h3>
+        <p>Paid on:10 Jul 2026</p>
+        <p>Amount:₹7,000</p>
+        <span class="paid">Status:Paid</span>
+    </div>
+    <div class="history-card">
+        <i class="fas fa-circle-check"></i>
+        <h3>Education Loan EMI</h3>
+        <p>Paid on:15 Jul 2026</p>
+        <p>Amount:₹3,000</p>
+        <span class="paid">Status:Paid</span>
+    </div>
+</div>
+</section>
+<section class="add-loan">
+<div class="section-title">
+    <h2>Add New Loan</h2>
+    <p>Enter your loan details to manage repayments efficiently.</p>
+</div>
+<form class="loan-form">
+    <input type="text"placeholder="Loan Name">
+    <input type="number"placeholder="Loan Amount">
+    <input type="number"placeholder="Interest Rate(%)">
+    <input type="number"placeholder="Loan Tenure(Years)">
+    <input type="date">
+    <textarea rows="5"placeholder="Loan Description"></textarea>
+    <button type="submit">
+        <i class="fas fa-plus-circle"></i>Add Loan</button>
+</form>
+</section>
+<section class="loan-insights">
+<div class="section-title">
+    <h2>Loan Insights</h2>
+    <p>Get a quick overview of your loan repayment performance.</p>
+</div>
+<div class="insight-grid">
+    <div class="insight-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Repayment Progress</h3>
+        <p>Track how much of your loan has been repaid.</p>
+    </div>
+    <div class="insight-card">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>Interest Saved</h3>
+        <p>Monitor savings through early repayments.</p>
+    </div>
+    <div class="insight-card">
+        <i class="fas fa-bell"></i>
+        <h3>Payment Alerts</h3>
+        <p>Receive reminders before EMI due dates.</p>
+    </div>
+</div>
+</section>
+<section class="loan-progress">
+<div class="section-title">
+    <h2>Loan Progress</h2>
+    <p>Track the repayment status of each loan with visual progress indicators.</p>
+</div>
+<div class="progress-grid">
+    <div class="progress-card">
+        <h3>Home Loan</h3>
+        <div class="progress-bar">
+            <div class="progress home-progress"></div>
+        </div>
+        <p>68% Repaid</p>
+    </div>
+    <div class="progress-card">
+        <h3>Car Loan</h3>
+        <div class="progress-bar">
+            <div class="progress car-progress"></div>
+        </div>
+        <p>82% Repaid</p>
+    </div>
+    <div class="progress-card">
+        <h3>Education Loan</h3>
+        <div class="progress-bar">
+            <div class="progress education-progress"></div>
+        </div>
+        <p>54% Repaid</p>
+    </div>
+</div>
+</section>
+<section class="loan-tips">
+<div class="section-title">
+    <h2>Loan Management Tips</h2>
+    <p>Follow these tips to reduce your loan burden and improve repayment.</p>
+</div>
+<div class="tips-grid">
+    <div class="tip-card">
+        <i class="fas fa-coins"></i>
+        <h3>Pay Extra When Possible</h3>
+        <p>Making additional payments can reduce both interest and loan tenure.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>Never Miss EMI</h3>
+        <p>Timely EMI payments help maintain healthy credit history.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-chart-pie"></i>
+        <h3>Review Regularly</h3>
+        <p>Check your loan status frequently to plan your finances better.</p>
+    </div>
+</div>
+</section>
+<footer><p>© 2026 FinanceHub.All Rights Reserved.</p>
+</footer>
+</body>
+</html>

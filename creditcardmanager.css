@@ -1,0 +1,708 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.7);
+    box-shadow:0 8px 24px rgba(0,20,40,.05);
+}
+.logo h2{
+    font-size:30px;
+    color:#1f5bc9;
+    font-weight:700;
+    letter-spacing:-0.5px;
+}
+nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+nav a{
+    text-decoration:none;
+    color:#2d4a72;
+    font-size:15px;
+    font-weight:600;
+    position:relative;
+    transition:.3s;
+}
+nav a:hover,
+nav a.active{
+    color:#1f5bc9;
+}
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:3px;
+    background:#1f5bc9;
+    border-radius:20px;
+    transition:.3s;
+}
+nav a:hover::after,
+nav a.active::after{
+    width:100%;
+}
+.hero-section{
+    width:100%;
+    padding:70px 8%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items:center;
+    gap:60px;
+}
+.hero-content h1{
+    font-size:56px;
+    color:#142b4b;
+    line-height:1.2;
+    margin-bottom:22px;
+    font-weight:700;
+}
+.hero-content span{
+    color:#1f5bc9;
+}
+.hero-content p{
+    font-size:17px;
+    color:#617ea5;
+    margin-bottom:35px;
+    line-height:1.9;
+}
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.primary-btn,
+.secondary-btn{
+    border:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 28px;
+    border-radius:18px;
+    font-size:15px;
+    font-weight:600;
+    transition:.35s;
+}
+.primary-btn{
+    color:#fff;
+    background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+    box-shadow:0 15px 30px rgba(31,91,201,.25);
+}
+.primary-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 22px 38px rgba(31,91,201,.30);
+}
+.secondary-btn{
+    color:#1f5bc9;
+    background:#fff;
+    border:2px solid #dbe8ff;
+}
+.secondary-btn:hover{
+    background:#1f5bc9;
+    color:#fff;
+    border-color:#1f5bc9;
+}
+.hero-image{
+    display:flex;
+    justify-content:center;
+}
+.hero-image img{
+    width:100%;
+    max-width:560px;
+    border-radius:30px;
+    box-shadow:0 25px 45px rgba(0,20,40,.12);
+    transition:.4s;
+}
+.hero-image img:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+.section-title h2{
+    font-size:34px;
+    color:#142b4b;
+    margin-bottom:12px;
+    font-weight:700;
+}
+.section-title p{
+    font-size:16px;
+    color:#6d88ad;
+    max-width:760px;
+    margin:auto;
+}
+.portfolio-overview,
+.active-credit-cards,
+.payment-summary,
+.credit-utilization,
+.reward-benefits,
+.recent-transactions,
+.spending-insights,
+.payment-reminders,
+.smart-recommendations{
+    padding:70px 8%;
+}
+.overview-card,
+.credit-card,
+.summary-card,
+.utilization-card,
+.reward-card,
+.transaction-card,
+.insight-card,
+.reminder-card,
+.recommendation-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+.overview-card::before,
+.credit-card::before,
+.summary-card::before,
+.utilization-card::before,
+.reward-card::before,
+.transaction-card::before,
+.insight-card::before,
+.reminder-card::before,
+.recommendation-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.overview-card:hover,
+.credit-card:hover,
+.summary-card:hover,
+.utilization-card:hover,
+.reward-card:hover,
+.transaction-card:hover,
+.insight-card:hover,
+.reminder-card:hover,
+.recommendation-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 42px rgba(31,91,201,.12);
+}
+.overview-card i,
+.credit-card i,
+.summary-card i,
+.utilization-card i,
+.reward-card i,
+.transaction-card i,
+.insight-card i,
+.reminder-card i,
+.recommendation-card i{
+    font-size:42px;
+    color:#1f5bc9;
+    margin-bottom:20px;
+}
+.overview-card h3,
+.credit-card h3,
+.summary-card h3,
+.utilization-card h3,
+.reward-card h3,
+.transaction-card h3,
+.insight-card h3,
+.reminder-card h3,
+.recommendation-card h3{
+    font-size:20px;
+    color:#1f3a6b;
+    margin-bottom:12px;
+}
+.overview-card h2,
+.credit-card h2,
+.summary-card h2,
+.utilization-card h2,
+.reward-card h2,
+.transaction-card h2,
+.insight-card h2,
+.reminder-card h2{
+    font-size:32px;
+    color:#1f5bc9;
+    margin-bottom:12px;
+    font-weight:700;
+}
+.overview-card p,
+.credit-card p,
+.summary-card p,
+.utilization-card p,
+.reward-card p,
+.transaction-card p,
+.insight-card p,
+.reminder-card p,
+.recommendation-card p{
+    color:#6b88ad;
+    font-size:15px;
+}
+.credit-card span{
+    display:inline-block;
+    margin-top:12px;
+    padding:8px 18px;
+    background:#edf5ff;
+    color:#1f5bc9;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+.overview-grid,
+.card-grid,
+.summary-grid,
+.utilization-grid,
+.reward-grid,
+.transaction-grid,
+.insight-grid,
+.reminder-grid,
+.recommendation-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:28px;
+}
+.overview-card{
+    text-align:center;
+}
+.overview-card h2{
+    margin:15px 0 10px;
+}
+.overview-card p{
+    color:#6d88ad;
+}
+.overview-card i{
+    width:80px;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    border-radius:50%;
+    background:#edf5ff;
+}
+.credit-card{
+    background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+    color:#fff;
+}
+.credit-card::before{
+    display:none;
+}
+.credit-card i{
+    color:#fff;
+    font-size:46px;
+}
+.credit-card h3,
+.credit-card h2,
+.credit-card p,
+.credit-card span{
+    color:#fff;
+}
+.credit-card span{
+    display:inline-block;
+    margin-top:14px;
+    padding:8px 18px;
+    background:rgba(255,255,255,.18);
+    border-radius:30px;
+    font-size:13px;
+}
+.credit-card:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+.summary-card{
+    text-align:center;
+}
+.summary-card i{
+    width:75px;
+    height:75px;
+    background:#edf5ff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+.utilization-card{
+    text-align:center;
+}
+.utilization-card i{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    background:#edf5ff;
+}
+.utilization-card h2{
+    color:#1f5bc9;
+}
+.reward-card{
+    text-align:center;
+}
+.reward-card i{
+    width:75px;
+    height:75px;
+    background:#edf5ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    margin:auto;
+}
+.reward-card h2{
+    color:#27ae60;
+}
+.transaction-card{
+    transition:.35s;
+}
+.transaction-card:hover{
+    transform:translateY(-8px);
+}
+.transaction-card h2{
+    color:#1f5bc9;
+}
+.transaction-card i{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#edf5ff;
+}
+.insight-card{
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+}
+.insight-card h2{
+    color:#1f5bc9;
+}
+.reminder-card{
+    border-left:6px solid #1f5bc9;
+}
+.reminder-card h2{
+    font-size:26px;
+}
+.recommendation-card{
+    text-align:center;
+}
+.recommendation-card p{
+    line-height:1.8;
+}
+.recommendation-card i{
+    width:80px;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#edf5ff;
+    margin:auto;
+}
+button{
+    cursor:pointer;
+    transition:.35s;
+}
+button:hover{
+    transform:translateY(-4px);
+}
+.overview-card:hover,
+.summary-card:hover,
+.utilization-card:hover,
+.reward-card:hover,
+.transaction-card:hover,
+.insight-card:hover,
+.reminder-card:hover,
+.recommendation-card:hover{
+    box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.overview-card i,
+.summary-card i,
+.utilization-card i,
+.reward-card i,
+.transaction-card i,
+.insight-card i,
+.reminder-card i,
+.recommendation-card i{
+    transition:.35s;
+}
+.overview-card:hover i,
+.summary-card:hover i,
+.utilization-card:hover i,
+.reward-card:hover i,
+.transaction-card:hover i,
+.insight-card:hover i,
+.reminder-card:hover i,
+.recommendation-card:hover i{
+    transform:rotate(8deg) scale(1.1);
+}
+section{
+    width:100%;
+}
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:28px;
+    font-size:15px;
+    letter-spacing:.5px;
+    margin-top:30px;
+}
+::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+::-webkit-scrollbar-track{
+    background:#edf2fb;
+    border-radius:20px;
+}
+::-webkit-scrollbar-thumb{
+    background:#8bb3ff;
+    border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#1f5bc9;
+}
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.hero-section,
+.portfolio-overview,
+.active-credit-cards,
+.payment-summary,
+.credit-utilization,
+.reward-benefits,
+.recent-transactions,
+.spending-insights,
+.payment-reminders,
+.smart-recommendations{
+    animation:fadeUp .8s ease;
+}
+@media(max-width:1024px){
+.header{
+    padding:16px 5%;
+    flex-direction:column;
+    gap:18px;
+}
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+}
+.hero-section{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:60px 5%;
+}
+.hero-content h1{
+    font-size:46px;
+}
+.hero-content p{
+    font-size:16px;
+}
+.hero-buttons{
+    justify-content:center;
+}
+.hero-image img{
+    max-width:500px;
+}
+.portfolio-overview,
+.active-credit-cards,
+.payment-summary,
+.credit-utilization,
+.reward-benefits,
+.recent-transactions,
+.spending-insights,
+.payment-reminders,
+.smart-recommendations{
+    padding:60px 5%;
+}
+.overview-grid,
+.card-grid,
+.summary-grid,
+.utilization-grid,
+.reward-grid,
+.transaction-grid,
+.insight-grid,
+.reminder-grid,
+.recommendation-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.section-title h2{
+    font-size:30px;
+}
+}
+@media(max-width:768px){
+.hero-content h1{
+    font-size:38px;
+}
+.hero-content p{
+    font-size:15px;
+}
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+.primary-btn,
+.secondary-btn{
+    width:240px;
+    justify-content:center;
+}
+.overview-grid,
+.card-grid,
+.summary-grid,
+.utilization-grid,
+.reward-grid,
+.transaction-grid,
+.insight-grid,
+.reminder-grid,
+.recommendation-grid{
+    grid-template-columns:1fr;
+}
+.section-title h2{
+    font-size:28px;
+}
+.hero-image img{
+    max-width:100%;
+}
+.overview-card,
+.credit-card,
+.summary-card,
+.utilization-card,
+.reward-card,
+.transaction-card,
+.insight-card,
+.reminder-card,
+.recommendation-card{
+    padding:25px;
+}
+.credit-card h2,
+.overview-card h2,
+.summary-card h2,
+.utilization-card h2,
+.reward-card h2,
+.transaction-card h2,
+.insight-card h2,
+.reminder-card h2{
+    font-size:28px;
+}
+}
+@media(max-width:480px){
+.header{
+    padding:15px;
+}
+.logo h2{
+    font-size:26px;
+}
+nav{
+    gap:12px;
+}
+nav a{
+    font-size:14px;
+}
+.hero-section{
+    padding:40px 18px;
+}
+.hero-content h1{
+    font-size:32px;
+}
+.hero-content p{
+    font-size:14px;
+}
+.primary-btn,
+.secondary-btn{
+    width:100%;
+    padding:15px;
+    font-size:14px;
+}
+.portfolio-overview,
+.active-credit-cards,
+.payment-summary,
+.credit-utilization,
+.reward-benefits,
+.recent-transactions,
+.spending-insights,
+.payment-reminders,
+.smart-recommendations{
+    padding:45px 18px;
+}
+.section-title{
+    margin-bottom:30px;
+}
+.section-title h2{
+    font-size:24px;
+}
+.section-title p{
+    font-size:14px;
+}
+.overview-card,
+.credit-card,
+.summary-card,
+.utilization-card,
+.reward-card,
+.transaction-card,
+.insight-card,
+.reminder-card,
+.recommendation-card{
+    padding:20px;
+    border-radius:20px;
+}
+.overview-card i,
+.credit-card i,
+.summary-card i,
+.utilization-card i,
+.reward-card i,
+.transaction-card i,
+.insight-card i,
+.reminder-card i,
+.recommendation-card i{
+    font-size:34px;
+}
+.overview-card h2,
+.credit-card h2,
+.summary-card h2,
+.utilization-card h2,
+.reward-card h2,
+.transaction-card h2,
+.insight-card h2,
+.reminder-card h2{
+    font-size:24px;
+}
+footer{
+    padding:20px;
+    font-size:13px;
+}
+}

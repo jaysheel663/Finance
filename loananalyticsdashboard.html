@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Analytics Dashboard|FinanceHub</title>
+    <link rel="stylesheet" href="loananalyticsdashboard.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <a href="loandashboard.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>Back</a>
+        <h1>Loan Analytics Dashboard</h1>
+        <p>Monitor loan performance,repayment progress,outstanding balance,EMI trends,interest analysis and financial health from a single intelligent dashboard.</p>
+    </div>
+    <div class="header-right">
+        <button class="primary-btn">
+            <i class="fas fa-file-arrow-down"></i>Export Report</button>
+        <button class="secondary-btn">
+            <i class="fas fa-chart-line"></i>Generate Analytics</button>
+    </div>
+</header>
+<section class="loan-summary">
+    <div class="summary-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Total Loan Amount</h3>
+        <h2>₹18,50,000</h2>
+        <span>Across All Loans</span>
+    </div>
+    <div class="summary-card">
+        <i class="fas fa-money-bill-wave"></i>
+        <h3>Outstanding Balance</h3>
+        <h2>₹9,84,300</h2>
+        <span>53% Remaining</span>
+    </div>
+    <div class="summary-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>Total EMI Paid</h3>
+        <h2>68</h2>
+        <span>On-Time Payments</span>
+    </div>
+    <div class="summary-card">
+        <i class="fas fa-percent"></i>
+        <h3>Average Interest</h3>
+        <h2>8.45%</h2>
+        <span>Current Rate</span>
+    </div>
+</section>
+<section class="loan-health">
+<div class="section-title">
+<h2>Loan Health Overview</h2>
+<p>Evaluate repayment quality,credit utilization,payment discipline and overall borrowing health.</p>
+</div>
+<div class="health-grid">
+<div class="health-card">
+<i class="fas fa-shield-halved"></i>
+<h3>Credit Score</h3>
+<h2>782</h2>
+<p>Excellent</p>
+</div>
+<div class="health-card">
+<i class="fas fa-check-circle"></i>
+<h3>Payment Success</h3>
+<h2>99%</h2>
+<p>EMIs Paid On Time</p>
+</div>
+<div class="health-card">
+<i class="fas fa-chart-pie"></i>
+<h3>Debt Ratio</h3>
+<h2>28%</h2>
+<p>Healthy Financial Position</p>
+</div>
+<div class="health-card">
+<i class="fas fa-award"></i>
+<h3>Loan Rating</h3>
+<h2>A+</h2>
+<p>Very Low Risk</p>
+</div>
+</div>
+</section>
+<section class="active-loans">
+<div class="section-title">
+<h2>Active Loan Portfolio</h2>
+<p>Overview of all active loans and their current repayment status.</p>
+</div>
+<div class="loan-grid">
+<div class="loan-card">
+<i class="fas fa-house"></i>
+<h3>Home Loan</h3>
+<h2>₹10,00,000</h2>
+<p>Outstanding:₹5,42,000</p>
+<div class="progress">
+<div class="home-progress" style="width:46%;"></div>
+</div>
+<span>54% Completed</span>
+</div>
+<div class="loan-card">
+<i class="fas fa-car"></i>
+<h3>Vehicle Loan</h3>
+<h2>₹4,20,000</h2>
+<p>Outstanding:₹1,65,000</p>
+<div class="progress">
+<div class="vehicle-progress" style="width:61%;"></div>
+</div>
+<span>61% Completed</span>
+</div>
+<div class="loan-card">
+<i class="fas fa-user-graduate"></i>
+<h3>Education Loan</h3>
+<h2>₹2,80,000</h2>
+<p>Outstanding:₹1,48,500</p>
+<div class="progress">
+<div class="education-progress" style="width:47%;"></div>
+</div>
+<span>47% Completed</span>
+</div>
+    <div class="loan-chart-card">
+            <div class="card-header">
+                <h3>Loan Portfolio Distribution</h3>
+                <span>Current Allocation</span>
+            </div>
+            <div class="allocation-grid">
+                <div class="allocation-item">
+                    <div class="allocation-circle home">
+                        <span>40%</span>
+                    </div>
+                    <h4>Home Loans</h4>
+                    <p>$48.5M</p>
+                </div>
+                <div class="allocation-item">
+                    <div class="allocation-circle personal">
+                        <span>22%</span>
+                    </div>
+                    <h4>Personal Loans</h4>
+                    <p>$26.4M</p>
+                </div>
+                <div class="allocation-item">
+                    <div class="allocation-circle vehicle">
+                        <span>18%</span>
+                    </div>
+                    <h4>Vehicle Loans</h4>
+                    <p>$21.6M</p>
+                </div>
+                <div class="allocation-item">
+                    <div class="allocation-circle business">
+                        <span>20%</span>
+                    </div>
+                    <h4>Business Loans</h4>
+                    <p>$24.2M</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="loan-table-section">
+    <div class="section-title">
+        <h2>Loan Category Performance</h2>
+        <p>Performance comparison across different loan categories.</p>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loan Category</th>
+                        <th>Accounts</th>
+                        <th>Outstanding</th>
+                        <th>Interest</th>
+                        <th>Collection</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Home Loans</td>
+                        <td>2,180</td>
+                        <td>$48.5M</td>
+                        <td>8.25%</td>
+                        <td>98.6%</td>
+                        <td><span class="status excellent">Excellent</span></td>
+                    </tr>
+                    <tr>
+                        <td>Personal Loans</td>
+                        <td>3,420</td>
+                        <td>$26.4M</td>
+                        <td>11.20%</td>
+                        <td>95.8%</td>
+                        <td><span class="status good">Good</span></td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle Loans</td>
+                        <td>1,860</td>
+                        <td>$21.6M</td>
+                        <td>9.10%</td>
+                        <td>97.3%</td>
+                        <td><span class="status excellent">Excellent</span></td>
+                    </tr>
+                    <tr>
+                        <td>Business Loans</td>
+                        <td>1,120</td>
+                        <td>$24.2M</td>
+                        <td>10.40%</td>
+                        <td>93.7%</td>
+                        <td><span class="status average">Average</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</section>
+<section class="risk-analysis">
+    <div class="section-title">
+        <h2>Risk Analysis</h2>
+        <p>Overall portfolio health and lending risk assessment.</p>
+        </div>
+        <div class="risk-grid">
+            <div class="risk-card">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Portfolio Risk</h3>
+                <h2>Low</h2>
+                <p>Well diversified loan portfolio.</p>
+            </div>
+            <div class="risk-card">
+                <i class="fas fa-circle-exclamation"></i>
+                <h3>NPA Ratio</h3>
+                <h2>1.82%</h2>
+                <p>Healthy asset quality maintained.</p>
+            </div>
+            <div class="risk-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Recovery Rate</h3>
+                <h2>97.4%</h2>
+                <p>Strong collection performance.</p>
+            </div>
+            <div class="risk-card">
+                <i class="fas fa-award"></i>
+                <h3>Portfolio Rating</h3>
+                <h2>A+</h2>
+                <p>Excellent lending performance.</p>
+            </div>
+        </div>
+    </section>
+<section class="analytics-insights">
+    <div class="section-title">
+        <h2>AI Loan Insights</h2>
+        <p>Smart recommendations based on portfolio analytics.</p>
+    </div>
+        <div class="insight-grid">
+            <div class="insight-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Top Performing Category</h3>
+                <p>Home Loans continue to generate the highest repayment consistency.</p>
+            </div>
+            <div class="insight-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Portfolio Suggestion</h3>
+                <p>Increase secured lending to further reduce overall portfolio risk.</p>
+            </div>
+            <div class="insight-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Collection Opportunity</h3>
+                <p>Business loan reminders can improve recovery by nearly 2%.</p>
+            </div>
+            <div class="insight-card">
+                <i class="fas fa-robot"></i>
+                <h3>Prediction</h3>
+                <p>Expected portfolio growth of nearly 13% during the next financial year.</p>
+        </div>
+    </div>
+</section>
+<section class="quick-actions">
+        <button><i class="fas fa-chart-line"></i> Generate Report</button>
+        <button><i class="fas fa-download"></i> Export Analytics</button>
+        <button><i class="fas fa-filter"></i> Filter Portfolio</button>
+        <button><i class="fas fa-print"></i> Print Dashboard</button>
+    </section>
+<footer>
+        <p>© 2026 FinanceHub.All Rights Reserved.</p>
+</footer>
+</body>
+</html>

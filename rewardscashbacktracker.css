@@ -1,0 +1,620 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+background:#f2f6fd;
+color:#142b4b;
+line-height:1.6;
+overflow-x:hidden;
+}
+.header{
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.6);
+box-shadow:0 8px 24px rgba(0,20,40,.05);
+}
+.logo h2{
+font-size:30px;
+font-weight:700;
+color:#1f5bc9;
+letter-spacing:-.5px;
+}
+nav{
+display:flex;
+gap:28px;
+align-items:center;
+}
+nav a{
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+color:#2d4a72;
+position:relative;
+transition:.3s;
+}
+nav a:hover,
+nav a.active{
+color:#1f5bc9;
+}
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:3px;
+background:#1f5bc9;
+border-radius:10px;
+transition:.3s;
+}
+nav a:hover::after,
+nav a.active::after{
+width:100%;
+}
+.hero-section{
+padding:70px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+align-items:center;
+gap:60px;
+}
+.hero-content h1{
+font-size:52px;
+font-weight:700;
+color:#142b4b;
+margin-bottom:20px;
+}
+.hero-content span{
+color:#1f5bc9;
+}
+.hero-content p{
+font-size:17px;
+color:#5f7ca5;
+margin-bottom:35px;
+max-width:650px;
+}
+.hero-buttons{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+.hero-buttons button{
+padding:16px 28px;
+border:none;
+border-radius:18px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:.35s;
+display:flex;
+align-items:center;
+gap:10px;
+}
+.primary-btn{
+background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+color:#fff;
+box-shadow:0 12px 30px rgba(31,91,201,.18);
+}
+.primary-btn:hover{
+transform:translateY(-5px);
+}
+.secondary-btn{
+background:#fff;
+color:#1f5bc9;
+border:2px solid #1f5bc9;
+}
+.secondary-btn:hover{
+background:#1f5bc9;
+color:#fff;
+}
+.hero-image img{
+width:100%;
+border-radius:30px;
+box-shadow:0 20px 45px rgba(0,20,40,.08);
+}
+.section-title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:28px;
+flex-wrap:wrap;
+gap:12px;
+}
+.section-title h2{
+font-size:30px;
+font-weight:700;
+color:#142b4b;
+}
+.section-title p{
+font-size:15px;
+color:#6d87ab;
+max-width:700px;
+}
+.rewards-overview,
+.cashback-summary,
+.active-reward-programs,
+.redeem-rewards,
+.partner-merchants,
+.monthly-analytics,
+.expiring-rewards,
+.reward-history,
+.smart-suggestions{
+padding:30px 8% 45px;
+}
+.overview-grid,
+.cashback-grid,
+.program-grid,
+.redeem-grid,
+.merchant-grid,
+.analytics-grid,
+.expiry-grid,
+.history-grid,
+.suggestion-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+}
+.overview-card,
+.cashback-card,
+.program-card,
+.redeem-card,
+.merchant-card,
+.analytics-card,
+.expiry-card,
+.history-card,
+.suggestion-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.75);
+border-radius:24px;
+padding:30px;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+position:relative;
+overflow:hidden;
+}
+.overview-card::before,
+.cashback-card::before,
+.program-card::before,
+.redeem-card::before,
+.merchant-card::before,
+.analytics-card::before,
+.expiry-card::before,
+.history-card::before,
+.suggestion-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:5px;
+background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.overview-card:hover,
+.cashback-card:hover,
+.program-card:hover,
+.redeem-card:hover,
+.merchant-card:hover,
+.analytics-card:hover,
+.expiry-card:hover,
+.history-card:hover,
+.suggestion-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.overview-card i,
+.cashback-card i,
+.program-card i,
+.redeem-card i,
+.merchant-card i,
+.analytics-card i,
+.expiry-card i,
+.history-card i,
+.suggestion-card i{
+font-size:42px;
+color:#1f5bc9;
+margin-bottom:20px;
+}
+.overview-card h3,
+.cashback-card h3,
+.program-card h3,
+.redeem-card h3,
+.merchant-card h3,
+.analytics-card h3,
+.expiry-card h3,
+.history-card h3,
+.suggestion-card h3{
+font-size:20px;
+color:#284d7d;
+margin-bottom:12px;
+}
+.overview-card h2,
+.cashback-card h2,
+.program-card h2,
+.redeem-card h2,
+.merchant-card h2,
+.analytics-card h2,
+.expiry-card h2,
+.history-card h2{
+font-size:34px;
+color:#142b4b;
+margin-bottom:12px;
+font-weight:700;
+}
+.overview-card p,
+.cashback-card p,
+.program-card p,
+.redeem-card p,
+.merchant-card p,
+.analytics-card p,
+.expiry-card p,
+.history-card p,
+.suggestion-card p{
+font-size:15px;
+color:#6c88ad;
+}
+.rewards-overview,
+.cashback-summary,
+.active-reward-programs,
+.redeem-rewards{
+    margin-bottom:45px;
+}
+.overview-grid,
+.cashback-grid,
+.program-grid,
+.redeem-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.overview-card,
+.cashback-card,
+.program-card,
+.redeem-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+.overview-card::before,
+.cashback-card::before,
+.program-card::before,
+.redeem-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.overview-card:hover,
+.cashback-card:hover,
+.program-card:hover,
+.redeem-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 24px 45px rgba(31,91,201,.12);
+}
+.overview-card i,
+.cashback-card i,
+.program-card i,
+.redeem-card i{
+    font-size:45px;
+    color:#1f5bc9;
+    margin-bottom:20px;
+}
+.overview-card h3,
+.cashback-card h3,
+.program-card h3,
+.redeem-card h3{
+    font-size:20px;
+    color:#27466f;
+    margin-bottom:15px;
+}
+.overview-card h2,
+.cashback-card h2,
+.program-card h2,
+.redeem-card h2{
+    font-size:34px;
+    color:#142b4b;
+    margin-bottom:12px;
+}
+.overview-card p,
+.cashback-card p,
+.program-card p,
+.redeem-card p{
+    font-size:15px;
+    color:#6986ab;
+    line-height:1.7;
+}
+.partner-merchants,
+.monthly-analytics,
+.expiring-rewards{
+    margin-bottom:45px;
+}
+.merchant-grid,
+.analytics-grid,
+.expiry-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.merchant-card,
+.analytics-card,
+.expiry-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+    border:1px solid rgba(255,255,255,.75);
+    position:relative;
+    overflow:hidden;
+}
+.merchant-card::before,
+.analytics-card::before,
+.expiry-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.merchant-card:hover,
+.analytics-card:hover,
+.expiry-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 24px 45px rgba(31,91,201,.12);
+}
+.merchant-card i,
+.analytics-card i,
+.expiry-card i{
+    font-size:45px;
+    color:#1f5bc9;
+    margin-bottom:20px;
+}
+.merchant-card h3,
+.analytics-card h3,
+.expiry-card h3{
+    font-size:20px;
+    color:#27466f;
+    margin-bottom:15px;
+}
+.merchant-card h2,
+.analytics-card h2,
+.expiry-card h2{
+    font-size:32px;
+    color:#142b4b;
+    margin-bottom:12px;
+}
+.merchant-card p,
+.analytics-card p,
+.expiry-card p{
+    font-size:15px;
+    color:#6986ab;
+    line-height:1.7;
+}
+.expiring-rewards,
+.reward-history{
+    width:100%;
+    margin-bottom:45px;
+}
+.expiry-grid,
+.history-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+.expiry-card,
+.history-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.expiry-card:hover,
+.history-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 45px rgba(31,91,201,.12);
+}
+.expiry-card i,
+.history-card i{
+    font-size:42px;
+    color:#1f5bc9;
+    margin-bottom:20px;
+}
+.expiry-card h3,
+.history-card h3{
+    font-size:22px;
+    color:#142b4b;
+    margin-bottom:12px;
+}
+.expiry-card h2,
+.history-card h2{
+    font-size:32px;
+    color:#1f5bc9;
+    margin-bottom:10px;
+}
+.expiry-card p,
+.history-card p{
+    font-size:15px;
+    color:#647d9e;
+    line-height:1.7;
+}
+.smart-suggestions{
+    width:100%;
+    margin-bottom:45px;
+}
+.suggestion-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:25px;
+}
+.suggestion-card{
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.suggestion-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 22px 45px rgba(31,91,201,.12);
+}
+.suggestion-card i{
+    font-size:42px;
+    color:#1f5bc9;
+    margin-bottom:18px;
+}
+.suggestion-card h3{
+    font-size:22px;
+    color:#142b4b;
+    margin-bottom:14px;
+}
+.suggestion-card p{
+    font-size:15px;
+    color:#647d9e;
+    line-height:1.8;
+}
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    font-size:15px;
+    letter-spacing:.5px;
+    margin-top:50px;
+}
+::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+::-webkit-scrollbar-track{
+    background:#edf2fb;
+    border-radius:20px;
+}
+::-webkit-scrollbar-thumb{
+    background:#8bb3ff;
+    border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#1f5bc9;
+}
+@media(max-width:1024px){
+.hero-section{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+.hero-image{
+    margin-top:35px;
+}
+.overview-grid,
+.cashback-grid,
+.program-grid,
+.redeem-grid,
+.merchant-grid,
+.analytics-grid,
+.expiry-grid,
+.history-grid,
+.suggestion-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+@media(max-width:768px){
+.hero-content h1{
+    font-size:40px;
+}
+.hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.overview-grid,
+.cashback-grid,
+.program-grid,
+.redeem-grid,
+.merchant-grid,
+.analytics-grid,
+.expiry-grid,
+.history-grid,
+.suggestion-grid{
+    grid-template-columns:1fr;
+}
+.section-title h2{
+    font-size:28px;
+}
+}
+@media(max-width:480px){
+.header{
+    padding:18px;
+    flex-direction:column;
+    gap:18px;
+}
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.hero-section{
+    padding:60px 20px;
+}
+.hero-content h1{
+    font-size:32px;
+}
+.hero-content p{
+    font-size:15px;
+}
+.primary-btn,
+.secondary-btn{
+    width:100%;
+    justify-content:center;
+}
+.overview-card,
+.cashback-card,
+.program-card,
+.redeem-card,
+.merchant-card,
+.analytics-card,
+.expiry-card,
+.history-card,
+.suggestion-card{
+    padding:22px;
+}
+.section-title h2{
+    font-size:24px;
+}
+footer{
+    font-size:13px;
+    padding:20px;
+}
+}
