@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Analytics Dashboard</title>
+    <link rel="stylesheet" href="expenseanalyticsdashboard.css">
+</head>
+<body>
+<header class="dashboard-navbar">
+<div class="logo">
+        <a href="homepage.html">FinanceHub</a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="../dashboard/bankaccountdashboard.html">Bank</a></li>
+            <li><a href="../dashboard/cashflowdashboard.html">Cash Flow</a></li>
+            <li><a href="../insurance/investmentportfoliodashboard.html">Investments</a></li>
+            <li><a href="../dashboard/financialgoaldashboard.html">Goals</a></li>
+            <li><a href="../dashboard/networthdashboard.html">Net Worth</a></li>
+            <li><a href="../profile/profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="expense-overview">
+    <div class="overview-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Total Expenses</h3>
+        <h2>₹6,84,250</h2>
+        <span>This Financial Year</span>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-calendar-days"></i>
+        <h3>This Month</h3>
+        <h2>₹58,640</h2>
+        <span>+4.8% vs Last Month</span>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>Total Savings</h3>
+        <h2>₹2,46,800</h2>
+        <span>29% Savings Rate</span>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-credit-card"></i>
+        <h3>Transactions</h3>
+        <h2>468</h2>
+        <span>Current Year</span>
+    </div>
+</section>
+<section class="spending-health">
+    <div class="section-title">
+        <h2>Spending Health</h2>
+        <p>Monitor your financial discipline using intelligent expense analytics.</p>
+    </div>
+    <div class="health-grid">
+        <div class="health-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Budget Score</h3>
+            <h2>92/100</h2>
+            <p>Excellent Budget Control</p>
+        </div>
+        <div class="health-card">
+            <i class="fas fa-arrow-trend-down"></i>
+            <h3>Expense Reduction</h3>
+            <h2>12.4%</h2>
+            <p>Compared to Last Year</p>
+        </div>
+        <div class="health-card">
+            <i class="fas fa-scale-balanced"></i>
+            <h3>Budget Utilized</h3>
+            <h2>74%</h2>
+            <p>Within Safe Limit</p>
+        </div>
+        <div class="health-card">
+            <i class="fas fa-award"></i>
+            <h3>Financial Rating</h3>
+            <h2>A+</h2>
+            <p>Healthy Spending Pattern</p>
+        </div>
+    </div>
+</section>
+<section class="expense-categories">
+    <div class="section-title">
+        <h2>Top Expense Categories</h2>
+        <p>Major spending categories contributing to your monthly expenses.</p>
+    </div>
+    <div class="category-grid">
+        <div class="category-card">
+            <i class="fas fa-house"></i>
+            <h3>House Rent</h3>
+            <h2>₹18,000</h2>
+            <p>Monthly Expense</p>
+            <div class="progress">
+                <div class="rent-progress" style="width:82%;"></div>
+            </div>
+            <span>31% of Monthly Budget</span>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-utensils"></i>
+            <h3>Food & Dining</h3>
+            <h2>₹8,950</h2>
+            <p>Restaurants & Groceries</p>
+            <div class="progress">
+                <div class="food-progress" style="width:58%;"></div>
+            </div>
+            <span>15% of Monthly Budget</span>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-car-side"></i>
+            <h3>Transportation</h3>
+            <h2>₹5,420</h2>
+            <p>Fuel & Travel</p>
+            <div class="progress">
+                <div class="transport-progress" style="width:44%;"></div>
+            </div>
+            <span>9% of Monthly Budget</span>
+        </div>
+        <div class="category-card">
+            <i class="fas fa-bolt"></i>
+            <h3>Utilities</h3>
+            <h2>₹4,860</h2>
+            <p>Electricity & Internet</p>
+            <div class="progress">
+                <div class="utility-progress" style="width:39%;"></div>
+            </div>
+            <span>8% of Monthly Budget</span>
+        </div>
+    </div>
+</section>
+<div class="financial-health-card">
+    <div class="meter-header">
+        <h3>Expense Health Meter</h3>
+        <span>Excellent</span>
+    </div>
+    <div class="meter">
+        <div class="meter-fill"></div>
+        <div class="meter-value">84%</div>
+    </div>
+     <div class="meter-stats">
+        <div class="stat">
+            <h4>Budget Used</h4>
+            <p>62%</p>
+        </div>
+        <div class="stat">
+            <h4>Remaining</h4>
+            <p>38%</p>
+        </div>
+        <div class="stat">
+            <h4>Status</h4>
+            <p>Healthy</p>
+        </div>
+    </div>
+    <div class="expense-highlights">
+        <div class="highlight-item">
+            <span>Food</span>
+            <strong>₹12,500</strong>
+        </div>
+        <div class="highlight-item">
+            <span>Travel</span>
+           <strong>₹5,800</strong>
+        </div>
+        <div class="highlight-item">
+            <span>Shopping</span>
+            <strong>₹3,250</strong>
+        </div>
+        <div class="highlight-item">
+            <span>Utilities</span>
+            <strong>₹2,700</strong>
+        </div>
+    </div>
+</div>
+<section class="expense-distribution">
+    <div class="section-title">
+        <h2>Expense Distribution</h2>
+        <p>Percentage contribution of each expense category.</p>
+    </div>
+    <div class="allocation-grid">
+        <div class="allocation-card">
+            <div class="circle-progress rent-circle">
+                <span>31%</span>
+            </div>
+            <h3>House Rent</h3>
+            <p>₹18,000</p>
+        </div>
+        <div class="allocation-card">
+            <div class="circle-progress food-circle">
+                <span>15%</span>
+            </div>
+            <h3>Food & Dining</h3>
+            <p>₹8,950</p>
+        </div>
+        <div class="allocation-card">
+            <div class="circle-progress transport-circle">
+                <span>9%</span>
+            </div>
+            <h3>Transportation</h3>
+            <p>₹5,420</p>
+        </div>
+        <div class="allocation-card">
+            <div class="circle-progress utility-circle">
+                <span>8%</span>
+            </div>
+            <h3>Utilities</h3>
+            <p>₹4,860</p>
+        </div>
+        <div class="allocation-card">
+            <div class="circle-progress shopping-circle">
+                <span>13%</span>
+            </div>
+            <h3>Shopping</h3>
+            <p>₹7,650</p>
+        </div>
+    </div>
+</section>
+<section class="expense-summary">
+    <div class="section-title">
+        <h2>Expense Summary</h2>
+        <p>Detailed overview of major monthly expenses.</p>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Monthly</th>
+                    <th>Annual</th>
+                    <th>Budget</th>
+                    <th>Variance</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>House Rent</td>
+                    <td>₹18,000</td>
+                    <td>₹2,16,000</td>
+                    <td>₹20,000</td>
+                    <td>-₹2,000</td>
+                    <td>Within Budget</td>
+                </tr>
+                <tr>
+                    <td>Food & Dining</td>
+                    <td>₹8,950</td>
+                    <td>₹1,07,400</td>
+                    <td>₹8,000</td>
+                    <td>+₹950</td>
+                    <td>Over Budget</td>
+                </tr>
+                <tr>
+                    <td>Transportation</td>
+                    <td>₹5,420</td>
+                    <td>₹65,040</td>
+                    <td>₹6,000</td>
+                    <td>-₹580</td>
+                    <td>Healthy</td>
+                </tr>
+                <tr>
+                    <td>Utilities</td>
+                    <td>₹4,860</td>
+                    <td>₹58,320</td>
+                    <td>₹5,000</td>
+                    <td>-₹140</td>
+                    <td>Healthy</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="payment-analysis">
+    <div class="section-title">
+        <h2>Payment Method Analysis</h2>
+        <p>Understand how your expenses are distributed across different payment methods.</p>
+    </div>
+    <div class="payment-grid">
+        <div class="payment-card">
+            <i class="fas fa-credit-card"></i>
+            <h3>Credit Cards</h3>
+            <h2>₹2,18,450</h2>
+            <p>46% of Total Spending</p>
+        </div>
+        <div class="payment-card">
+            <i class="fas fa-mobile-screen-button"></i>
+            <h3>UPI Payments</h3>
+            <h2>₹1,54,260</h2>
+            <p>33% of Total Spending</p>
+        </div>
+        <div class="payment-card">
+            <i class="fas fa-building-columns"></i>
+            <h3>Bank Transfer</h3>
+            <h2>₹72,880</h2>
+            <p>15% of Total Spending</p>
+        </div>
+        <div class="payment-card">
+            <i class="fas fa-money-bill-wave"></i>
+            <h3>Cash</h3>
+            <h2>₹28,650</h2>
+            <p>6% of Total Spending</p>
+        </div>
+    </div>
+</section>
+<section class="top-merchants">
+    <div class="section-title">
+        <h2>Top Merchants</h2>
+        <p>Businesses where you spend the most every month.</p>
+    </div>
+    <div class="merchant-grid">
+        <div class="merchant-card">
+            <i class="fas fa-store"></i>
+            <h3>D-Mart</h3>
+            <h2>₹18,450</h2>
+            <p>Groceries & Household</p>
+        </div>
+        <div class="merchant-card">
+            <i class="fas fa-burger"></i>
+            <h3>Swiggy & Zomato</h3>
+            <h2>₹7,860</h2>
+            <p>Food Delivery</p>
+        </div>
+        <div class="merchant-card">
+            <i class="fas fa-gas-pump"></i>
+            <h3>Indian Oil</h3>
+            <h2>₹5,420</h2>
+            <p>Fuel Expenses</p>
+        </div>
+        <div class="merchant-card">
+            <i class="fas fa-cart-shopping"></i>
+            <h3>Amazon</h3>
+            <h2>₹12,840</h2>
+            <p>Shopping</p>
+        </div>
+    </div>
+</section>
+<section class="subscriptions">
+    <div class="section-title">
+        <h2>Recurring Subscriptions</h2>
+        <p>Monthly subscriptions and auto-debit services.</p>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Amount</th>
+                    <th>Billing Cycle</th>
+                    <th>Next Due</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+ 
+                    <td>Netflix</td>
+                    <td>₹649</td>
+                    <td>Monthly</td>
+                    <td>18 Jul 2026</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+ 
+                    <td>Spotify Premium</td>
+                    <td>₹119</td>
+                    <td>Monthly</td>
+                    <td>22 Jul 2026</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+ 
+                    <td>Amazon Prime</td>
+                    <td>₹299</td>
+                    <td>Monthly</td>
+                    <td>25 Jul 2026</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+ 
+                    <td>Google One</td>
+                    <td>₹650</td>
+                    <td>Monthly</td>
+                    <td>30 Jul 2026</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="budget-comparison">
+    <div class="section-title">
+        <h2>Budget vs Actual</h2>
+        <p>Compare your planned budget against actual spending.</p>
+    </div>
+    <div class="comparison-grid">
+        <div class="comparison-card">
+            <i class="fas fa-scale-balanced"></i>
+            <h3>Total Budget</h3>
+            <h2>₹80,000</h2>
+            <p>Monthly Planned Budget</p>
+        </div>
+        <div class="comparison-card">
+            <i class="fas fa-wallet"></i>
+            <h3>Actual Spending</h3>
+            <h2>₹58,640</h2>
+            <p>Current Month</p>
+        </div>
+        <div class="comparison-card">
+            <i class="fas fa-piggy-bank"></i>
+            <h3>Budget Remaining</h3>
+            <h2>₹21,360</h2>
+            <p>Available to Spend</p>
+        </div>
+        <div class="comparison-card">
+            <i class="fas fa-circle-check"></i>
+            <h3>Budget Status</h3>
+            <h2>Healthy</h2>
+            <p>Within Budget Limit</p>
+        </div>
+    </div>
+</section>
+<section class="expense-insights">
+    <div class="section-title">
+        <h2>AI Expense Insights</h2>
+        <p>Personalized recommendations to improve your spending habits and maximize monthly savings.</p>
+    </div>
+    <div class="insight-grid">
+        <div class="insight-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Potential Savings</h3>
+            <h2>₹6,850</h2>
+            <p>Reduce dining and shopping expenses to save approximately ₹6,850 every month.</p>
+        </div>
+        <div class="insight-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Spending Trend</h3>
+            <h2>Stable</h2>
+            <p>Your monthly expenses have remained stable during the last six months.</p>
+        </div>
+        <div class="insight-card">
+            <i class="fas fa-wallet"></i>
+            <h3>Saving Score</h3>
+            <h2>91/100</h2>
+            <p>Excellent financial discipline with a healthy savings ratio.</p>
+        </div>
+        <div class="insight-card">
+            <i class="fas fa-bullseye"></i>
+            <h3>Budget Accuracy</h3>
+            <h2>96%</h2>
+            <p>Your actual spending closely matches your planned monthly budget.</p>
+        </div>
+    </div>
+</section>
+<section class="saving-opportunities">
+    <div class="section-title">
+        <h2>Saving Opportunities</h2>
+        <p>Areas where you can reduce expenses without affecting your lifestyle.</p>
+    </div>
+    <div class="opportunity-grid">
+        <div class="opportunity-card">
+            <i class="fas fa-utensils"></i>
+            <h3>Food & Dining</h3>
+            <h2>Save ₹2,500</h2>
+            <p>Cook more meals at home.</p>
+        </div>
+        <div class="opportunity-card">
+            <i class="fas fa-cart-shopping"></i>
+            <h3>Shopping</h3>
+            <h2>Save ₹1,800</h2>
+            <p>Avoid unnecessary purchases.</p>
+        </div>
+        <div class="opportunity-card">
+            <i class="fas fa-film"></i>
+            <h3>Subscriptions</h3>
+            <h2>Save ₹850</h2>
+            <p>Cancel unused subscriptions.</p>
+        </div>
+        <div class="opportunity-card">
+            <i class="fas fa-bolt"></i>
+            <h3>Utilities</h3>
+            <h2>Save ₹1,700</h2>
+            <p>Optimize electricity usage.</p>
+        </div>
+    </div>
+</section>
+<section class="expense-alerts">
+    <div class="section-title">
+        <h2>Expense Alerts</h2>
+        <p>Important reminders and budget notifications.</p>
+    </div>
+    <div class="notification-list">
+        <div class="notification-item">
+            <i class="fas fa-triangle-exclamation"></i>
+            <div>
+                <h3>Dining Budget Exceeded</h3>
+                <p>Food expenses are 12% above your monthly budget.</p>
+            </div>
+            <span>High</span>
+        </div>
+        <div class="notification-item">
+            <i class="fas fa-credit-card"></i>
+            <div>
+                <h3>Credit Card Bill</h3>
+                <p>Payment of ₹18,420 is due within 5 days.</p>
+            </div>
+            <span>Reminder</span>
+        </div>
+        <div class="notification-item">
+            <i class="fas fa-circle-check"></i>
+            <div>
+                <h3>Budget Status</h3>
+                <p>Overall monthly spending remains within your planned budget.</p>
+            </div>
+            <span>Good</span>
+        </div>
+        <div class="notification-item">
+            <i class="fas fa-piggy-bank"></i>
+            <div>
+                <h3>Savings Achieved</h3>
+                <p>You saved ₹21,360 from this month's allocated budget.</p>
+            </div>
+            <span>Completed</span>
+        </div>
+    </div>
+</section>
+ <footer>
+ <p>© 2026 FinanceHub.All Rights Reserved</p>
+</footer>
+</body>
+</html>

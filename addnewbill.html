@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Bill|Financial Dashboard</title>
+    <link rel="stylesheet" href="addnewbill.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <h1>Add New Bill</h1>
+        <p>Add an upcoming bill and set reminders so you never miss a payment.</p>
+    </div>
+    <div class="header-right">
+        <button class="secondary-btn" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i>Back</button>
+    </div>
+</header>
+<main>
+<section class="bill-form-section">
+    <div class="bill-card">
+        <div class="form-icon">
+            <i class="fas fa-file-circle-plus"></i>
+        </div>
+        <h2>Bill Details</h2>
+        <form>
+            <label for="bill-name">Bill Name</label>
+            <input id="bill-name"type="text"placeholder="Example:Electricity Bill"required>
+            <label for="category">Category</label>
+            <select id="category">
+                <option>Utilities</option>
+                <option>Internet</option>
+                <option>Mobile</option>
+                <option>Insurance</option>
+                <option>Loan</option>
+                <option>Other</option>
+            </select>
+            <label for="bill-amount">Amount</label>
+            <input id="bill-amount"type="number"placeholder="Enter bill amount"min="1"required>
+            <label for="due-date">Due Date</label>
+            <input id="due-date" type="date" required>
+            <label for="reminder">Reminder</label>
+            <select id="reminder">
+                <option>1 day before</option>
+                <option>3 days before</option>
+                <option>7 days before</option>
+                <option>14 days before</option>
+            </select>
+            <button type="submit" class="primary-btn">
+                <i class="fas fa-plus"></i>Add Bill</button>
+        </form>
+    </div>
+</section>
+</main>
+<footer>
+    <p>© 2026 Financehub.All rights reserved.</p>
+</footer>
+</body>
+</html>

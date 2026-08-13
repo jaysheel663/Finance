@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finance Calendar-Add Reminder</title>
+    <link rel="stylesheet" href="addreminder.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-brand">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Financehub</span>
+    </div>
+    <div class="nav-links">
+        <a href="homepage.html">
+            <i class="fa-solid fa-house"></i>Home</a>
+        <a href="awareness.html">
+            <i class="fa-solid fa-graduation-cap"></i>Awareness</a>
+        <a href="fraud-security-centre.html">
+            <i class="fa-solid fa-shield-halved"></i>Security Centre</a>
+        <a href="security-overview.html">
+            <i class="fa-solid fa-lock"></i>Security</a>
+    </div>
+    <a href="finance-calendar-view.html" class="nav-action">
+        <i class="fa-solid fa-calendar-days"></i>View Calendar</a>
+</nav>
+<header class="page-header">
+    <span class="page-badge">
+        <i class="fa-solid fa-calendar-check"></i>Finance Calendar</span>
+    <h1>Add Financial Reminder</h1>
+    <p>Add important financial dates and reminders so you can stay organized and avoid missing important payments or deadlines.</p>
+</header>
+<section class="section-title">
+    <div>
+        <h2>Create a Reminder</h2>
+        <p>Enter the details of your upcoming financial activity.</p>
+    </div>
+</section>
+<section class="form-section">
+    <div class="form-card">
+    <div class="form-icon">
+            <i class="fa-solid fa-calendar-plus"></i>
+        </div>
+        <h2>Financial Reminder</h2>
+        <p class="form-description">Add a payment,bill,savings,investment,or other important financial reminder.</p>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="title">
+                    <i class="fa-solid fa-heading"></i>Reminder Title</label>
+                <input type="text"id="title"name="title"placeholder="Example:Credit card payment"required>
+            </div>
+            <div class="input-group">
+                <label for="type">
+                    <i class="fa-solid fa-list"></i>Reminder Type</label>
+                <select id="type" name="type" required>
+                    <option value="">Select reminder type</option>
+                    <option value="bill">Bill Payment</option>
+                    <option value="loan">Loan Payment</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="investment">Investment</option>
+                    <option value="savings">Savings</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="tax">Tax</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="date">
+                        <i class="fa-solid fa-calendar"></i>Date</label>
+                    <input type="date"id="date"name="date"required>
+                </div>
+                <div class="input-group">
+                    <label for="time">
+                        <i class="fa-solid fa-clock"></i>Time</label>
+                    <input type="time"id="time"name="time">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="amount">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>Amount</label>
+                <input type="number"id="amount"name="amount"min="0"step="0.01"placeholder="Enter amount if applicable">
+            </div>
+            <div class="input-group">
+                <label for="repeat">
+                    <i class="fa-solid fa-repeat"></i>Repeat</label>
+                <select id="repeat" name="repeat">
+                    <option value="none">Does not repeat</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="notes">
+                    <i class="fa-solid fa-note-sticky"></i>Notes</label>
+                <textarea id="notes"name="notes"rows="4"placeholder="Add additional details"></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="reset" class="secondary-btn">
+                    <i class="fa-solid fa-rotate-left"></i>Clear</button>
+                <button type="submit" class="primary-btn">
+                    <i class="fa-solid fa-calendar-plus"></i>Add Reminder</button>
+            </div>
+        </form>
+    </div>
+</section>
+<section class="reminder-tips">
+    <div class="tip-card">
+        <div class="tip-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <div>
+            <h3>Useful Reminder Ideas</h3>
+            <p>Track rent,utility bills,loan payments,credit card due dates,insurance renewals,investments,savings contributions,and tax deadlines.</p>
+        </div>
+    </div>
+</section>
+<section class="action-section">
+    <h2>View Your Financial Calendar</h2>
+    <p>Review upcoming financial activities and important dates.</p>
+    <a href="finance-calendar-view.html" class="primary-btn">
+        <i class="fa-solid fa-calendar-days"></i>View Calendar</a>
+</section>
+<footer class="footer">
+    <div class="copyright">© 2026 Financehub.All rights reserved.</div>
+</footer>
+</body>
+</html>

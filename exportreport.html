@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Export Report|Financial Dashboard</title>
+    <link rel="stylesheet" href="exportreport.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <h1>Export Report</h1>
+        <p>Choose a report type and download your financial data.</p>
+    </div>
+</header>
+<main>
+<section class="section-title">
+    <h2>Report Export</h2>
+    <p>Select the format and period you want to export.</p>
+</section>
+<section class="export-card">
+    <form>
+        <label>Report Type</label>
+        <select>
+            <option>Transaction Report</option>
+            <option>Income Report</option>
+            <option>Expense Report</option>
+            <option>Monthly Financial Summary</option>
+        </select>
+        <label>File Format</label>
+        <select>
+            <option>PDF</option>
+            <option>Excel</option>
+            <option>CSV</option>
+        </select>
+        <label>Report Period</label>
+        <select>
+            <option>Current Month</option>
+            <option>Last 3 Months</option>
+            <option>Last 6 Months</option>
+            <option>This Year</option>
+        </select>
+        <button type="submit" class="primary-btn">
+            <i class="fas fa-download"></i> Export Report</button>
+    </form>
+</section>
+</main>
+<footer>
+    <p>© 2026 Financehub.All rights reserved.</p>
+</footer>
+</body>
+</html>

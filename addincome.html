@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Income Analytics-Add Income</title>
+    <link rel="stylesheet" href="addincome.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-brand">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Financehub</span>
+    </div>
+    <div class="nav-links">
+        <a href="homepage.html">
+            <i class="fa-solid fa-house"></i> Home</a>
+        <a href="incomeanalyticsdashboard.html">
+            <i class="fa-solid fa-chart-line"></i> Income Analytics</a>
+        <a href="financialdashboard.html">
+            <i class="fa-solid fa-chart-pie"></i> Finance</a>
+        <a href="securityoverview.html">
+            <i class="fa-solid fa-lock"></i> Security</a>
+    <a href="incomeanalyticsdashboard.html" class="nav-action">
+        <i class="fa-solid fa-arrow-left"></i> Dashboard</a>
+</nav>
+<header class="page-header">
+    <span class="page-badge">
+        <i class="fa-solid fa-money-bill-wave"></i>Income Analytics</span>
+    <h1>Add Income</h1>
+    <p>Record your income sources to keep your income analytics accurate and up to date.</p>
+</header>
+<section class="form-section">
+    <div class="form-card">
+        <div class="form-icon">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <h2>Income Details</h2>
+        <p class="form-description">Enter the details of the income you received.</p>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="source">
+                    <i class="fa-solid fa-building"></i>Income Source</label>
+                <input type="text"id="source"name="source"placeholder="Example:Monthly Salary"required>
+            </div>
+            <div class="input-group">
+                <label for="category">
+                    <i class="fa-solid fa-layer-group"></i>Income Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select category</option>
+                    <option value="salary">Salary</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="business">Business</option>
+                    <option value="investment">Investment</option>
+                    <option value="rental">Rental Income</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="amount">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>Amount</label>
+                <input type="number"id="amount"name="amount"min="0"step="0.01"placeholder="₹50,000"required>
+            </div>
+            <div class="input-group">
+                <label for="date">
+                    <i class="fa-solid fa-calendar"></i>Income Date</label>
+                <input type="date"id="date"name="date"required>
+            </div>
+            <div class="input-group">
+                <label for="frequency">
+                    <i class="fa-solid fa-repeat"></i>Frequency</label>
+                <select id="frequency" name="frequency">
+                    <option value="one-time">One Time</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="notes">
+                    <i class="fa-solid fa-note-sticky"></i>Notes</label>
+                <textarea id="notes"name="notes"rows="4"placeholder="Add optional notes"></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="reset" class="secondary-btn">
+                    <i class="fa-solid fa-rotate-left"></i>Clear</button>
+                <button type="submit" class="primary-btn">
+                    <i class="fa-solid fa-plus"></i>Add Income</button>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <div class="copyright">© 2026 Financehub.All rights reserved.</div>
+</footer>
+</body>
+</html>

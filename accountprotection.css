@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+}
+.dashboard-header{
+    padding:35px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.8);
+}
+.header-left h1{
+    font-size:38px;
+    color:#0f2545;
+}
+.header-left p{
+    color:#5d7ca5;
+}
+.protection-section{
+    padding:50px 8%;
+}
+.security-score{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-radius:26px;
+    padding:30px;
+    text-align:center;
+    margin-bottom:30px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+}
+.security-score h2{
+    color:#142b4b;
+}
+.score-circle{
+    width:140px;
+    height:140px;
+    margin:20px auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:conic-gradient(#1f5bc9 82%,#e8eef8 82%);
+    position:relative;
+}
+.score-circle::before{
+    content:"";
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:#fff;
+    border-radius:50%;
+}
+.score-circle span{
+    position:relative;
+    z-index:2;
+    font-size:28px;
+    font-weight:700;
+    color:#1f5bc9;
+}
+.security-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+.security-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:28px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+}
+.security-card i{
+    color:#1f5bc9;
+    font-size:28px;
+    margin-bottom:15px;
+}
+.security-card h3{
+    color:#1f3a6b;
+}
+.security-card p{
+    color:#6d88ab;
+    margin:8px 0 18px;
+}
+.status-safe{
+    color:#27ae60;
+    font-weight:700;
+}
+.primary-btn{
+    border:none;
+    padding:13px 20px;
+    border-radius:15px;
+    background:#edf4ff;
+    color:#1f5bc9;
+    font-weight:600;
+    cursor:pointer;
+}
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+font-size:15px;
+letter-spacing:.5px;
+}

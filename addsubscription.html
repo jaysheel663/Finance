@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Subscription|Subscription Manager</title>
+    <link rel="stylesheet" href="addsubscription.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <h1>Add Subscription</h1>
+        <p>Track your recurring subscriptions and upcoming payments.</p>
+    </div>
+</header>
+<main>
+<section class="subscription-form-card">
+    <h2>Subscription Details</h2>
+    <form>
+        <label>Service Name</label>
+        <input type="text" placeholder="Example: Netflix" required>
+        <label>Category</label>
+        <select>
+            <option>Entertainment</option>
+            <option>Software</option>
+            <option>Education</option>
+            <option>Health</option>
+            <option>Other</option>
+        </select>
+        <label>Subscription Amount</label>
+        <input type="number" placeholder="Enter amount" required>
+        <label>Billing Cycle</label>
+        <select>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+            <option>Yearly</option>
+        </select>
+        <label>Next Payment Date</label>
+        <input type="date" required>
+        <button type="submit" class="primary-btn">
+            <i class="fas fa-plus"></i>Add Subscription</button>
+    </form>
+</section>
+</main>
+<footer>
+    <p>© 2026 Financehub.All rights reserved.</p>
+</footer>
+</body>
+</html>

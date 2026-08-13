@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+    line-height:1.6;
+}
+.dashboard-header{
+    padding:35px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.8);
+    box-shadow:0 12px 28px rgba(0,20,40,.06);
+}
+.header-left h1{
+    font-size:38px;
+    color:#0f2545;
+    margin-bottom:8px;
+}
+.header-left p{
+    color:#5d7ca5;
+}
+.edit-section{
+    padding:50px 8%;
+    display:flex;
+    justify-content:center;
+}
+.edit-card{
+    width:100%;
+    max-width:700px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-radius:26px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,20,40,.07);
+}
+.edit-card h2{
+    font-size:28px;
+    margin-bottom:25px;
+}
+.form-group{
+    margin-bottom:20px;
+}
+.form-group label{
+    display:block;
+    color:#456587;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:7px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #dce6f3;
+    border-radius:14px;
+    background:#f9fbff;
+    outline:none;
+    color:#142b4b;
+    font-size:15px;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#4a85f0;
+    box-shadow:0 0 0 4px rgba(74,133,240,.1);
+}
+.form-actions{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+.primary-btn,
+.secondary-btn{
+    flex:1;
+    border:none;
+    padding:15px;
+    border-radius:17px;
+    font-weight:600;
+    cursor:pointer;
+}
+.primary-btn{
+    background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+    color:#fff;
+}
+.secondary-btn{
+    background:#edf4ff;
+    color:#1f5bc9;
+}
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+font-size:15px;
+letter-spacing:.5px;
+}
+@media(max-width:600px){
+    .form-actions{
+        flex-direction:column;
+    }
+    .edit-card{
+        padding:25px;
+    }
+}

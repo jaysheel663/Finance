@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Loan|Loan Manager</title>
+    <link rel="stylesheet" href="addloan.css">
+</head>
+<body>
+<header class="dashboard-header">
+    <div class="header-left">
+        <h1>Add Loan</h1>
+        <p>Add a loan and keep track of your repayment details.</p>
+    </div>
+</header>
+<main>
+<section class="loan-form-card">
+    <h2>Loan Details</h2>
+    <form>
+        <label>Loan Name</label>
+        <input type="text" placeholder="Example: Home Loan" required>
+        <label>Loan Type</label>
+        <select>
+            <option>Home Loan</option>
+            <option>Personal Loan</option>
+            <option>Education Loan</option>
+            <option>Vehicle Loan</option>
+            <option>Other</option>
+        </select>
+        <label>Principal Amount</label>
+        <input type="number" placeholder="Enter loan amount" required>
+        <label>Interest Rate (%)</label>
+        <input type="number" step="0.01" placeholder="Enter interest rate" required>
+        <label>Loan Tenure</label>
+        <input type="number" placeholder="Tenure in months" required>
+        <label>Start Date</label>
+        <input type="date" required>
+        <button type="submit" class="primary-btn">Add Loan</button>
+    </form>
+</section>
+</main>
+<footer>
+    <p>© 2026 Financehub.All rights reserved.</p>
+</footer>
+</body>
+</html>

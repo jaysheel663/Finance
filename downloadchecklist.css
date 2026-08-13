@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f4f8ff;
+    color:#142b4b;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+.checklist-header{
+    padding:45px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:25px;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.8);
+    box-shadow:0 10px 25px rgba(0,20,40,.06);
+}
+.header-left h1{
+    font-size:38px;
+    color:#12345b;
+    margin-bottom:10px;
+}
+.header-left p{
+    font-size:16px;
+    color:#6985aa;
+    max-width:760px;
+}
+.header-right{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.primary-btn,
+.secondary-btn{
+    padding:15px 28px;
+    border:none;
+    border-radius:18px;
+    font-size:15px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.35s;
+}
+.primary-btn{
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+    color:#fff;
+}
+.secondary-btn{
+    background:#fff;
+    color:#1f5bc9;
+    border:1px solid rgba(31,91,201,.15);
+}
+.primary-btn:hover,
+.secondary-btn:hover{
+    transform:translateY(-5px);
+}
+.section-title{
+    margin:50px 8% 30px;
+}
+.section-title h2{
+    font-size:30px;
+    color:#12345b;
+    margin-bottom:10px;
+}
+.section-title p{
+    color:#6985aa;
+    font-size:15px;
+}
+.download-section{
+    padding:0 8% 60px;
+}
+.download-card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-radius:26px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+}
+.download-card i{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#edfdf3;
+    color:#16a34a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:38px;
+    margin:0 auto 22px;
+}
+.download-card h2{
+    font-size:34px;
+    color:#12345b;
+    margin-bottom:15px;
+}
+.download-card p{
+    color:#6985aa;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+.download-card button{
+    padding:15px 35px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(135deg,#16a34a,#22c55e);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s;
+}
+.download-card button:hover{
+    transform:translateY(-5px);
+}
+.checklist-grid{
+    padding:0 8% 60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.check-card{
+    background:#fff;
+    border-radius:22px;
+    padding:28px;
+    box-shadow:0 12px 28px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.check-card:hover{
+    transform:translateY(-8px);
+}
+.check-card i{
+    font-size:40px;
+    color:#16a34a;
+    margin-bottom:15px;
+}
+.check-card h3{
+    color:#16396b;
+    margin-bottom:10px;
+}
+.check-card p{
+    color:#6985aa;
+    line-height:1.8;
+}
+.benefit-grid{
+    padding:0 8% 70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.benefit-card{
+    background:#fff;
+    border-radius:22px;
+    padding:28px;
+    text-align:center;
+    box-shadow:0 12px 28px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.benefit-card:hover{
+    transform:translateY(-8px);
+}
+.benefit-card i{
+    font-size:42px;
+    color:#1f5bc9;
+    margin-bottom:15px;
+}
+.benefit-card h3{
+    color:#16396b;
+    margin-bottom:10px;
+}
+.benefit-card p{
+    color:#6985aa;
+    line-height:1.8;
+}
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+font-size:15px;
+letter-spacing:.5px;
+}

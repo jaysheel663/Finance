@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan Management Dashboard</title>
+<link rel="stylesheet" href="loanmanagementdashboard.css">
+</head>
+<body>
+<header class="dashboard-navbar">
+<div class="logo">
+        <a href="homepage.html">FinanceHub</a>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="../dashboard/bankaccountdashboard.html">Bank</a></li>
+            <li><a href="../dashboard/cashflowdashboard.html">Cash Flow</a></li>
+            <li><a href="../insurance/investmentportfoliodashboard.html">Investments</a></li>
+            <li><a href="../dashboard/financialgoaldashboard.html">Goals</a></li>
+            <li><a href="../dashboard/networthdashboard.html">Net Worth</a></li>
+            <li><a href="../profile/profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="loan-overview">
+<div class="overview-card">
+    <h3>Total Outstanding</h3>
+    <h2>₹18,55,400</h2>
+    <span>Across 4 Active Loans</span>
+</div>
+<div class="overview-card">
+    <h3>Total Monthly EMI</h3>
+    <h2>₹48,250</h2>
+    <span>Next EMI:10 Jul 2026</span>
+</div>
+<div class="overview-card">
+    <h3>Remaining Tenure</h3>
+    <h2>7 Years</h2>
+    <span>Average Remaining Duration</span>
+</div>
+<div class="overview-card">
+    <h3>Interest Remaining</h3>
+    <h2>₹4,82,300</h2>
+    <span>Expected Until Closure</span>
+</div>
+</section>
+<section class="loan-health">
+<div class="section-title">
+    <h2>Loan Health Summary</h2>
+    <p>Key performance indicators showing your current debt position and repayment health.</p>
+</div>
+<div class="health-grid">
+    <div class="health-card">
+        <h3>Loan Health Score</h3>
+        <h2>91/100</h2>
+        <p>Excellent Repayment Behaviour</p>
+    </div>
+    <div class="health-card">
+        <h3>Debt to Income</h3>
+        <h2>24%</h2>
+        <p>Within Recommended Range</p>
+    </div>
+    <div class="health-card">
+        <h3>Credit Score</h3>
+        <h2>785</h2>
+        <p>Excellent Credit Standing</p>
+    </div>
+    <div class="health-card">
+        <h3>Interest Saved</h3>
+        <h2>₹86,420</h2>
+        <p>Through Previous Prepayments</p>
+    </div>
+</div>
+</section>
+<section class="loan-portfolio">
+<div class="section-title">
+    <h2>Active Loan Portfolio</h2>
+    <p>Overview of all active loans linked to your financial profile.</p>
+</div>
+<div class="loan-grid">
+    <div class="loan-card">
+        <h3>Home Loan</h3>
+        <h2>₹12,40,000</h2>
+        <p>Interest:8.40%</p>
+        <p>EMI:₹24,580</p>
+        <div class="progress">
+            <div class="home-loan-progress" style="width:58%;"></div>
+        </div>
+        <span>58% Repaid</span>
+    </div>
+    <div class="loan-card">
+        <h3>Vehicle Loan</h3>
+        <h2>₹2,85,400</h2>
+        <p>Interest:9.10%</p>
+        <p>EMI:₹8,250</p>
+         <div class="progress">
+            <div class="car-loan-progress" style="width:67%;"></div>
+        </div>
+        <span>67% Repaid</span>
+    </div>
+    <div class="loan-card">
+        <h3>Personal Loan</h3>
+        <h2>₹1,80,000</h2>
+        <p>Interest:11.20%</p>
+        <p>EMI:₹9,420</p>
+        <div class="progress">
+            <div class="personal-loan-progress" style="width:41%;"></div>
+        </div>
+        <span>41% Repaid</span>
+    </div>
+    <div class="loan-card">
+        <h3>Education Loan</h3>
+        <h2>₹1,50,000</h2>
+        <p>Interest:7.80%</p>
+        <p>EMI:₹6,000</p>
+        <div class="progress">
+            <div class="education-loan-progress" style="width:76%;"></div>
+        </div>
+        <span>76% Repaid</span>
+    </div>
+</div>
+</section>
+<div class="section-title">
+<h2>Loan Management Overview</h2>
+<p>Track outstanding balance,Emi status,repayment progress and overall loan health</p>
+<div class="loan-control-center">
+    <div class="loan-summary">
+        <div class="loan-circle">
+            <h1>₹4.8L</h1>
+            <p>Outstanding Loan</p>
+        </div>
+        <div class="loan-details">
+            <div class="loan-box">
+                <h4>Total Loan</h4>
+                <h2>₹8,00,000</h2>
+            </div>
+            <div class="loan-box">
+                <h4>Paid</h4>
+                <h2>₹3,20,000</h2>
+            </div>
+            <div class="loan-box">
+                <h4>Remaining</h4>
+                <h2>₹4,80,000</h2>
+            </div>
+            <div class="loan-box">
+                <h4>EMI</h4>
+                <h2>₹18,500</h2>
+            </div>
+        </div>
+    </div>
+    <div class="emi-status">
+        <div class="emi-card paid">
+            <h3>June EMI</h3>
+            <span>Paid ✔</span>
+        </div>
+        <div class="emi-card due">
+            <h3>July EMI</h3>
+            <span>Due in 8 Days</span>
+        </div>
+        <div class="emi-card future">
+            <h3>August EMI</h3>
+            <span>Upcoming</span>
+        </div>
+    </div>
+    <div class="loan-health">
+        <div class="health-item">
+            <span>Payment History</span>
+            <strong>Excellent</strong>
+        </div>
+        <div class="health-item">
+            <span>Loan Utilization</span>
+            <strong>60%</strong>
+        </div>
+        <div class="health-item">
+            <span>Interest Rate</span>
+            <strong>8.45%</strong>
+        </div>
+        <div class="health-item">
+            <span>Loan Health</span>
+            <strong>Very Good</strong>
+        </div>
+    </div>
+    <div class="loan-tip">AI Recommendation:Paying an extra ₹5,000 every month can reduce your loan tenure by nearly 11 months.</div>
+</div>
+<section class="loan-distribution">
+    <div class="section-title">
+        <h2>Loan Distribution</h2>
+        <p>Percentage of total outstanding amount by loan category.</p>
+    <div class="distribution-grid">
+        <div class="distribution-item">
+            <div class="circle-progress home-circle">
+                <span>67%</span>
+            </div>
+            <h3>Home Loan</h3>
+            <p>₹12,40,000</p>
+        </div>
+        <div class="distribution-item">
+            <div class="circle-progress vehicle-circle">
+                <span>15%</span>
+            </div>
+            <h3>Vehicle Loan</h3>
+            <p>₹2,85,400</p>
+        </div>
+        <div class="distribution-item">
+            <div class="circle-progress personal-circle">
+                <span>10%</span>
+            </div>
+            <h3>Personal Loan</h3>
+            <p>₹1,80,000</p>
+        </div>
+        <div class="distribution-item">
+            <div class="circle-progress education-circle">
+                <span>8%</span>
+            </div>
+            <h3>Education Loan</h3>
+            <p>₹1,50,000</p>
+        </div>
+    </div>
+</section>
+<section class="loan-summary-table">
+<div class="section-title">
+    <h2>Loan Portfolio Summary</h2>
+    <p>Complete overview of all active loans with repayment information.</p>
+</div>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Loan</th>
+                <th>Bank</th>
+                <th>Outstanding</th>
+                <th>Interest</th>
+                <th>Monthly EMI</th>
+                <th>Remaining Tenure</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Home Loan</td>
+                <td>SBI</td>
+                <td>₹12,40,000</td>
+                <td>8.40%</td>
+                <td>₹24,580</td>
+                <td>84 Months</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Vehicle Loan</td>
+                <td>HDFC Bank</td>
+                <td>₹2,85,400</td>
+                <td>9.10%</td>
+                <td>₹8,250</td>
+                <td>32 Months</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Personal Loan</td>
+                <td>ICICI Bank</td>
+                <td>₹1,80,000</td>
+                <td>11.20%</td>
+                <td>₹9,420</td>
+                <td>21 Months</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Education Loan</td>
+                <td>Axis Bank</td>
+                <td>₹1,50,000</td>
+                <td>7.80%</td>
+                <td>₹6,000</td>
+                <td>18 Months</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+<section class="emi-payment-history">
+<div class="section-title">
+    <h2>EMI Payment History</h2>
+    <p>Review recent EMI payments across all active loans.</p>
+</div>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Loan</th>
+                <th>Bank</th>
+                <th>Amount</th>
+                <th>Mode</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10 Jul 2026</td>
+                <td>Home Loan</td>
+                <td>SBI</td>
+                <td>₹24,580</td>
+                <td>Auto Debit</td>
+                <td>Paid</td>
+            </tr>
+            <tr>
+                <td>08 Jul 2026</td>
+                <td>Vehicle Loan</td>
+                <td>HDFC Bank</td>
+                <td>₹8,250</td>
+                <td>UPI AutoPay</td>
+                <td>Paid</td>
+            </tr>
+            <tr>
+                <td>05 Jul 2026</td>
+                <td>Personal Loan</td>
+                <td>ICICI Bank</td>
+                <td>₹9,420</td>
+                <td>Net Banking</td>
+                <td>Paid</td>
+            </tr>
+            <tr>
+                <td>02 Jul 2026</td>
+                <td>Education Loan</td>
+                <td>Axis Bank</td>
+                <td>₹6,000</td>
+                <td>Auto Debit</td>
+                <td>Paid</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+<section class="upcoming-emis">
+<div class="section-title">
+    <h2>Upcoming EMI Schedule</h2>
+    <p>Stay informed about your upcoming loan repayments.</p>
+</div>
+<div class="emi-grid">
+    <div class="emi-card">
+        <h3>Home Loan EMI</h3>'
+        <h2>10 Jul 2026</h2>
+        <p>₹24,580</p>
+    </div>
+    <div class="emi-card">
+        <h3>Vehicle Loan EMI</h3>
+        <h2>08 Jul 2026</h2>
+        <p>₹8,250</p>
+    </div>
+    <div class="emi-card">
+        <h3>Personal Loan EMI</h3>
+        <h2>15 Jul 2026</h2>
+        <p>₹9,420</p>
+    </div>
+    <div class="emi-card">
+        <h3>Education Loan EMI</h3>
+        <h2>20 Jul 2026</h2>
+        <p>₹6,000</p>
+    </div>
+</div>
+</section>
+<section class="repayment-analytics">
+<div class="section-title">
+    <h2>Repayment Analytics</h2>
+    <p>Analyze your repayment performance using key financial indicators.</p>
+</div>
+<div class="analytics-grid">
+    <div class="analytics-card">
+        <h3>Repayment Progress</h3>
+        <h2>61%</h2>
+        <p>Total Loan Repaid</p>
+    </div>
+    <div class="analytics-card">
+        <h3>Total Amount Paid</h3>
+        <h2>₹29,84,600</h2>
+        <p>Principal+Interest</p>
+    </div>
+    <div class="analytics-card">
+        <h3>Principal Cleared</h3>
+        <h2>₹23,15,000</h2>
+        <p>Outstanding Reducing</p>
+    </div>
+    <div class="analytics-card">
+        <h3>Interest Paid</h3>
+        <h2>₹6,69,600</h2>
+        <p>Paid Till Date</p>
+    </div>
+</div>
+</section>
+<section class="loan-insights">
+<div class="section-title">
+    <h2>Smart Loan Insights</h2>
+    <p>AI-powered recommendations to help reduce interest costs and improve your repayment strategy.</p>
+</div>
+<div class="insight-grid">
+    <div class="insight-card">
+        <h3>Prepayment Opportunity</h3>
+        <h2>₹50,000</h2>
+        <p>Making a prepayment this month can reduce approximately ₹1.15L in future interest.</p>
+    </div>
+    <div class="insight-card">
+        <h3>Interest Saving</h3>
+        <h2>₹86,420</h2>
+        <p>Saved through timely payments and previous prepayments.</p>
+    </div>
+    <div class="insight-card">
+        <h3>Repayment Rating</h3>
+        <h2>Excellent</h2>
+        <p>No missed EMI payments during the last 24 months.</p>
+    </div>
+    <div class="insight-card">
+        <h3>Credit Impact</h3>
+        <h2>Positive</h2>
+        <p>Consistent repayments continue to strengthen your credit score.</p>
+    </div>
+</div>
+</section>
+<section class="loan-notifications">
+<div class="section-title">
+    <h2>Loan Notifications</h2>
+    <p>Important alerts and reminders for your active loan accounts.</p>
+</div>
+<div class="notification-list">
+    <div class="notification-item">
+        <div>
+            <h3>Upcoming Home Loan EMI</h3>
+            <p>EMI of ₹24,580 will be auto-debited on 10 July 2026.</p>
+        </div>
+        <span>2 Days Left</span>
+    </div>
+    <div class="notification-item">
+        <div>
+            <h3>Vehicle Loan EMI Paid</h3>
+            <p>Your EMI payment was successfully processed.</p>
+        </div>
+        <span>Completed</span>
+    </div>
+    <div class="notification-item">
+        <div>
+            <h3>Interest Rate Alert</h3>
+            <p>Home loan refinance may reduce your interest rate.</p>
+        </div>
+        <span>Recommendation</span>
+    </div>
+    <div class="notification-item">
+        <div>
+            <h3>Prepayment Reminder</h3>
+            <p>You have sufficient balance available for a partial loan prepayment.</p>
+        </div>
+        <span>Suggested</span>
+    </div>
+</div>
+</section>
+<footer>
+    <p>© 2026 FinanceHub.All Rights Reserved</p>
+</footer>
+</body>
+</html>

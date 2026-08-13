@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" href="financialcalculator.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">
+    <h2>FinanceHub</h2>
+</div>
+<nav>
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <a href="../incomeexpense/budgettracker.html">Budget Tracker</a>
+    <a href="../financetools/aifinanceadvisor.html">AI Advisor</a>
+    <a href="../profile/profile.html">Profile</a>
+</nav>
+</header>
+<section class="hero-section">
+<div class="hero-content">
+    <h1>Smart Financial Calculator</h1>
+    <p>Calculate EMI,SIP returns,Fixed Deposits,Savings Goals,Retirement Planning and Taxes with intelligent financial tools.</p>
+    <button>Start Calculating</button>
+</div>
+<div class="hero-image">
+    <img src="https://play-lh.googleusercontent.com/FV7siDswZyjNHXzbrB_ROQ-1KGgvmj7C25hEM1nW5z5oi-pck95Jha3ri6ZdJN8G6y8XfqlqvLjZ99gMRh-GBw" alt="Financial Calculator">
+</div>
+</section>
+<section class="calculator-categories">
+<div class="section-title">
+    <h2>Choose Calculator</h2>
+    <p>Select a financial calculator to begin.</p>
+</div>
+<div class="category-grid">
+    <div class="category-card">
+        <i class="fas fa-money-check-dollar"></i>
+        <h3>EMI Calculator</h3>
+        <p>Calculate monthly loan payments.</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>SIP Calculator</h3>
+        <p>Estimate future investment growth.</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>FD Calculator</h3>
+        <p>Calculate fixed deposit maturity value.</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h3>Tax Calculator</h3>
+        <p>Estimate annual tax liability.</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-user-clock"></i>
+        <h3>Retirement Calculator</h3>
+        <p>Plan your retirement savings.</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Budget Calculator</h3>
+        <p>Track income,expenses and savings.</p>
+    </div>
+</div>
+</section>
+<section class="calculator-section">
+<div class="section-title">
+    <h2>EMI Calculator</h2>
+    <p>Calculate your monthly loan EMI instantly.</p>
+</div>
+<div class="calculator-container">
+    <div class="calculator-form">
+        <div class="input-group">
+            <label>Loan Amount(₹)</label>
+            <input type="number"placeholder="Enter Loan Amount">
+        </div>
+        <div class="input-group">
+            <label>Interest Rate(%)</label>
+            <input type="number"placeholder="Enter Interest Rate">
+        </div>
+        <div class="input-group">
+            <label>Loan Tenure(Years)</label>
+            <input type="number"placeholder="Enter Loan Tenure">
+        </div>
+        <button class="calculate-btn">Calculate EMI</button>
+    </div>
+    <div class="result-card">
+        <h3>Calculation Result</h3>
+        <div class="result-item">
+            <span>Monthly EMI</span>
+            <h2>₹18,250</h2>
+        </div>
+        <div class="result-item">
+            <span>Total Interest</span>
+            <h2>₹4,35,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Total Payment</span>
+            <h2>₹14,35,000</h2>
+        </div>
+    </div>
+</div>
+</section>
+<section class="emi-details">
+<div class="detail-card">
+    <i class="fas fa-calculator"></i>
+    <h3>EMI Formula</h3>
+    <p>EMI is calculated using loan amount,interest rate and tenure.</p>
+</div>
+<div class="detail-card">
+    <i class="fas fa-percent"></i>
+    <h3>Interest Analysis</h3>
+    <p>Understand how interest impacts total repayment amount.</p>
+</div>
+<div class="detail-card">
+    <i class="fas fa-chart-pie"></i>
+    <h3>Repayment Planning</h3>
+    <p>Plan your finances better with accurate EMI projections.</p>
+</div>
+</section>
+<section class="sip-calculator"><div class="section-title">
+    <h2>SIP Calculator</h2>
+    <p>Estimate your future wealth through systematic investments.</p>
+</div>
+<div class="calculator-container">
+    <div class="calculator-form">
+        <div class="input-group">
+            <label>Monthly Investment (₹)</label>
+            <input type="number"placeholder="Enter Monthly SIP Amount">
+        </div>
+        <div class="input-group">
+            <label>Expected Return(%)</label>
+            <input type="number"
+            placeholder="Enter Expected Annual Return">
+        </div>
+        <div class="input-group">
+            <label>Investment Period(Years)</label>
+            <input type="number"placeholder="Enter Investment Duration">
+        </div>
+        <button class="calculate-btn">Calculate SIP</button>
+    </div>
+    <div class="result-card">
+        <h3>SIP Result</h3>
+        <div class="result-item">
+            <span>Total Investment</span>
+            <h2>₹12,00,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Wealth Gained</span>
+            <h2>₹8,45,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Maturity Value</span>
+            <h2>₹20,45,000</h2>
+        </div>
+    </div>
+</div>
+</section>
+<section class="sip-benefits">
+<div class="detail-card">
+<i class="fas fa-chart-line"></i>
+    <h3>Long Term Growth</h3>
+    <p>Regular SIP investments help build wealth steadily through market participation.</p>
+</div>
+<div class="detail-card">
+    <i class="fas fa-coins"></i>
+    <h3>Power Of Compounding</h3>
+    <p>Earnings generate additional earnings,helping investments grow faster over time.</p>
+</div>
+<div class="detail-card">
+    <i class="fas fa-shield-alt"></i>
+    <h3>Disciplined Investing</h3>
+    <p>SIP encourages consistent investing without worrying about market timing.</p>
+</div>
+</section>
+<section class="fd-calculator">
+<div class="section-title">
+    <h2>FD Calculator</h2>
+    <p>Calculate your Fixed Deposit maturity amount.</p>
+</div>
+<div class="calculator-container">
+    <div class="calculator-form">
+        <div class="input-group">
+            <label>Deposit Amount(₹)</label>
+            <input type="number" placeholder="Enter Deposit Amount">
+        </div>
+        <div class="input-group">
+            <label>Interest Rate(%)</label>
+            <input type="number" placeholder="Enter Interest Rate">
+        </div>
+        <div class="input-group">
+            <label>Duration(Years)</label>
+            <input type="number" placeholder="Enter Duration">
+        </div>
+        <button class="calculate-btn">Calculate FD</button>
+    </div>
+    <div class="result-card">
+        <h3>FD Result</h3>
+        <div class="result-item">
+            <span>Invested Amount</span>
+            <h2>₹5,00,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Interest Earned</span>
+            <h2>₹1,75,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Maturity Amount</span>
+            <h2>₹6,75,000</h2>
+        </div>
+    </div>
+</div>
+</section>
+<section class="budget-calculator">
+<div class="section-title">
+    <h2>Budget Calculator</h2>
+</div>
+<div class="calculator-container">
+    <div class="calculator-form">
+        <div class="input-group">
+            <label>Monthly Income (₹)</label>
+            <input type="number" placeholder="Enter Income">
+        </div>
+        <div class="input-group">
+            <label>Monthly Expenses (₹)</label>
+            <input type="number" placeholder="Enter Expenses">
+        </div>
+        <button class="calculate-btn">Calculate Budget</button>
+    </div>
+    <div class="result-card">
+        <h3>Budget Summary</h3>
+        <div class="result-item">
+            <span>Total Income</span>
+            <h2>₹75,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Total Expenses</span>
+            <h2>₹48,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Total Savings</span>
+            <h2>₹27,000</h2>
+        </div>
+    </div>
+</div>
+</section>
+<section class="tax-calculator">
+<div class="section-title">
+    <h2>Tax Calculator</h2>
+</div>
+<div class="calculator-container">
+    <div class="calculator-form">
+        <div class="input-group">
+            <label>Annual Income(₹)</label>
+            <input type="number" placeholder="Enter Annual Income">
+        </div>
+        <div class="input-group">
+            <label>Deductions(₹)</label>
+            <input type="number" placeholder="Enter Deductions">
+        </div>
+        <button class="calculate-btn">Calculate Tax</button>
+    </div>
+    <div class="result-card">
+        <h3>Tax Summary</h3>
+        <div class="result-item">
+            <span>Taxable Income</span>
+            <h2>₹8,50,000</h2>
+        </div>
+        <div class="result-item">
+            <span>Estimated Tax</span>
+            <h2>₹42,500</h2>
+        </div>
+    </div>
+</div>
+</section>
+<section class="retirement-calculator">
+<div class="section-title">
+    <h2>Retirement Calculator</h2>
+</div>
+<div class="calculator-container">
+    <div class="calculator-form">
+        <div class="input-group">
+            <label>Current Age</label>
+            <input type="number" placeholder="Enter Current Age">
+        </div>
+        <div class="input-group">
+            <label>Retirement Age</label>
+            <input type="number" placeholder="Enter Retirement Age">
+        </div>
+        <div class="input-group">
+            <label>Monthly Expenses(₹)</label>
+            <input type="number" placeholder="Enter Monthly Expenses">
+        </div>
+        <button class="calculate-btn">Calculate Retirement Plan</button>
+    </div>
+    <div class="result-card">
+        <h3>Retirement Result</h3>
+        <div class="result-item">
+            <span>Years Remaining</span>
+            <h2>25 Years</h2>
+        </div>
+        <div class="result-item">
+            <span>Required Corpus</span>
+            <h2>₹2.5 Cr</h2>
+        </div>
+        <div class="result-item">
+            <span>Monthly Investment</span>
+            <h2>₹18,000</h2>
+        </div>
+ 
+    </div>
+</div>
+</section>
+<section class="quick-actions">
+    <div class="section-title">
+    <h2>Quick Actions</h2>
+</div>
+<div class="action-buttons">
+    <button>Calculate EMI</button>
+    <button>Calculate SIP</button>
+    <button>Calculate FD</button>
+    <button>Calculate Tax</button>
+    <button>Retirement Plan</button>
+    <button>Download Report</button>
+ </div>
+</section>
+<footer>
+    <p>© 2026 FinanceHub Financial Calculator.All Rights Reserved.</p>
+</footer>
+</body>
+</html>

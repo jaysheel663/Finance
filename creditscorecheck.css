@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+.dashboard-navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.6);
+    box-shadow:0 8px 24px rgba(0,20,40,.05);
+}
+
+.logo a{
+    text-decoration:none;
+    font-size:30px;
+    font-weight:700;
+    color:#1f5bc9;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:28px;
+    list-style:none;
+}
+
+.nav-links li a{
+    text-decoration:none;
+    font-size:15px;
+    font-weight:600;
+    color:#2d4a72;
+    transition:.3s;
+    position:relative;
+}
+
+.nav-links li a:hover{
+    color:#1f5bc9;
+}
+
+.nav-links li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:3px;
+    background:#1f5bc9;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.nav-links li a:hover::after{
+    width:100%;
+}
+
+.main-content{
+    width:100%;
+    padding:35px 8%;
+}
+
+.topbar{
+    margin-bottom:30px;
+}
+
+.topbar h1{
+    font-size:38px;
+    color:#0f2545;
+    margin-bottom:6px;
+}
+
+.topbar p{
+    color:#5f7ca5;
+}
+
+.score-container{
+    max-width:900px;
+    margin:0 auto 45px;
+    padding:35px;
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.75);
+    border-radius:28px;
+    box-shadow:0 16px 35px rgba(0,20,40,.07);
+}
+
+.score-form{
+    display:grid;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group label{
+    font-weight:600;
+    color:#29466f;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+    padding:15px 18px;
+    border:1px solid #dce6f5;
+    border-radius:14px;
+    outline:none;
+    background:#fff;
+    color:#29466f;
+    font-size:15px;
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    border-color:#1f5bc9;
+    box-shadow:0 0 0 4px rgba(31,91,201,.08);
+}
+
+.primary-btn{
+    border:none;
+    padding:16px 22px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(31,91,201,.18);
+    transition:.35s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 35px rgba(31,91,201,.25);
+}
+
+.score-result{
+    margin-top:30px;
+    padding:30px;
+    text-align:center;
+    border-radius:22px;
+    background:linear-gradient(135deg,#eef5ff,#fff);
+}
+
+.score-result h2{
+    color:#1f5bc9;
+    margin-bottom:10px;
+}
+
+.score-number{
+    font-size:55px;
+    font-weight:700;
+    color:#142b4b;
+}
+
+.score-status{
+    display:inline-block;
+    margin-top:10px;
+    padding:7px 18px;
+    border-radius:30px;
+    background:#eafaf2;
+    color:#27ae60;
+    font-weight:600;
+}
+
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    font-size:15px;
+}
+
+@media(max-width:768px){
+    .dashboard-navbar{
+        padding:16px 5%;
+        flex-direction:column;
+        gap:18px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:16px;
+    }
+
+    .main-content{
+        padding:25px 5%;
+    }
+
+    .topbar h1{
+        font-size:30px;
+    }
+
+    .score-container{
+        padding:24px;
+    }
+}
+
+@media(max-width:480px){
+    .dashboard-navbar{
+        padding:15px;
+    }
+
+    .logo a{
+        font-size:26px;
+    }
+
+    .nav-links{
+        gap:12px;
+    }
+
+    .nav-links li a{
+        font-size:14px;
+    }
+
+    .main-content{
+        padding:18px;
+    }
+
+    .score-container{
+        padding:20px;
+        border-radius:20px;
+    }
+
+    .score-number{
+        font-size:42px;
+    }
+
+    footer{
+        font-size:13px;
+        padding:20px;
+    }
+}

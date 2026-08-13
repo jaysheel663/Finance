@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+    line-height:1.6;
+}
+.dashboard-header{
+    padding:35px 8%;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.8);
+    box-shadow:0 12px 28px rgba(0,20,40,.06);
+}
+.header-left h1{
+    font-size:38px;
+    color:#0f2545;
+    margin-bottom:8px;
+}
+.header-left p{
+    color:#5d7ca5;
+}
+.emi-section{
+    padding:50px 8%;
+}
+.emi-summary{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:30px;
+}
+.emi-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:28px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+}
+.emi-card i{
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#edf4ff;
+    color:#1f5bc9;
+    font-size:24px;
+    margin-bottom:14px;
+}
+.emi-card h3{
+    color:#5d7ca5;
+    font-size:15px;
+}
+.emi-card h2{
+    color:#142b4b;
+    font-size:28px;
+    margin-top:5px;
+}
+.schedule-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:25px;
+    padding:30px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    overflow-x:auto;
+}
+.schedule-card h2{
+    color:#1f3a6b;
+    margin-bottom:20px;
+}
+.schedule-table{
+    width:100%;
+    min-width:750px;
+    border-collapse:collapse;
+}
+.schedule-table th{
+    background:#edf4ff;
+    color:#1f3a6b;
+    padding:15px;
+    text-align:left;
+}
+.schedule-table td{
+    padding:14px 15px;
+    border-bottom:1px solid #e4ebf4;
+    color:#5f7ca5;
+}
+.schedule-table tr:hover{
+    background:#f8fbff;
+}
+.paid{
+    color:#27ae60;
+    font-weight:700;
+}
+.pending{
+    color:#f39c12;
+    font-weight:700;
+}
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+font-size:15px;
+letter-spacing:.5px;
+}
+@media(max-width:768px){
+    .emi-section{
+        padding:35px 6%;
+    }
+    .header-left h1{
+        font-size:30px;
+    }
+}

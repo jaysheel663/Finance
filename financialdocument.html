@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Financial Document Vault|FinanceHub</title>
+<link rel="stylesheet" href="financialdocument.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">
+    <h2>FinanceHub</h2>
+</div>
+<nav>
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <a href="../financetools/financialdocument.html"class="active">Documents</a>
+    <a href="../insurance/investmentportfolio.html">Investments</a>
+    <a href="../financetools/reportsandanalytics.html">Reports</a>
+    <a href="../profile/profile.html">Profile</a>
+</nav>
+</header>
+<section class="hero-section">
+<div class="hero-content">
+    <h1>Financial<span>Documents Vault</span></h1>
+    <p>Securely organize,manage and access all your important financial documents anytime from one protected location.</p>
+    <div class="hero-buttons">
+        <button class="primary-btn">
+            <i class="fas fa-upload"></i>Upload Document</button>
+        <button class="secondary-btn">
+            <i class="fas fa-folder-open"></i>View Documents</button>
+    </div>
+</div>
+<div class="hero-image">
+    <img src="https://planetpci-tech.com/wp-content/uploads/2020/03/Krystal-Banner-003.jpg"alt="Financial Documents Vault">
+</div>
+</section>
+<section class="vault-overview">
+<div class="section-title">
+    <h2>Vault Overview</h2>
+    <p>Keep track of all your financial documents in one secure place.</p>
+</div>
+<div class="overview-grid">
+    <div class="overview-card">
+        <i class="fas fa-folder"></i>
+        <h3>Total Documents</h3>
+        <h2>38</h2>
+        <p>Stored securely</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-shield-halved"></i>
+        <h3>Protected Files</h3>
+        <h2>38</h2>
+        <p>Encrypted storage</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-clock"></i>
+        <h3>Expiring Soon</h3>
+        <h2>4</h2>
+        <p>Need renewal</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-cloud-arrow-up"></i>
+        <h3>Cloud Backup</h3>
+        <h2>100%</h2>
+        <p>Successfully synced</p>
+    </div>
+</div>
+</section>
+<section class="document-categories">
+<div class="section-title">
+    <h2>Document Categories</h2>
+    <p>Organize your important documents into different financial categories.</p>
+</div>
+<div class="category-grid">
+    <div class="category-card">
+        <i class="fas fa-id-card"></i>
+        <h3>PAN Card</h3>
+        <p>1 Document</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-address-card"></i>
+        <h3>Aadhaar Card</h3>
+        <p>1 Document</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-building-columns"></i>
+        <h3>Bank Statements</h3>
+        <p>12 Documents</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h3>Tax Documents</h3>
+        <p>5 Documents</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-shield-heart"></i>
+        <h3>Insurance</h3>
+        <p>6 Documents</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Investments</h3>
+        <p>8 Documents</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-file-contract"></i>
+        <h3>Loan Papers</h3>
+        <p>3 Documents</p>
+    </div>
+    <div class="category-card">
+        <i class="fas fa-folder-open"></i>
+        <h3>Other Documents</h3>
+        <p>2 Documents</p>
+    </div>
+</div>
+</section>
+<section class="recent-documents">
+<div class="section-title">
+    <h2>Recently Uploaded Documents</h2>
+    <p>Quickly access your latest uploaded financial records.</p>
+</div>
+<div class="document-grid">
+    <div class="document-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Bank Statement</h3>
+        <p>Uploaded:10 Jul 2026</p>
+        <button>View</button>
+    </div>
+    <div class="document-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Income Tax Return</h3>
+        <p>Uploaded:08 Jul 2026</p>
+        <button>View</button>
+    </div>
+    <div class="document-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Health Insurance</h3>
+        <p>Uploaded:05 Jul 2026</p>
+        <button>View</button>
+    </div>
+    <div class="document-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Mutual Fund Report</h3>
+        <p>Uploaded:02 Jul 2026</p>
+        <button>View</button>
+    </div>
+</div>
+</section>
+<section class="upload-document">
+<div class="section-title">
+    <h2>Upload New Document</h2>
+    <p>Add your important financial documents securely to the vault.</p>
+</div>
+<form class="upload-form">
+    <input type="text"placeholder="Document Name">
+    <select>
+        <option>Select Category</option>
+        <option>PAN Card</option>
+        <option>Aadhaar Card</option>
+        <option>Bank Statement</option>
+        <option>Insurance</option>
+        <option>Investment</option>
+        <option>Loan Document</option>
+        <option>Tax Document</option>
+        <option>Other</option>
+    </select>
+    <input type="date">
+    <input type="file">
+    <textarea rows="5"placeholder="Document Description"></textarea>
+    <button type="submit">
+        <i class="fas fa-cloud-upload-alt"></i>Upload Document</button>
+</form>
+</section>
+<section class="expiry-reminders">
+<div class="section-title">
+    <h2>Document Expiry Reminders</h2>
+    <p>Keep track of documents that need renewal before they expire.</p>
+</div>
+<div class="reminder-grid">
+    <div class="reminder-card">
+        <i class="fas fa-calendar-times"></i>
+        <h3>Vehicle Insurance</h3>
+        <p>Expires on 25 Aug 2026</p>
+    </div>
+    <div class="reminder-card">
+        <i class="fas fa-passport"></i>
+        <h3>Passport</h3>
+        <p>Expires on 18 Dec 2026</p>
+    </div>
+    <div class="reminder-card">
+        <i class="fas fa-id-badge"></i>
+        <h3>Driving License</h3>
+        <p>Expires on 05 Jan 2027</p>
+    </div>
+</div>
+</section>
+<section class="vault-features">
+<div class="section-title">
+    <h2>Vault Features</h2>
+    <p>Secure features designed to protect and organize your financial records.</p>
+</div>
+<div class="feature-grid">
+    <div class="feature-card">
+        <i class="fas fa-lock"></i>
+        <h3>Secure Storage</h3>
+        <p>Encrypted protection for all uploaded documents.</p>
+    </div>
+    <div class="feature-card">
+        <i class="fas fa-download"></i>
+        <h3>Easy Download</h3>
+        <p>Download documents anytime with one click.</p>
+    </div>
+    <div class="feature-card">
+        <i class="fas fa-magnifying-glass"></i>
+        <h3>Quick Search</h3>
+        <p>Find documents instantly using smart search.</p>
+    </div>
+</div>
+</section>
+<section class="document-security">
+<div class="section-title">
+    <h2>Document Security</h2>
+    <p>Your financial documents are protected with advanced security and cloud backup.</p>
+</div>
+<div class="security-grid">
+    <div class="security-card">
+        <i class="fas fa-shield-halved"></i>
+        <h3>256-bit Encryption</h3>
+        <p>Every uploaded document is encrypted for maximum security.</p>
+    </div>
+    <div class="security-card">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Backup</h3>
+        <p>Automatic backup ensures your files are always safe and accessible.</p>
+    </div>
+    <div class="security-card">
+        <i class="fas fa-user-lock"></i>
+        <h3>Private Access</h3>
+        <p>Only authorized users can view and manage stored documents.</p>
+    </div>
+</div>
+</section>
+<section class="vault-tips">
+<div class="section-title">
+    <h2>Document Management Tips</h2>
+    <p>Follow these tips to keep your financial records organized.</p>
+</div>
+<div class="tips-grid">
+    <div class="tip-card">
+        <i class="fas fa-folder-tree"></i>
+        <h3>Organize Files</h3>
+        <p>Store documents under the correct category for quick access.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-bell"></i>
+        <h3>Enable Reminders</h3>
+        <p>Receive notifications before important documents expire.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-arrows-rotate"></i>
+        <h3>Keep Updated</h3>
+        <p>Replace outdated documents with the latest versions regularly.</p>
+    </div>
+</div>
+</section>
+<footer>
+<p>© 2026 FinanceHub.All Rights Reserved.</p>
+</footer>
+</body>
+</html>
