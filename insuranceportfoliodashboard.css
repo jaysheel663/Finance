@@ -1,0 +1,788 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+background:#f2f6fd;
+color:#142b4b;
+line-height:1.6;
+overflow-x:hidden;
+}
+.dashboard-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:35px 8%;
+background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+color:#fff;
+box-shadow:0 12px 30px rgba(31,91,201,.18);
+}
+.header-left h1{
+font-size:38px;
+font-weight:700;
+margin-bottom:10px;
+}
+.header-left p{
+font-size:16px;
+max-width:700px;
+opacity:.92;
+}
+.header-right{
+display:flex;
+gap:18px;
+}
+.primary-btn,
+.secondary-btn{
+padding:14px 26px;
+border:none;
+border-radius:16px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:.35s;
+display:flex;
+align-items:center;
+gap:10px;
+}
+.primary-btn{
+background:#fff;
+color:#1f5bc9;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+.primary-btn:hover{
+transform:translateY(-4px);
+background:#edf5ff;
+}
+.secondary-btn{
+background:rgba(255,255,255,.18);
+color:#fff;
+border:1px solid rgba(255,255,255,.35);
+backdrop-filter:blur(12px);
+-webkit-backdrop-filter:blur(12px);
+}
+.secondary-btn:hover{
+background:rgba(255,255,255,.28);
+transform:translateY(-4px);
+}
+section{
+padding:45px 8%;
+}
+.section-title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:28px;
+}
+.section-title h2{
+font-size:30px;
+font-weight:700;
+color:#142b4b;
+}
+.section-title p{
+font-size:15px;
+color:#6c88ad;
+margin-top:6px;
+}
+.insurance-overview{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.overview-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:24px;
+padding:28px;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+position:relative;
+overflow:hidden;
+}
+.overview-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:5px;
+background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.overview-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.overview-card i{
+font-size:34px;
+color:#1f5bc9;
+margin-bottom:18px;
+}
+.overview-card h3{
+font-size:18px;
+font-weight:600;
+color:#4d6a92;
+margin-bottom:12px;
+}
+.overview-card h2{
+font-size:34px;
+font-weight:700;
+color:#142b4b;
+margin-bottom:10px;
+}
+.overview-card span{
+font-size:14px;
+color:#6b88ae;
+}
+.insurance-health{
+padding:20px 8% 45px;
+}
+.health-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.health-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:24px;
+padding:28px;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+text-align:center;
+}
+.health-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.health-card i{
+font-size:34px;
+color:#1f5bc9;
+margin-bottom:18px;
+}
+.health-card h3{
+font-size:18px;
+color:#4d6a92;
+margin-bottom:12px;
+}
+.health-card h2{
+font-size:32px;
+color:#142b4b;
+margin-bottom:10px;
+}
+.health-card p{
+font-size:15px;
+color:#6b88ae;
+}
+.policy-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.policy-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:24px;
+padding:28px;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+}
+.policy-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.policy-card i{
+font-size:34px;
+color:#1f5bc9;
+margin-bottom:18px;
+}
+.policy-card h3{
+font-size:22px;
+margin-bottom:10px;
+color:#142b4b;
+}
+.policy-card h2{
+font-size:30px;
+margin-bottom:15px;
+color:#1f5bc9;
+}
+.policy-card p{
+font-size:15px;
+color:#5f7ca5;
+margin-bottom:8px;
+}
+.progress{
+width:100%;
+height:14px;
+background:#e7eefb;
+border-radius:30px;
+overflow:hidden;
+margin:18px 0;
+}
+.health-progress,
+.life-progress,
+.vehicle-progress,
+.home-progress{
+height:100%;
+border-radius:30px;
+}
+.health-progress{
+background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.life-progress{
+background:linear-gradient(90deg,#28b463,#6fd6a5);
+}
+.vehicle-progress{
+background:linear-gradient(90deg,#f39c12,#ffd166);
+}
+.home-progress{
+background:linear-gradient(90deg,#9b59b6,#c084fc);
+}
+.policy-card span{
+font-size:14px;
+font-weight:600;
+color:#1f5bc9;
+}
+.distribution-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+.distribution-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+border-radius:24px;
+padding:30px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+}
+.distribution-card:hover{
+transform:translateY(-8px);
+}
+.circle-progress{
+width:150px;
+height:150px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 20px;
+position:relative;
+}
+.circle-progress::before{
+content:"";
+position:absolute;
+width:110px;
+height:110px;
+background:#fff;
+border-radius:50%;
+}
+.circle-progress span{
+position:relative;
+z-index:2;
+font-size:24px;
+font-weight:700;
+color:#1f5bc9;
+}
+.life-circle{
+background:conic-gradient(#1f5bc9 52%,#e8eefb 0);
+}
+.health-circle{
+background:conic-gradient(#28b463 18%,#e8eefb 0);
+}
+.property-circle{
+background:conic-gradient(#f39c12 16%,#e8eefb 0);
+}
+.vehicle-circle{
+background:conic-gradient(#9b59b6 14%,#e8eefb 0);
+}
+.distribution-card h3{
+font-size:20px;
+margin-bottom:10px;
+color:#142b4b;
+}
+.distribution-card p{
+font-size:15px;
+color:#6b88ae;
+}
+.premium-trend{
+padding:20px 8% 45px;
+}
+.insurance-health-card{
+    width:100%;
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    text-align:center;
+    margin-top:30px;
+}
+.health-header h2{
+    font-size:32px;
+    color:#1d3557;
+    margin-bottom:8px;
+}
+.health-header p{
+    color:#777;
+    font-size:17px;
+    margin-bottom:30px;
+}
+.health-circle{
+    display:flex;
+    justify-content:center;
+    margin-bottom:35px;
+}
+.outer-circle{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:conic-gradient(#3b82f6 0deg 331deg,#e5e7eb 331deg);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.inner-circle{
+    width:170px;
+    height:170px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+.inner-circle h1{
+    font-size:48px;
+    color:#2563eb;
+    margin-bottom:6px;
+}
+.inner-circle span{
+    color:#666;
+    font-size:18px;
+}
+.policy-status{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin-top:25px;
+}
+.policy-item{
+    background:#f8fafc;
+    padding:18px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.3s;
+}
+.policy-item:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+.policy-item span{
+    font-size:17px;
+    color:#333;
+}
+.policy-item strong{
+    color:#2563eb;
+}
+.risk-box{
+    margin-top:35px;
+    background:#ecfdf5;
+    border:2px solid #10b981;
+    padding:20px;
+    border-radius:15px;
+}
+.risk-box h3{
+    color:#065f46;
+    margin-bottom:10px;
+}
+.risk-low{
+    background:#10b981;
+    color:#fff;
+    padding:8px 24px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+}
+@media(max-width:768px){
+.policy-status{
+grid-template-columns:1fr;
+}
+.outer-circle{
+width:180px;
+height:180px;
+}
+.inner-circle{
+width:140px;
+height:140px;
+}
+.inner-circle h1{
+font-size:36px;
+}
+}
+.policy-summary-table{
+padding:20px 8% 45px;
+}
+.table-container{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:26px;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+overflow-x:auto;
+}
+table{
+width:100%;
+border-collapse:collapse;
+min-width:850px;
+}
+table th{
+background:#edf4ff;
+padding:18px;
+font-size:15px;
+font-weight:700;
+color:#1f3a6b;
+text-align:left;
+}
+table td{
+padding:18px;
+font-size:15px;
+color:#425c81;
+border-bottom:1px solid rgba(0,0,0,.05);
+}
+table tr:last-child td{
+border-bottom:none;
+}
+table tr:hover{
+background:#f8fbff;
+transition:.25s;
+}
+.claim-history{
+padding:20px 8% 45px;
+}
+.renewal-calendar{
+padding:20px 8% 45px;
+}
+.renewal-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.renewal-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:24px;
+padding:28px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+}
+.renewal-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.renewal-card i{
+font-size:34px;
+color:#1f5bc9;
+margin-bottom:18px;
+}
+.renewal-card h3{
+font-size:20px;
+color:#142b4b;
+margin-bottom:12px;
+}
+.renewal-card h2{
+font-size:28px;
+color:#1f5bc9;
+margin-bottom:10px;
+}
+.renewal-card p{
+font-size:15px;
+color:#6b88ae;
+}
+.coverage-analytics{
+padding:20px 8% 45px;
+}
+.analytics-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+.analytics-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:24px;
+padding:28px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+}
+.analytics-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.analytics-card i{
+font-size:34px;
+color:#1f5bc9;
+margin-bottom:18px;
+}
+.analytics-card h3{
+font-size:20px;
+color:#142b4b;
+margin-bottom:12px;
+}
+.analytics-card h2{
+font-size:32px;
+color:#1f5bc9;
+margin-bottom:12px;
+}
+.analytics-card p{
+font-size:15px;
+color:#6b88ae;
+line-height:1.7;
+}
+.insurance-insights{
+padding:20px 8% 45px;
+}
+.insight-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+.insight-card{
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:24px;
+padding:28px;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+}
+.insight-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.insight-card i{
+font-size:34px;
+color:#1f5bc9;
+margin-bottom:18px;
+}
+.insight-card h3{
+font-size:20px;
+margin-bottom:10px;
+color:#142b4b;
+}
+.insight-card h2{
+font-size:28px;
+margin-bottom:12px;
+color:#1f5bc9;
+}
+.insight-card p{
+font-size:15px;
+color:#6b88ae;
+line-height:1.7;
+}
+.insurance-notifications{
+padding:20px 8% 60px;
+}
+.notification-list{
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+.notification-item{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+background:rgba(255,255,255,.72);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+border-radius:22px;
+padding:22px 28px;
+box-shadow:0 15px 35px rgba(0,20,40,.06);
+transition:.35s;
+}
+.notification-item:hover{
+transform:translateX(8px);
+box-shadow:0 22px 40px rgba(31,91,201,.12);
+}
+.notification-item i{
+font-size:30px;
+color:#1f5bc9;
+}
+.notification-item div{
+flex:1;
+}
+.notification-item h3{
+font-size:18px;
+color:#142b4b;
+margin-bottom:6px;
+}
+.notification-item p{
+font-size:15px;
+color:#6b88ae;
+line-height:1.6;
+}
+.notification-item span{
+padding:8px 18px;
+border-radius:30px;
+background:#edf5ff;
+color:#1f5bc9;
+font-size:14px;
+font-weight:600;
+white-space:nowrap;
+}
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:25px;
+font-size:15px;
+letter-spacing:.5px;
+}
+::-webkit-scrollbar{
+width:10px;
+height:10px;
+}
+::-webkit-scrollbar-track{
+background:#edf2fb;
+border-radius:20px;
+}
+::-webkit-scrollbar-thumb{
+background:#8bb3ff;
+border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover{
+background:#1f5bc9;
+}
+@media(max-width:1024px){
+.dashboard-header{
+flex-direction:column;
+align-items:flex-start;
+gap:25px;
+padding:35px 5%;
+}
+section{
+padding-left:5%;
+padding-right:5%;
+}
+.analytics-grid,
+.insight-grid,
+.insurance-overview,
+.health-grid,
+.policy-grid,
+.distribution-grid,
+.renewal-grid{
+grid-template-columns:repeat(2,1fr);
+}
+.notification-item{
+flex-direction:column;
+align-items:flex-start;
+}
+}
+@media(max-width:768px){
+.analytics-grid,
+.insight-grid,
+.insurance-overview,
+.health-grid,
+.policy-grid,
+.distribution-grid,
+.renewal-grid{
+grid-template-columns:1fr;
+}
+.header-left h1{
+font-size:30px;
+}
+.header-left p{
+font-size:15px;
+}
+.header-right{
+flex-direction:column;
+width:100%;
+}
+.primary-btn,
+.secondary-btn{
+width:100%;
+justify-content:center;
+}
+.graph-area{
+height:260px;
+}
+.graph-bar{
+width:42px;
+}
+.circle-progress{
+width:130px;
+height:130px;
+}
+.circle-progress::before{
+width:92px;
+height:92px;
+}
+.circle-progress span{
+font-size:20px;
+}
+.section-title h2{
+font-size:24px;
+}
+}
+@media(max-width:480px){
+.dashboard-header{
+padding:25px 20px;
+}
+section{
+padding:35px 20px;
+}
+.header-left h1{
+font-size:26px;
+}
+.header-left p{
+font-size:14px;
+}
+.overview-card,
+.health-card,
+.policy-card,
+.distribution-card,
+.analytics-card,
+.insight-card,
+.renewal-card,
+.notification-item{
+padding:20px;
+border-radius:20px;
+}
+.overview-card h2,
+.health-card h2,
+.policy-card h2,
+.analytics-card h2,
+.insight-card h2{
+font-size:26px;
+}
+.notification-item span{
+width:100%;
+text-align:center;
+}
+table{
+min-width:700px;
+}
+footer{
+font-size:13px;
+padding:20px;
+}
+}

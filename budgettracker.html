@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FinanceHub Budget Tracker</title>
+    <link rel="stylesheet" href="budgettracker.css">
+</head>
+<body
+  ><header class="header">
+    <div class="logo">
+        <h2>FinanceHub</h2>
+    </div>
+    <nav>
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <a href="../incomeexpense/income.html">Income</a>
+    <a href="../incomeexpense/expenses.html">Expenses</a>
+    <a href="../incomeexpense/budgettracker.html">Budget Tracker</a>
+    <a href="../financetools/reports.html">Reports</a>
+</nav>
+<div class="header-icons">
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-user-circle"></i>
+</div>
+</header>
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Smart Budget Tracker</h1>
+        <p>Monitor spending,compare budget vs actual expenses,track financial goals and improve your savings habits.</p>    
+            <button>Track Budget</button>
+</div>
+<div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="Budget Tracker">
+</div>
+</section>
+<section class="budget-summary">
+<div class="summary-card">
+    <h3>Total Budget</h3>
+    <h1>₹1,20,000</h1>
+    <span>Monthly Allocation</span>
+</div>
+<div class="summary-card">
+    <h3>Total Spent</h3>
+    <h1>₹82,500</h1>
+    <span>Current Spending</span>
+</div>
+<div class="summary-card">
+    <h3>Remaining Budget</h3>
+    <h1>₹37,500</h1>
+    <span>Available Balance</span>
+</div>
+<div class="summary-card">
+    <h3>Budget Utilization</h3>
+    <h1>69%</h1>
+    <span>Used This Month</span>
+</div>
+</section>
+<section class="budget-overview">
+<div class="section-title">
+    <h2>Monthly Budget Overview</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Budget</th>
+            <th>Actual</th>
+            <th>Remaining</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Housing</td>
+            <td>₹30,000</td>
+            <td>₹26,500</td>
+            <td>₹3,500</td>
+            <td class="good">On Track</td>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td>₹12,000</td>
+            <td>₹13,500</td>
+            <td>-₹1,500</td>
+            <td class="danger">Exceeded</td>
+        </tr>
+        <tr>
+            <td>Transportation</td>
+            <td>₹8,000</td>
+            <td>₹6,200</td>
+            <td>₹1,800</td>
+            <td class="good">On Track</td>
+        </tr>
+        <tr>
+            <td>Utilities</td>
+            <td>₹5,000</td>
+            <td>₹4,100</td>
+            <td>₹900</td>
+            <td class="good">On Track</td>
+        </tr>
+        <tr>
+            <td>Entertainment</td>
+            <td>₹7,000</td>
+            <td>₹8,200</td>
+            <td>-₹1,200</td>
+            <td class="danger">Exceeded</td>
+        </tr>
+        <tr>
+            <td>Shopping</td>
+            <td>₹10,000</td>
+            <td>₹9,400</td>
+            <td>₹600</td>
+            <td class="warning">Near Limit</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+<section class="expense-categories">
+<div class="section-title">
+    <h2>Expense Categories</h2>
+</div>
+<div class="category-grid">
+    <div class="category-card">
+        <h3>Food & Dining</h3>
+        <h1>₹13,500</h1>
+        <span>16% of Total Spending</span>
+    </div>
+    <div class="category-card">
+        <h3>Housing</h3>
+        <h1>₹26,500</h1>
+        <span>32% of Total Spending</span>
+    </div>
+    <div class="category-card">
+        <h3>Transportation</h3>
+        <h1>₹6,200</h1>
+        <span>8% of Total Spending</span>
+    </div>
+    <div class="category-card">
+        <h3>Utilities</h3>
+        <h1>₹4,100</h1>
+        <span>5% of Total Spending</span>
+    </div>
+    <div class="category-card">
+        <h3>Shopping</h3>
+        <h1>₹9,400</h1>
+        <span>11% of Total Spending</span>
+    </div>
+    <div class="category-card">
+        <h3>Entertainment</h3>
+        <h1>₹8,200</h1>
+        <span>10% of Total Spending</span>
+    </div>
+</div>
+</section>
+<section class="budget-progress">
+<div class="section-title">
+    <h2>Budget Progress Tracker</h2>
+</div>
+<div class="progress-container">
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Housing Budget</span>
+            <span>88%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill housing"></div>
+        </div>
+    </div>
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Food Budget</span>
+            <span>112%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill food"></div>
+        </div>
+    </div>
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Transportation Budget</span>
+            <span>78%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill transport"></div>
+        </div>
+    </div>
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Shopping Budget</span>
+            <span>94%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill shopping"></div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="insights-section">
+<div class="section-title">
+    <h2>Spending Insights</h2>
+</div>
+<div class="insights-grid">
+    <div class="insight-card">
+        <h3>Highest Expense</h3>
+        <p>Housing remains your highest spending category this month.</p>
+    </div>
+    <div class="insight-card">
+        <h3>Budget Efficiency</h3>
+        <p>You have utilized only 69% of your monthly budget.</p>
+    </div>
+    <div class="insight-card">
+        <h3>Savings Opportunity</h3>
+        <p>Reducing entertainment expenses could save ₹2,000 monthly.</p>
+    </div>
+</div>
+</section>
+<section class="budget-alerts">
+<div class="section-title">
+    <h2>Budget Alerts</h2>
+</div>
+<div class="alert-container">
+    <div class="alert-card danger">Food spending exceeded the allocated budget by ₹1,500.</div>
+    <div class="alert-card warning">Shopping budget has reached 94% utilization.</div>
+    <div class="alert-card success">Transportation expenses are well within budget limits.</div>
+</div>
+</section>
+<section class="savings-suggestions">
+<div class="section-title">
+    <h2>Savings Suggestions</h2>
+</div>
+<div class="suggestion-grid">
+    <div class="suggestion-card">
+        <h3>Reduce Dining Costs</h3>
+        <p>Cooking at home more often could save up to ₹3,000 per month.</p>
+    </div>
+    <div class="suggestion-card">
+        <h3>Subscription Review</h3>
+        <p>Review unused subscriptions to reduce recurring expenses.</p>
+    </div>
+    <div class="suggestion-card">
+        <h3>Increase Savings</h3>
+        <p>Move remaining monthly balance directly into savings investments.</p>
+    </div>
+</div>
+</section>
+<section class="budget-progress">
+<div class="section-title">
+    <h2>Budget Progress Tracker</h2>
+</div>
+<div class="progress-container">
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Housing Budget</span>
+            <span>88%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill housing"></div>
+        </div>
+    </div>
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Food Budget</span>
+            <span>112%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill food"></div>
+        </div>
+    </div>
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Transportation Budget</span>
+            <span>78%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill transport"></div>
+        </div>
+    </div>
+    <div class="progress-item">
+        <div class="progress-header">
+            <span>Shopping Budget</span>
+            <span>94%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill shopping"></div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="insights-section">
+<div class="section-title">
+    <h2>Spending Insights</h2>
+</div>
+<div class="insights-grid">
+    <div class="insight-card">
+        <h3>Highest Expense</h3>
+        <p>Housing remains your highest spending category this month.</p>
+    </div>
+    <div class="insight-card">
+        <h3>Budget Efficiency</h3>
+        <p>You have utilized only 69% of your monthly budget.</p>
+    </div>
+    <div class="insight-card">
+        <h3>Savings Opportunity</h3>
+        <p>Reducing entertainment expenses could save ₹2,000 monthly.</p>
+    </div>
+</div>
+</section>
+<section class="budget-alerts">
+<div class="section-title">
+    <h2>Budget Alerts</h2>
+</div>
+<div class="alert-container">
+    <div class="alert-card danger">Food spending exceeded the allocated budget by ₹1,500.</div>
+    <div class="alert-card warning">Shopping budget has reached 94% utilization.</div>
+    <div class="alert-card success">Transportation expenses are well within budget limits.</div>
+</div>
+</section>
+<section class="savings-suggestions">
+<div class="section-title">
+    <h2>Savings Suggestions</h2>
+</div>
+<div class="suggestion-grid">
+    <div class="suggestion-card">
+        <h3>Reduce Dining Costs</h3>
+        <p>Cooking at home more often could save up to ₹3,000 per month.</p>
+    </div>
+    <div class="suggestion-card">
+        <h3>Subscription Review</h3>
+        <p>Review unused subscriptions to reduce recurring expenses.</p>
+    </div>
+    <div class="suggestion-card">
+        <h3>Increase Savings</h3>
+        <p>Move remaining monthly balance directly into savings investments.</p>
+    </div>
+</div>
+</section>
+<section class="recent-activity">
+<div class="section-title">
+    <h2>Recent Budget Activity</h2>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Activity</th>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>24-Jun-2026</td>
+            <td>Grocery Shopping</td>
+            <td>Food</td>
+            <td>₹2,500</td>
+            <td class="warning">Recorded</td>
+        </tr>
+        <tr>
+            <td>22-Jun-2026</td>
+            <td>House Rent</td>
+            <td>Housing</td>
+            <td>₹18,000</td>
+            <td class="success">Completed</td>
+        </tr>
+        <tr>
+            <td>20-Jun-2026</td>
+            <td>Movie & Dining</td>
+            <td>Entertainment</td>
+            <td>₹1,800</td>
+            <td class="danger">High Spend</td>
+        </tr>
+        <tr>
+            <td>18-Jun-2026</td>
+            <td>Fuel Expense</td>
+            <td>Transport</td>
+            <td>₹1,200</td>
+            <td class="success">Recorded</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+<section class="monthly-summary">
+<div class="section-title">
+    <h2>Monthly Budget Summary</h2>
+</div>
+<div class="summary-box">
+    <p><strong>Total Budget:</strong> ₹1,20,000</p>
+    <p><strong>Total Expenses:</strong> ₹82,500</p>
+    <p><strong>Total Savings:</strong> ₹37,500</p>
+    <p><strong>Budget Performance:</strong> Good Financial Control Maintained.</p>
+</div>
+</section>
+<section class="quick-actions">
+<div class="section-title">
+    <h2>Quick Actions</h2>
+</div>
+<div class="action-buttons">
+    <button>Add Expense</button>
+    <button>Update Budget</button>
+    <button>Generate Report</button>
+    <button>Export Budget</button>
+    <button>Track Savings</button>
+    <button>Download Statement</button>
+</div>
+</section>
+<footer>
+<p>© 2026 FinanceHub Budget Tracker.All Rights Reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insurance Manager|FinanceHub</title>
+<link rel="stylesheet" href="insurancemanager.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">
+    <h2>FinanceHub</h2>
+</div>
+<nav>
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <a href="../insurance/insurancemanager.html" class="active">Insurance</a>
+    <a href="../loans/loanemimanager.html">Loans</a>
+    <a href="../investments/investmentportfolio.html">Investments</a>
+    <a href="../budgeting/financialcalendar.html">Calendar</a>
+    <a href="../profile/profile.html">Profile</a>
+</nav>
+</header>
+<section class="hero-section">
+<div class="hero-content">
+    <h1>Insurance<span>Manager</span></h1>
+    <p>Keep all your insurance policies in one secure place.Track premiums,renewal dates,policy coverage,claims,and important reminders with ease.</p>
+    <div class="hero-buttons">
+        <button class="primary-btn">
+            <i class="fas fa-plus-circle"></i>Add Policy</button>
+        <button class="secondary-btn">
+            <i class="fas fa-file-shield"></i>View Policies</button>
+    </div>
+</div>
+<div class="hero-image">
+    <img src="https://www.shutterstock.com/image-vector/blue-health-insurance-banner-design-260nw-2382108695.jpg" alt="Insurance Manager">
+</div>
+</section>
+<section class="insurance-overview">
+<div class="section-title">
+    <h2>Insurance Overview</h2>
+    <p>Monitor all your insurance policies and important policy information from one dashboard.</p>
+</div>
+<div class="overview-grid">
+    <div class="overview-card">
+        <i class="fas fa-file-shield"></i>
+        <h3>Total Policies</h3>
+        <h2>06</h2>
+        <p>Registered insurance policies</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-circle-check"></i>
+        <h3>Active Policies</h3>
+        <h2>05</h2>
+        <p>Currently active policies</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-calendar-days"></i>
+        <h3>Renewals Due</h3>
+        <h2>02</h2>
+        <p>Upcoming premium renewals</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-shield-heart"></i>
+        <h3>Total Coverage</h3>
+        <h2>₹1.5 Cr</h2>
+        <p>Total insured coverage value</p>
+    </div>
+</div>
+</section>
+<section class="insurance-policies">
+<div class="section-title">
+    <h2>Insurance Policies</h2>
+    <p>View and manage all your insurance policies in one place.</p>
+</div>
+<div class="policy-grid">
+    <div class="policy-card">
+        <i class="fas fa-heart-pulse"></i>
+        <h3>Health Insurance</h3>
+        <p>Coverage:₹10,00,000</p>
+        <p>Premium:₹18,000/Year</p>
+        <p>Status:<strong>Active</strong></p>
+        <button>View Details</button>
+    </div>
+    <div class="policy-card">
+        <i class="fas fa-user-shield"></i>
+        <h3>Life Insurance</h3>
+        <p>Coverage:₹50,00,000</p>
+        <p>Premium:₹24,500/Year</p>
+        <p>Status:<strong>Active</strong></p>
+        <button>View Details</button>
+    </div>
+    <div class="policy-card">
+        <i class="fas fa-car-side"></i>
+        <h3>Vehicle Insurance</h3>
+        <p>Coverage:₹8,00,000</p>
+        <p>Premium:₹12,000/Year</p>
+        <p>Status:<strong>Renewal Soon</strong></p>
+        <button>View Details</button>
+    </div>
+    <div class="policy-card">
+        <i class="fas fa-house"></i>
+        <h3>Home Insurance</h3>
+        <p>Coverage:₹25,00,000</p>
+        <p>Premium:₹9,500/Year</p>
+        <p>Status:<strong>Active</strong></p>
+        <button>View Details</button>
+    </div>
+</div>
+</section>
+<section class="policy-summary">
+<div class="section-title">
+    <h2>Policy Summary</h2>
+    <p>Get a quick overview of your insurance portfolio.</p>
+</div>
+<div class="summary-grid">
+    <div class="summary-card">
+        <i class="fas fa-money-check-dollar"></i>
+        <h3>Total Premium Paid</h3>
+        <h2>₹64,000</h2>
+    </div>
+    <div class="summary-card">
+        <i class="fas fa-shield-halved"></i>
+        <h3>Total Coverage</h3>
+        <h2>₹1.5 Crore</h2>
+    </div>
+    <div class="summary-card">
+        <i class="fas fa-file-circle-check"></i>
+        <h3>Claims Settled</h3>
+        <h2>03</h2>
+    </div>
+</div>
+</section>
+<section class="add-policy">
+<div class="section-title">
+    <h2>Add New Policy</h2>
+    <p>Store and manage your insurance policy information securely.</p>
+</div>
+<form class="policy-form">
+    <input type="text"placeholder="Policy Name">
+    <select>
+        <option>Select Insurance Type</option>
+        <option>Health Insurance</option>
+        <option>Life Insurance</option>
+        <option>Vehicle Insurance</option>
+        <option>Home Insurance</option>
+        <option>Travel Insurance</option>
+        <option>Accident Insurance</option>
+    </select>
+    <input type="text"placeholder="Insurance Provider">
+    <input type="number"placeholder="Coverage Amount">
+    <input type="date">
+    <input type="date"placeholder="Renewal Date">
+    <textarea rows="5"placeholder="Policy Description or Notes"></textarea>
+    <button type="submit">
+        <i class="fas fa-plus"></i>Add Policy</button>
+</form>
+</section>
+<section class="premium-reminders">
+<div class="section-title">
+    <h2>Premium Due Reminders</h2>
+    <p>Never miss an insurance premium payment with timely reminders.</p>
+</div>
+<div class="reminder-grid">
+    <div class="reminder-card">
+        <i class="fas fa-bell"></i>
+        <h3>Vehicle Insurance</h3>
+        <p>Due Date:20 Aug 2026</p>
+    </div>
+    <div class="reminder-card">
+        <i class="fas fa-bell"></i>
+        <h3>Health Insurance</h3>
+        <p>Due Date:05 Sep 2026</p>
+    </div>
+    <div class="reminder-card">
+        <i class="fas fa-bell"></i>
+        <h3>Home Insurance</h3>
+        <p>Due Date:18 Sep 2026</p>
+    </div>
+</div>
+</section>
+<section class="policy-documents">
+<div class="section-title">
+    <h2>Policy Documents</h2>
+    <p>Keep all your insurance documents organized and easily accessible.</p>
+</div>
+<div class="document-grid">
+    <div class="document-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Health Policy</h3>
+        <button>Download</button>
+    </div>
+    <div class="document-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Life Policy</h3>
+        <button>Download</button>
+    </div>
+    <div class="document-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Vehicle Policy</h3>
+        <button>Download</button>
+    </div>
+</div>
+</section>
+<section class="claim-history">
+<div class="section-title">
+    <h2>Claim History</h2>
+    <p>Track all your previous insurance claims and their current status.</p>
+</div>
+<div class="claim-grid">
+    <div class="claim-card">
+        <i class="fas fa-file-circle-check"></i>
+        <h3>Health Insurance</h3>
+        <p>Claim Amount:₹45,000</p>
+        <p>Status:Approved</p>
+    </div>
+    <div class="claim-card">
+        <i class="fas fa-car-burst"></i>
+        <h3>Vehicle Insurance</h3>
+        <p>Claim Amount:₹18,500</p>
+        <p>Status:Processing</p>
+    </div>
+    <div class="claim-card">
+        <i class="fas fa-house-circle-check"></i>
+        <h3>Home Insurance</h3>
+        <p>Claim Amount:₹75,000</p>
+        <p>Status:Settled</p>
+    </div>
+</div>
+</section>
+<section class="insurance-tips">
+<div class="section-title">
+    <h2>Insurance Tips</h2>
+    <p>Follow these tips to manage your insurance policies effectively.</p>
+</div>
+<div class="tips-grid">
+    <div class="tip-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>Renew On Time</h3>
+        <p>Renew your policies before the due date to avoid coverage gaps.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-folder-open"></i>
+        <h3>Keep Documents Safe</h3>
+        <p>Store digital copies of policy documents for quick access.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-shield-heart"></i>
+        <h3>Review Coverage</h3>
+        <p>Review your insurance coverage annually to match your needs.</p>
+    </div>
+</div>
+</section>
+<footer>
+<p>© 2026 FinanceHub.All Rights Reserved.</p>
+</footer>
+</body>
+</html>

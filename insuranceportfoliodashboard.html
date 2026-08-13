@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insurance Portfolio Dashboard|FinanceHub</title>
+<link rel="stylesheet" href="insuranceportfoliodashboard.css">
+</head>
+<body>
+<header class="dashboard-header">
+<div class="header-left">
+    <h1>Insurance Portfolio Dashboard</h1>
+    <p>Manage all your insurance policies,premiums,claims,renewals and coverage from one centralized dashboard.</p>
+</div>
+<div class="header-right">
+    <button class="primary-btn">
+        <i class="fas fa-plus"></i>Add Policy</button>
+    <button class="secondary-btn">
+        <i class="fas fa-file-export"></i>Export Portfolio</button>
+</div>
+</header>
+<section class="insurance-overview">
+<div class="overview-card">
+    <i class="fas fa-shield-heart"></i>
+    <h3>Total Coverage</h3>
+    <h2>₹3.85 Cr</h2>
+    <span>Across 8 Active Policies</span>
+</div>
+<div class="overview-card">
+    <i class="fas fa-money-check-dollar"></i>
+    <h3>Annual Premium</h3>
+    <h2>₹1,18,500</h2>
+    <span>Combined Premium Amount</span>
+</div>
+<div class="overview-card">
+    <i class="fas fa-calendar-days"></i>
+    <h3>Next Renewal</h3>
+    <h2>20 Jul 2026</h2>
+    <span>Health Insurance Policy</span>
+</div>
+<div class="overview-card">
+    <i class="fas fa-award"></i>
+    <h3>Coverage Score</h3>
+    <h2>93/100</h2>
+    <span>Excellent Protection</span>
+</div>
+</section>
+<section class="insurance-health">
+<div class="section-title">
+    <h2>Portfolio Health</h2>
+    <p>Evaluate your overall insurance protection and financial security.</p>
+</div>
+<div class="health-grid">
+    <div class="health-card">
+        <i class="fas fa-user-shield"></i>
+        <h3>Life Cover</h3>
+        <h2>₹2 Cr</h2>
+        <p>Adequate Protection</p>
+    </div>
+    <div class="health-card">
+        <i class="fas fa-heart-pulse"></i>
+        <h3>Health Cover</h3>
+        <h2>₹25 Lakh</h2>
+        <p>Family Floater Active</p>
+    </div>
+    <div class="health-card">
+        <i class="fas fa-car-side"></i>
+        <h3>Vehicle Cover</h3>
+        <h2>2 Policies</h2>
+        <p>Comprehensive Insurance</p>
+    </div>
+    <div class="health-card">
+        <i class="fas fa-house"></i>
+        <h3>Property Cover</h3>
+        <h2>₹60 Lakh</h2>
+        <p>Home Fully Protected</p>
+    </div>
+</div>
+</section>
+<section class="policy-portfolio">
+<div class="section-title">
+    <h2>Insurance Portfolio</h2>
+    <p>Overview of all active insurance policies and their current status.</p>
+</div>
+<div class="policy-grid">
+    <div class="policy-card">
+        <i class="fas fa-heart-pulse"></i>
+        <h3>Health Insurance</h3>
+        <h2>₹25 Lakh</h2>
+        <p>Premium:₹22,500/Year</p>
+        <p>Renewal:20 Jul 2026</p>
+        <div class="progress">
+            <div class="health-progress" style="width:82%;"></div>
+        </div>
+        <span>82% Policy Year Completed</span>
+    </div>
+    <div class="policy-card">
+        <i class="fas fa-user-shield"></i>
+        <h3>Term Life Insurance</h3>
+        <h2>₹2 Crore</h2>
+        <p>Premium:₹28,000/Year</p>
+        <p>Renewal:05 Dec 2026</p>
+        <div class="progress">
+            <div class="life-progress" style="width:56%;"></div>
+        </div>
+        <span>56% Policy Year Completed</span>
+    </div>
+    <div class="policy-card">
+        <i class="fas fa-car"></i>
+        <h3>Vehicle Insurance</h3>
+        <h2>₹12 Lakh</h2>
+        <p>Premium:₹16,800/Year</p>
+        <p>Renewal:11 Nov 2026</p>
+        <div class="progress">
+            <div class="vehicle-progress" style="width:38%;"></div>
+        </div>
+        <span>38% Policy Year Completed</span>
+    </div>
+    <div class="policy-card">
+        <i class="fas fa-house-chimney"></i>
+        <h3>Home Insurance</h3>
+        <h2>₹60 Lakh</h2>
+        <p>Premium:₹14,500/Year</p>
+        <p>Renewal:18 Jan 2027</p>
+        <div class="progress">
+            <div class="home-progress" style="width:24%;"></div>
+        </div>
+        <span>24% Policy Year Completed</span>
+    </div>
+</div>
+</section>
+<section class="coverage-distribution">
+<div class="section-title">
+    <h2>Coverage Distribution</h2>
+    <p>Distribution of your total insurance coverage across different policy types.</p>
+</div>
+<div class="distribution-grid">
+    <div class="distribution-card">
+        <div class="circle-progress life-circle">
+            <span>52%</span>
+        </div>
+        <h3>Life Insurance</h3>
+        <p>₹2.00 Cr</p>
+    </div>
+    <div class="distribution-card">
+        <div class="circle-progress health-circle">
+            <span>18%</span>
+        </div>
+        <h3>Health Insurance</h3>
+        <p>₹70 Lakh</p>
+    </div>
+    <div class="distribution-card">
+        <div class="circle-progress property-circle">
+            <span>16%</span>
+        </div>
+        <h3>Property Insurance</h3>
+        <p>₹60 Lakh</p>
+    </div>
+    <div class="distribution-card">
+        <div class="circle-progress vehicle-circle">
+            <span>14%</span>
+        </div>
+        <h3>Vehicle Insurance</h3>
+        <p>₹55 Lakh</p>
+    </div>
+</div>
+</section>
+<div class="insurance-health-card">
+    <div class="health-header">
+        <h2>Insurance Health Score</h2>
+        <p>Overall protection status</p>
+    </div>
+    <div class="health-circle">
+        <div class="outer-circle">
+            <div class="inner-circle">
+                <h1>92%</h1>
+                <span>Protected</span>
+            </div>
+        </div>
+    </div>
+    <div class="policy-status">
+        <div class="policy-item">
+            <span>Life Insurance</span>
+            <strong>Active</strong>
+        </div>
+        <div class="policy-item">
+            <span>Health Insurance</span>
+            <strong>Protected</strong>
+        </div>
+        <div class="policy-item">
+            <span>Vehicle Insurance</span>
+            <strong>18 Days Left</strong>
+        </div>
+        <div class="policy-item">
+            <span>Home Insurance</span>
+            <strong>Active</strong>
+        </div>
+    </div>
+    <div class="risk-box">
+        <h3>Risk Level</h3>
+        <span class="risk-low">LOW</span>
+    </div>
+</div>
+<section class="policy-summary-table">
+<div class="section-title">
+    <h2>Policy Summary</h2>
+    <p>Complete overview of all active insurance policies.</p>
+</div>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Policy</th>
+                <th>Company</th>
+                <th>Coverage</th>
+                <th>Premium</th>
+                <th>Renewal</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Health Insurance</td>
+                <td>Star Health</td>
+                <td>₹25 Lakh</td>
+                <td>₹22,500</td>
+                <td>20 Jul 2026</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Term Life Insurance</td>
+                <td>LIC</td>
+                <td>₹2 Crore</td>
+                <td>₹28,000</td>
+                <td>05 Dec 2026</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Vehicle Insurance</td>
+                <td>ICICI Lombard</td>
+                <td>₹12 Lakh</td>
+                <td>₹16,800</td>
+                <td>11 Nov 2026</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Home Insurance</td>
+                <td>HDFC ERGO</td>
+                <td>₹60 Lakh</td>
+                <td>₹14,500</td>
+                <td>18 Jan 2027</td>
+                <td>Active</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+<section class="claim-history">
+<div class="section-title">
+    <h2>Claim History</h2>
+    <p>View all insurance claims submitted,approved and settled.</p>
+</div>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Claim ID</th>
+                <th>Policy</th>
+                <th>Date</th>
+                <th>Claim Amount</th>
+                <th>Status</th>
+                <th>Settlement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CLM-20458</td>
+                <td>Health Insurance</td>
+                <td>18 Mar 2026</td>
+                <td>₹1,45,800</td>
+                <td>Approved</td>
+                <td>Settled</td>
+            </tr>
+            <tr>
+                <td>CLM-19842</td>
+                <td>Vehicle Insurance</td>
+                <td>05 Jan 2026</td>
+                <td>₹62,500</td>
+                <td>Approved</td>
+                <td>Settled</td>
+            </tr>
+            <tr>
+                <td>CLM-18411</td>
+                <td>Health Insurance</td>
+                <td>11 Aug 2025</td>
+                <td>₹82,000</td>
+                <td>Approved</td>
+                <td>Settled</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+<section class="renewal-calendar">
+<div class="section-title">
+    <h2>Upcoming Renewals</h2>
+    <p>Never miss an insurance renewal with scheduled reminders.</p>
+</div>
+<div class="renewal-grid">
+    <div class="renewal-card">
+        <i class="fas fa-heart-pulse"></i>
+        <h3>Health Insurance</h3>
+        <h2>20 Jul 2026</h2>
+        <p>Premium ₹22,500</p>
+    </div>
+    <div class="renewal-card">
+        <i class="fas fa-car"></i>
+        <h3>Vehicle Insurance</h3>
+        <h2>11 Nov 2026</h2>
+        <p>Premium ₹16,800</p>
+    </div>
+    <div class="renewal-card">
+        <i class="fas fa-user-shield"></i>
+        <h3>Life Insurance</h3>
+        <h2>05 Dec 2026</h2>
+        <p>Premium ₹28,000</p>
+    </div>
+    <div class="renewal-card">
+        <i class="fas fa-house"></i>
+        <h3>Home Insurance</h3>
+        <h2>18 Jan 2027</h2>
+        <p>Premium ₹14,500</p>
+    </div>
+ </div>
+</section>
+<section class="coverage-analytics">
+<div class="section-title">
+    <h2>Coverage Analytics</h2>
+    <p>Analyze your insurance portfolio using advanced protection metrics.</p>
+</div>
+<div class="analytics-grid">
+    <div class="analytics-card">
+        <i class="fas fa-shield-check"></i>
+        <h3>Protection Score</h3>
+        <h2>93%</h2>
+        <p>Excellent Overall Coverage</p>
+    </div>
+    <div class="analytics-card">
+        <i class="fas fa-coins"></i>
+        <h3>Total Premium Paid</h3>
+        <h2>₹7.86L</h2>
+        <p>Since Policy Purchase</p>
+    </div>
+    <div class="analytics-card">
+        <i class="fas fa-hand-holding-dollar"></i>
+        <h3>Total Claims Received</h3>
+        <h2>₹2.90L</h2>
+        <p>Successfully Settled</p>
+    </div>
+    <div class="analytics-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Claim Success Rate</h3>
+        <h2>100%</h2>
+        <p>All Eligible Claims Approved</p>
+    </div>
+</div>
+</section>
+<section class="insurance-insights">
+<div class="section-title">
+    <h2>Smart Insurance Insights</h2>
+    <p>Personalized recommendations to improve your insurance coverage and reduce financial risk.</p>
+</div>
+<div class="insight-grid">
+    <div class="insight-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Coverage Gap</h3>
+        <h2>Low Risk</h2>
+        <p>Your current insurance coverage is sufficient for your financial profile.</p>
+    </div>
+    <div class="insight-card">
+        <i class="fas fa-user-group"></i>
+        <h3>Family Protection</h3>
+        <h2>92%</h2>
+        <p>Consider increasing health coverage for enhanced family protection.</p>
+    </div>
+    <div class="insight-card">
+        <i class="fas fa-percent"></i>
+        <h3>Premium Optimization</h3>
+        <h2>₹8,500</h2>
+        <p>Bundle policies to save up to ₹8,500 annually on premiums.</p>
+    </div>
+    <div class="insight-card">
+        <i class="fas fa-award"></i>
+        <h3>Portfolio Rating</h3>
+        <h2>Excellent</h2>
+        <p>Your insurance portfolio is well diversified across all major categories.</p>
+    </div>
+</div>
+</section>
+<section class="insurance-notifications">
+<div class="section-title">
+    <h2>Insurance Notifications</h2>
+    <p>Stay updated with renewals,premium payments and policy alerts.</p>
+</div>
+<div class="notification-list">
+    <div class="notification-item">
+        <i class="fas fa-calendar-check"></i>
+        <div>
+            <h3>Health Insurance Renewal</h3>
+            <p>Your policy will renew on 20 July 2026.Premium:₹22,500.</p>
+        </div>
+        <span>5 Days Left</span>
+    </div>
+    <div class="notification-item">
+        <i class="fas fa-circle-check"></i>
+        <div>
+            <h3>Claim Successfully Settled</h3>
+            <p>Vehicle insurance claim of ₹62,500 has been credited to your account.</p>
+        </div>
+        <span>Completed</span>
+    </div>
+    <div class="notification-item">
+        <i class="fas fa-bell"></i>
+        <div>
+            <h3>Premium Due Reminder</h3>
+            <p>Annual Life Insurance premium payment is due next month.</p>
+        </div>
+        <span>Upcoming</span>
+    </div>
+    <div class="notification-item">
+        <i class="fas fa-shield-halved"></i>
+        <div>
+            <h3>Policy Recommendation</h3>
+            <p>Consider adding Personal Accident Insurance to improve overall protection.</p>
+        </div>
+        <span>Suggested</span>
+    </div>
+</div>
+</section>
+<footer>
+    <p>© 2026 FinanceHub.All Rights Reserved</p>
+</footer>
+</body>
+</html>

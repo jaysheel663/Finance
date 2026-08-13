@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Salary & Income Tracker|FinanceHub</title>
+<link rel="stylesheet" href="salaryincometracker.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">
+    <h2>FinanceHub</h2>
+</div>
+<nav>
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <a href="../incomeexpense/salaryincometracker.html" class="active">Income Tracker</a>
+    <a href="../budgeting/budgetplanner.html">Budget</a>
+    <a href="../insurance/investmentportfolio.html">Investments</a>
+    <a href="../financetools/reportsandanalytics.html">Reports</a>
+    <a href="../profile/profile.html">Profile</a>
+</nav>
+</header>
+<section class="hero-section">
+<div class="hero-content">
+    <h1>Salary&<span>Income Tracker</span></h1>
+    <p>Track your salary,multiple income sources,bonuses,and monthly earnings to better understand and manage your personal finances.</p>
+    <div class="hero-buttons">
+        <button class="primary-btn">
+            <i class="fas fa-wallet"></i>Add Income</button>
+        <button class="secondary-btn">
+            <i class="fas fa-chart-column"></i>View Report</button>
+    </div>
+</div>
+<div class="hero-image">
+<img src="https://png.pngtree.com/png-clipart/20200226/original/pngtree-business-people-work-together-in-increasing-their-business-income-modern-vector-png-image_5326494.jpg"alt="Salary and Income Tracker">
+</div>
+</section>
+<section class="income-overview">
+<div class="section-title">
+    <h2>Income Overview</h2>
+    <p>View a quick summary of your salary and income performance.</p>
+</div>
+<div class="overview-grid">
+    <div class="overview-card">
+        <i class="fas fa-indian-rupee-sign"></i>
+        <h3>Monthly Income</h3>
+        <h2>₹85,000</h2>
+        <p>Total income this month</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-sack-dollar"></i>
+        <h3>Annual Income</h3>
+        <h2>₹10,20,000</h2>
+        <p>Estimated yearly earnings</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Income Sources</h3>
+        <h2>4</h2>
+        <p>Active earning sources</p>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>Savings Rate</h3>
+        <h2>32%</h2>
+        <p>Percentage saved monthly</p>
+    </div>
+</div>
+</section>
+<section class="salary-breakdown">
+<div class="section-title">
+    <h2>Salary Breakdown</h2>
+    <p>View a detailed breakdown of your monthly salary components.</p>
+</div>
+<div class="breakdown-grid">
+    <div class="breakdown-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Basic Salary</h3>
+        <p>₹55,000</p>
+    </div>
+    <div class="breakdown-card">
+        <i class="fas fa-house"></i>
+        <h3>House Rent Allowance</h3>
+        <p>₹15,000</p>
+    </div>
+    <div class="breakdown-card">
+        <i class="fas fa-gift"></i>
+        <h3>Bonus & Incentives</h3>
+        <p>₹8,000</p>
+    </div>
+    <div class="breakdown-card">
+        <i class="fas fa-coins"></i>
+        <h3>Other Allowances</h3>
+        <p>₹7,000</p>
+    </div>
+</div>
+</section>
+<section class="income-sources">
+<div class="section-title">
+    <h2>Income Sources</h2>
+    <p>Monitor all your active income sources in one place.</p>
+</div>
+<div class="source-grid">
+    <div class="source-card">
+        <i class="fas fa-building"></i>
+        <h3>Full-Time Salary</h3>
+        <p>₹85,000/ Month</p>
+        <button>View Details</button>
+    </div>
+    <div class="source-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Freelancing</h3>
+        <p>₹12,000/Month</p>
+        <button>View Details</button>
+    </div>
+    <div class="source-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Investment Returns</h3>
+        <p>₹4,500/Month</p>
+        <button>View Details</button>
+    </div>
+    <div class="source-card">
+        <i class="fas fa-house-user"></i>
+        <h3>Rental Income</h3>
+        <p>₹10,000/Month</p>
+        <button>View Details</button>
+    </div>
+</div>
+</section>
+<section class="add-income">
+<div class="section-title">
+    <h2>Add New Income</h2>
+    <p>Record salary,freelance earnings,bonuses,rental income,or any additional source of income.</p>
+</div>
+<form class="income-form">
+    <input type="text"placeholder="Income Source">
+    <select>
+        <option>Select Category</option>
+        <option>Salary</option>
+        <option>Freelancing</option>
+        <option>Business</option>
+        <option>Rental Income</option>
+        <option>Investment</option>
+        <option>Bonus</option>
+        <option>Other</option>
+    </select>
+    <input type="number"placeholder="Income Amount">
+    <input type="date">
+    <textarea rows="5"placeholder="Description or Notes"></textarea>
+    <button type="submit">
+        <i class="fas fa-plus-circle"></i>Add Income</button>
+</form>
+</section>
+<section class="income-history">
+<div class="section-title">
+    <h2>Monthly Income History</h2>
+    <p>Review your income received over the last few months.</p>
+</div>
+<div class="history-grid">
+    <div class="history-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>May 2026</h3>
+        <p>Total Income:₹82,500</p>
+    </div>
+    <div class="history-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>June 2026</h3>
+        <p>Total Income:₹84,000</p>
+    </div>
+    <div class="history-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>July 2026</h3>
+        <p>Total Income:₹85,000</p>
+    </div>
+</div>
+</section>
+<section class="income-growth">
+<div class="section-title">
+    <h2>Income Growth</h2>
+    <p>Track your earning progress and financial growth over time.</p>
+</div>
+<div class="growth-grid">
+    <div class="growth-card">
+        <i class="fas fa-arrow-trend-up"></i>
+        <h3>Highest Income</h3>
+        <p>₹90,000-July 2026</p>
+    </div>
+    <div class="growth-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Average Monthly Income</h3>
+        <p>₹83,800</p>
+    </div>
+    <div class="growth-card">
+        <i class="fas fa-coins"></i>
+        <h3>Growth Rate</h3>
+        <p>+8.5% Compared to Last Year</p>
+    </div>
+</div>
+</section>
+<section class="income-goals">
+<div class="section-title">
+    <h2>Income Goals</h2>
+    <p>Set earning targets and monitor your progress toward financial success.</p>
+</div>
+<div class="goal-grid">
+    <div class="goal-card">
+        <i class="fas fa-bullseye"></i>
+        <h3>Monthly Goal</h3>
+        <p>Target Income:₹1,00,000</p>
+    </div>
+    <div class="goal-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Side Income Goal</h3>
+        <p>Earn ₹20,000/month from freelancing.</p>
+    </div>
+    <div class="goal-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Annual Goal</h3>
+        <p>Reach ₹12,00,000 annual income.</p>
+    </div>
+</div>
+</section>
+<section class="income-tips">
+<div class="section-title">
+    <h2>Income Management Tips</h2>
+    <p>Improve your financial stability with smart income management strategies.</p>
+</div>
+<div class="tips-grid">
+    <div class="tip-card">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>Save First</h3>
+        <p>Allocate a portion of your income to savings before spending.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-layer-group"></i>
+        <h3>Diversify Income</h3>
+        <p>Build multiple income sources to reduce financial risk.</p>
+    </div>
+    <div class="tip-card">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h3>Track Every Payment</h3>
+        <p>Record every income transaction to maintain accurate financial records.</p>
+    </div>
+</div>
+</section>
+<footer>
+<p>© 2026 FinanceHub.All Rights Reserved.</p>
+</footer>
+</body>
+</html>

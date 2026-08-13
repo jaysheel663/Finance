@@ -1,0 +1,722 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+body{
+    background:#f2f6fd;
+    color:#142b4b;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    background-size:cover;
+    background-position:center;
+    overflow:hidden;
+}
+.mutualfund-hero{
+    background-image:url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3");
+}
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,rgba(15,37,69,.85),rgba(31,91,201,.75));
+}
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:80%;
+    text-align:center;
+    color:#fff;
+}
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    padding:12px 22px;
+    border-radius:40px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    margin-bottom:30px;
+    transition:.3s;
+}
+.back-btn:hover{
+    background:#fff;
+    color:#1f5bc9;
+    transform:translateY(-4px);
+}
+.hero-content h1{
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:18px;
+    letter-spacing:-1px;
+}
+.hero-content p{
+    max-width:900px;
+    margin:auto;
+    font-size:17px;
+    opacity:.95;
+}
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+.primary-btn,
+.secondary-btn{
+    padding:15px 30px;
+    border:none;
+    border-radius:40px;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.35s;
+}
+.primary-btn{
+    background:#fff;
+    color:#1f5bc9;
+}
+.secondary-btn{
+    background:rgba(255,255,255,.18);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.5);
+}
+.primary-btn:hover,
+.secondary-btn:hover{
+    transform:translateY(-5px);
+}
+.quick-stats{
+    width:84%;
+    margin:-60px auto 50px;
+    position:relative;
+    z-index:5;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+.stat-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.08);
+    border:1px solid rgba(255,255,255,.75);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+.stat-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#1f5bc9,#4a85f0);
+}
+.stat-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 45px rgba(31,91,201,.15);
+}
+.stat-card i{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#edf4ff;
+    color:#1f5bc9;
+    font-size:25px;
+}
+.stat-card h3{
+    font-size:17px;
+    color:#58739a;
+    margin-bottom:10px;
+}
+.stat-card h2{
+    font-size:28px;
+    color:#142b4b;
+    margin-bottom:8px;
+}
+.stat-card span{
+    color:#1f5bc9;
+    font-size:14px;
+    font-weight:600;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+.section-title h2{
+    font-size:32px;
+    font-weight:750;
+    color:#142b4b;
+    margin-bottom:10px;
+}
+.section-title p{
+    max-width:850px;
+    margin:auto;
+    color:#6c88ad;
+    font-size:16px;
+}
+.about-investment{
+    width:84%;
+    margin:auto;
+    padding:40px 0;
+}
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+    align-items:center;
+}
+.about-image img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:28px;
+    box-shadow:0 20px 40px rgba(0,20,40,.12);
+}
+.about-content h3{
+    font-size:30px;
+    color:#142b4b;
+    margin-bottom:15px;
+}
+.about-content p{
+    color:#5f7ca5;
+    margin-bottom:15px;
+    font-size:16px;
+}
+.info-box{
+    display:flex;
+    gap:18px;
+    padding:22px;
+    margin-top:25px;
+    border-radius:22px;
+    background:#eef5ff;
+    border-left:6px solid #1f5bc9;
+}
+.info-box i{
+    font-size:30px;
+    color:#1f5bc9;
+}
+.info-box h4{
+    color:#1f3a6b;
+    margin-bottom:5px;
+}
+.info-box p{
+    margin:0;
+    font-size:14px;
+}
+.investment-components,
+.investment-benefits,
+.comparison-section,
+.portfolio-allocation,
+.calculation-section,
+.investment-tips,
+.common-mistakes,
+.investment-journey,
+.faq-section,
+.investment-insights,
+.quick-actions,
+.summary-section{
+    width:84%;
+    margin:70px auto;
+}
+.component-grid,
+.benefit-grid,
+.comparison-grid,
+.allocation-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.component-card,
+.benefit-card,
+.comparison-card,
+.allocation-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    border-radius:24px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    border:1px solid rgba(255,255,255,.75);
+    transition:.35s;
+}
+.component-card:hover,
+.benefit-card:hover,
+.comparison-card:hover,
+.allocation-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.component-card i,
+.benefit-card i,
+.comparison-card i{
+    width:65px;
+    height:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#edf4ff;
+    color:#1f5bc9;
+    font-size:28px;
+}
+.component-card h3,
+.benefit-card h3,
+.comparison-card h3{
+    font-size:21px;
+    margin-bottom:12px;
+    color:#1f3a6b;
+}
+.component-card p,
+.benefit-card p,
+.comparison-card p{
+    color:#607da5;
+    font-size:15px;
+}
+.benefit-card{
+    text-align:left;
+}
+.benefit-card i{
+    margin:0 0 18px;
+}
+.comparison-section{
+    background:rgba(255,255,255,.35);
+    padding:40px;
+    border-radius:30px;
+}
+.comparison-card{
+    text-align:center;
+}
+.allocation-card{
+    text-align:left;
+}
+.allocation-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+.allocation-header h3{
+    font-size:20px;
+    color:#1f3a6b;
+}
+.allocation-header span{
+    color:#1f5bc9;
+    font-size:18px;
+}
+.allocation-card p{
+    color:#607da5;
+}
+.calculation-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    padding:30px;
+    border-radius:26px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    overflow-x:auto;
+}
+.calculation-card table{
+    width:100%;
+    border-collapse:collapse;
+}
+.calculation-card th{
+    background:#edf4ff;
+    padding:18px;
+    text-align:left;
+    color:#1f3a6b;
+}
+.calculation-card td{
+    padding:18px;
+    border-bottom:1px solid rgba(0,0,0,.05);
+    color:#425c81;
+}
+.calculation-card tr:hover{
+    background:#f7fbff;
+}
+.tips-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+.tip-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:rgba(255,255,255,.72);
+    padding:22px;
+    border-radius:22px;
+    box-shadow:0 12px 30px rgba(0,20,40,.06);
+    transition:.3s;
+}
+.tip-item:hover{
+    transform:translateX(8px);
+}
+.tip-item i{
+    font-size:25px;
+    color:#1f5bc9;
+}
+.tip-item p{
+    color:#607da5;
+}
+.mistake-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.mistake-card{
+    background:rgba(255,255,255,.72);
+    border-radius:24px;
+    padding:28px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.mistake-card:hover{
+    transform:translateY(-8px);
+}
+.mistake-card i{
+    font-size:35px;
+    color:#e74c3c;
+    margin-bottom:18px;
+}
+.mistake-card h3{
+    color:#1f3a6b;
+    margin-bottom:12px;
+}
+.mistake-card p{
+    color:#607da5;
+}
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#1f5bc9;
+    transform:translateX(-50%);
+}
+.timeline-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+.timeline-icon{
+    width:70px;
+    height:70px;
+    background:#1f5bc9;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+    z-index:2;
+}
+.timeline-content{
+    width:42%;
+    background:rgba(255,255,255,.72);
+    padding:25px;
+    border-radius:22px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+}
+.timeline-content h3{
+    color:#1f3a6b;
+    margin-bottom:10px;
+}
+.timeline-content p{
+    color:#607da5;
+}
+.faq-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+.faq-card{
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    padding:28px;
+    border-radius:24px;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    transition:.35s;
+}
+.faq-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 25px 45px rgba(31,91,201,.12);
+}
+.faq-card h3{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#1f3a6b;
+    font-size:19px;
+    margin-bottom:15px;
+}
+.faq-card h3 i{
+    color:#1f5bc9;
+}
+.faq-card p{
+    color:#607da5;
+    font-size:15px;
+}
+.insight-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.insight-card{
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+    padding:30px;
+    border-radius:24px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+    border:1px solid rgba(255,255,255,.8);
+    transition:.35s;
+}
+.insight-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 45px rgba(31,91,201,.15);
+}
+.insight-card i{
+    width:65px;
+    height:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    border-radius:50%;
+    background:#edf4ff;
+    color:#1f5bc9;
+    font-size:28px;
+    margin-bottom:18px;
+}
+.insight-card h3{
+    color:#1f3a6b;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.insight-card h2{
+    color:#1f5bc9;
+    font-size:28px;
+    margin-bottom:12px;
+}
+.insight-card p{
+    color:#607da5;
+}
+.action-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+.action-grid button{
+    padding:18px 25px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(135deg,#1f5bc9,#4a85f0);
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 12px 25px rgba(31,91,201,.2);
+}
+.action-grid button i{
+    margin-right:8px;
+}
+.action-grid button:hover{
+    transform:translateY(-6px);
+    box-shadow:0 22px 35px rgba(31,91,201,.3);
+}
+.summary-section{
+    display:flex;
+    justify-content:center;
+}
+.summary-card{
+    width:100%;
+    background:rgba(255,255,255,.72);
+    backdrop-filter:blur(18px);
+    padding:35px;
+    border-radius:28px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,20,40,.06);
+}
+.summary-card h2{
+    color:#1f3a6b;
+    font-size:30px;
+    margin-bottom:15px;
+}
+.summary-card p{
+    color:#607da5;
+    font-size:16px;
+}
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    font-size:15px;
+    letter-spacing:.5px;
+}
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background:#edf2fb;
+}
+::-webkit-scrollbar-thumb{
+    background:#8bb3ff;
+    border-radius:20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#1f5bc9;
+}
+@media(max-width:1024px){
+    .hero-content{
+        width:90%;
+    }
+    .hero-content h1{
+        font-size:42px;
+    }
+    .investment-components,
+    .investment-benefits,
+    .comparison-section,
+    .portfolio-allocation,
+    .calculation-section,
+    .investment-tips,
+    .common-mistakes,
+    .investment-journey,
+    .faq-section,
+    .investment-insights,
+    .quick-actions,
+    .summary-section,
+    .about-investment{
+        width:90%;
+    }
+    .timeline::before{
+        left:30px;
+    }
+    .timeline-item{
+        justify-content:flex-start;
+        gap:25px;
+    }
+    .timeline-content{
+        width:70%;
+    }
+}
+@media(max-width:768px){
+    .hero{
+        min-height:75vh;
+    }
+    .hero-content h1{
+        font-size:34px;
+    }
+    .hero-content p{
+        font-size:15px;
+    }
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+    .primary-btn,
+    .secondary-btn{
+        width:220px;
+        justify-content:center;
+    }
+    .quick-stats{
+        width:90%;
+        margin-top:-40px;
+    }
+    .section-title h2{
+        font-size:26px;
+    }
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+    .about-image img{
+        height:300px;
+    }
+    .timeline-content{
+        width:65%;
+    }
+    .timeline-icon{
+        width:55px;
+        height:55px;
+        font-size:20px;
+    }
+}
+@media(max-width:480px){
+    .hero-content h1{
+        font-size:28px;
+    }
+    .hero-content{
+        width:92%;
+    }
+    .quick-stats{
+        grid-template-columns:1fr;
+    }
+    .stat-card{
+        padding:25px;
+    }
+    .section-title h2{
+        font-size:23px;
+    }
+    .section-title p{
+        font-size:14px;
+    }
+    .component-card,
+    .benefit-card,
+    .comparison-card,
+    .allocation-card,
+    .mistake-card,
+    .faq-card,
+    .insight-card{
+        padding:22px;
+    }
+    .timeline-item{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .timeline-content{
+        width:100%;
+    }
+    .timeline::before{
+        display:none;
+    }
+    .summary-card{
+        padding:25px;
+    }
+    .summary-card h2{
+        font-size:25px;
+    }
+    footer{
+        font-size:13px;
+    }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transaction|FinanceHub</title>
+<link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+<header class="header">
+<div class="logo">
+<h2>FinanceHub</h2>
+</div>
+ <nav>
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <a href="../financetools/reportsanalytics.html">Reports</a>
+    <a href="../incomeexpense/bill.html">Bills</a>
+    <a href="../profile/notificationcenter.html">Notifications</a>
+    <a href="../profile/profile.html">Profile</a>
+</nav>
+</header>
+<section class="hero-section">
+<div class="hero-content">
+    <h1>Transaction<span>History</span></h1>
+    <p>Track all your income,expenses,transfers,refunds,and payments in one secure place.Get a complete financial overview anytime.</p>
+    <div class="hero-buttons">
+        <button class="primary-btn">
+            <i class="fas fa-filter"></i>Filter Transactions</button>
+        <button class="secondary-btn"><i class="fas fa-download"></i>Export Report</button>
+    </div>
+</div>
+<div class="hero-image">
+    <img src="https://img.magnific.com/premium-vector/smart-investment-concept-businessman-makes-big-profit-company-revenue-growth-statistics-increase_118813-25584.jpg?semt=ais_hybrid&w=740&q=80" alt="Transaction History">
+</div>
+</section>
+<section class="transaction-summary">
+<div class="section-title">
+    <h2>Financial Summary</h2>
+    <p>Overview of your income,expenses and net balance.</p>
+</div>
+<div class="summary-grid">
+    <div class="summary-card income">
+        <i class="fas fa-arrow-trend-up"></i>
+        <h3>Total Income</h3>
+        <h2>₹85,000</h2>
+        <p>This month earnings</p>
+    </div>
+    <div class="summary-card expense">
+        <i class="fas fa-arrow-trend-down"></i>
+        <h3>Total Expense</h3>
+        <h2>₹42,500</h2>
+        <p>Monthly spending</p>
+    </div>
+    <div class="summary-card balance">
+        <i class="fas fa-wallet"></i>
+        <h3>Net Balance</h3>
+        <h2>₹42,500</h2>
+        <p>Remaining amount</p>
+    </div>
+    <div class="summary-card savings">
+        <i class="fas fa-piggy-bank"></i>
+        <h3>Savings Rate</h3>
+        <h2>50%</h2>
+        <p>Of total income</p>
+    </div>
+</div>
+</section>
+<section class="transaction-filters">
+<div class="section-title">
+    <h2>Search & Filters</h2>
+    <p>Easily find transactions using filters and search options.</p>
+</div>
+<div class="filter-box">
+    <input type="text" placeholder="Search transactions...">
+    <select>
+        <option>All Types</option>
+        <option>Income</option>
+        <option>Expense</option>
+        <option>Transfer</option>
+    </select>
+    <select>
+        <option>Last 7 Days</option>
+        <option>Last 30 Days</option>
+        <option>This Year</option>
+        <option>Custom Range</option>
+    </select>
+    <button>
+        <i class="fas fa-search"></i>Search</button>
+</div>
+</section>
+<section class="transaction-table-section">
+<div class="section-title">
+    <h2>Recent Transactions</h2>
+    <p>Detailed list of all your financial activities with status updates.</p>
+</div>
+<div class="transaction-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>26 Jun 2026</td>
+                <td><i class="fas fa-money-bill-wave"></i>Salary Credit</td>
+                <td>Income</td>
+                <td class="income">+₹85,000</td>
+                <td><span class="status success">Success</span></td>
+            </tr>
+            <tr>
+                <td>25 Jun 2026</td>
+                <td><i class="fas fa-cart-shopping"></i>Online Shopping</td>
+                <td>Expense</td>
+                <td class="expense">-₹2,350</td>
+                <td><span class="status success">Success</span></td>
+            </tr>
+            <tr>
+                <td>24 Jun 2026</td>
+                <td><i class="fas fa-wifi"></i>Internet Bill Payment</td>
+                <td>Utility</td>
+                <td class="expense">-₹999</td>
+                <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+                <td>23 Jun 2026</td>
+                <td><i class="fas fa-arrow-right-arrow-left"></i>Money Transfer to Ravi</td>
+                <td>Transfer</td>
+                <td class="expense">-₹5,000</td>
+                <td><span class="status success">Success</span></td>
+            </tr>
+            <tr>
+                <td>22 Jun 2026</td>
+                <td><i class="fas fa-credit-card"></i>Card Cashback</td>
+                <td>Refund</td>
+                <td class="income">+₹250</td>
+                <td><span class="status success">Success</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
+<section class="transaction-cards">
+<div class="section-title">
+    <h2>Mobile View Transactions</h2>
+    <p>Card-style transaction view for mobile-friendly experience.</p>
+</div>
+<div class="card-grid">
+    <div class="txn-card">
+        <div class="txn-icon income">
+            <i class="fas fa-arrow-trend-up"></i>
+        </div>
+        <div class="txn-info">
+            <h3>Salary Credit</h3>
+            <p>26 Jun 2026</p>
+        </div>
+        <div class="txn-amount income">+ ₹85,000</div>
+    </div>
+    <div class="txn-card">
+        <div class="txn-icon expense">
+            <i class="fas fa-cart-shopping"></i>
+        </div>
+        <div class="txn-info">
+            <h3>Shopping</h3>
+            <p>25 Jun 2026</p>
+        </div>
+        <div class="txn-amount expense">-₹2,350</div>
+    </div>
+    <div class="txn-card">
+        <div class="txn-icon transfer">
+            <i class="fas fa-arrow-right-arrow-left"></i>
+        </div>
+        <div class="txn-info">
+            <h3>Money Transfer</h3>
+            <p>23 Jun 2026</p>
+        </div>
+        <div class="txn-amount expense">-₹5,000</div>
+    </div>
+</div>
+</section>
+<section class="export-section">
+<div class="section-title">
+    <h2>Export Transactions</h2>
+    <p>Download your transaction history in different formats for reports and record keeping.</p>
+</div>
+<div class="export-grid">
+    <div class="export-card">
+        <i class="fas fa-file-pdf"></i>
+        <h3>Export PDF</h3>
+        <p>Download a detailed statement in PDF format.</p>
+        <button>Download PDF</button>
+    </div>
+    <div class="export-card">
+        <i class="fas fa-file-excel"></i>
+        <h3>Export Excel</h3>
+        <p>Export all transactions for analysis in Excel.</p>
+        <button>Download Excel</button>
+    </div>
+    <div class="export-card">
+        <i class="fas fa-file-csv"></i>
+        <h3>Export CSV</h3>
+        <p>Get raw data for custom financial reports.</p>
+        <button>Download CSV</button>
+    </div>
+ </div>
+</section>
+<section class="pagination-section">
+<div class="section-title">
+    <h2>Transaction Pages</h2>
+    <p>Navigate through your full transaction history easily.</p>
+</div>
+<div class="pagination">
+    <button class="page-btn">
+        <i class="fas fa-angle-left"></i>
+    </button>
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <button class="page-btn">
+        <i class="fas fa-angle-right"></i>
+    </button>
+</div>
+</section>
+<section class="analytics-preview">
+<div class="section-title">
+    <h2>Spending Analytics</h2>
+    <p>Quick overview of your financial behavior trends.</p>
+</div>
+<div class="analytics-grid">
+    <div class="analytics-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Top Expense Category</h3>
+        <p>Food & Dining(₹12,800)</p>
+    </div>
+    <div class="analytics-card">
+        <i class="fas fa-wallet"></i>
+        <h3>Highest Income Source</h3>
+        <p>Monthly Salary(₹85,000)</p>
+    </div>
+    <div class="analytics-card">
+        <i class="fas fa-bullseye"></i>
+        <h3>Savings Rate</h3>
+        <p>50% of Income</p>
+    </div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<div class="footer-bottom">
+    <p>© 2026 FinanceHub.All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>

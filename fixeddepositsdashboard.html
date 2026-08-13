@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fixed Deposits Dashboard</title>
+    <link rel="stylesheet" href="fixeddepositsdashboard.css">
+</head>
+<body>
+<aside class="sidebar">
+    <div class="logo">
+        <i class="fas fa-piggy-bank"></i>
+        <h2>FinanceHub</h2>
+    </div>
+    <ul class="menu">
+        <li>
+            <a href="dashboard.html">
+                <i class="fas fa-house"></i>Dashboard</a>
+        </li>
+        <li>
+            <a href="bankaccountdashboard.html">
+                <i class="fas fa-building-columns"></i>Bank Accounts</a>
+        </li>
+        <li>
+            <a href="networthdashboard.html">
+                <i class="fas fa-chart-pie"></i>Net Worth</a>
+        </li>
+        <li>
+            <a href="investmentdashboard.html">
+                <i class="fas fa-chart-line"></i>Investments</a>
+        </li>
+        <li>
+            <a href="salarypayrolldashboard.html">
+                <i class="fas fa-money-check-dollar"></i>
+                Salary & Payroll</a>
+        </li>
+        <li class="active">
+            <a href="fixeddepositsdashboard.html">
+                <i class="fas fa-vault"></i>Fixed Deposits</a>
+        </li>
+        <li>
+            <a href="cashflowdashboard.html">
+                <i class="fas fa-arrow-right-arrow-left"></i>Cash Flow</a>
+        </li>
+    </ul>
+</aside>
+<div class="main-content">
+    <header class="dashboard-header">
+    <div>
+        <h1>Fixed Deposits Dashboard</h1>
+        <p>Monitor active fixed deposits,maturity schedules,interest earned,and investment growth from one professional dashboard.</p>
+    </div>
+    <div class="header-actions">
+        <button class="primary-btn">
+            <i class="fas fa-plus"></i>New FD</button>
+        <button class="secondary-btn">
+            <i class="fas fa-file-export"></i>Export Report</button>
+    </div>
+</header>
+<section class="fd-overview">
+    <div class="overview-card">
+        <i class="fas fa-sack-dollar"></i>
+        <h3>Total FD Value</h3>
+        <h2>₹18,50,000</h2>
+        <span>12 Active Deposits</span>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-percent"></i>
+        <h3>Interest Earned</h3>
+        <h2>₹2,48,600</h2>
+        <span>Till Date</span>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-calendar-check"></i>
+        <h3>Upcoming Maturity</h3>
+        <h2>18 Aug</h2>
+        <span>₹3,00,000 FD</span>
+    </div>
+    <div class="overview-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Average Interest</h3>
+        <h2>7.35%</h2>
+        <span>Across All FDs</span>
+    </div>
+</section>
+<section class="fd-health">
+    <div class="section-title">
+        <h2>Deposit Portfolio Summary</h2>
+        <p>Review your deposit performance,maturity status,returns and portfolio strength.</p>
+    </div>
+    <div class="health-grid">
+        <div class="health-card">
+            <i class="fas fa-building-columns"></i>
+            <h3>Active Deposits</h3>
+            <h2>12</h2>
+            <p>Running Fixed Deposits</p>
+        </div>
+        <div class="health-card">
+            <i class="fas fa-hand-holding-dollar"></i>
+            <h3>Maturity Value</h3>
+            <h2>₹20.98L</h2>
+            <p>Total Expected Amount</p>
+        </div>
+        <div class="health-card">
+            <i class="fas fa-arrow-trend-up"></i>
+            <h3>Portfolio Growth</h3>
+            <h2>13.4%</h2>
+            <p>Compared to Last Year</p>
+        </div>
+        <div class="health-card">
+            <i class="fas fa-star"></i>
+            <h3>Investment Score</h3>
+            <h2>Excellent</h2>
+            <p>Low Risk Portfolio</p>
+        </div>
+    </div>
+</section>
+<section class="fd-growth">
+    <div class="section-title">
+        <h2>Fixed Deposit Growth</h2>
+        <p>Track your fixed deposit portfolio growth over the past six months.</p>
+    </div>
+    <div class="graph-card">
+        <div class="graph-area">
+            <div class="graph-column">
+                <div class="fd-bar" style="height:62%;"></div>
+                <span>Jan</span>
+                <small>₹15.8L</small>
+            </div>
+            <div class="graph-column">
+                <div class="fd-bar" style="height:68%;"></div>
+                <span>Feb</span>
+                <small>₹16.2L</small>
+            </div>
+            <div class="graph-column">
+                <div class="fd-bar" style="height:74%;"></div>
+                <span>Mar</span>
+                <small>₹16.8L</small>
+            </div>
+            <div class="graph-column">
+                <div class="fd-bar" style="height:82%;"></div>\
+                <span>Apr</span>
+                <small>₹17.4L</small>
+            </div>
+            <div class="graph-column">
+                <div class="fd-bar" style="height:92%;"></div>
+                <span>May</span>
+                <small>₹18.0L</small>
+            </div>
+            <div class="graph-column">
+                <div class="fd-bar" style="height:100%;"></div>
+                <span>Jun</span>
+                <small>₹18.5L</small>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fd-distribution">
+    <div class="section-title">
+        <h2>Deposit Distribution</h2>
+        <p>Allocation of your fixed deposits across different investment categories.</p>
+    </div>
+    <div class="distribution-grid">
+        <div class="distribution-card">
+            <div class="circle bank-circle">
+                <span>40%</span>
+            </div>
+            <h3>Public Banks</h3>
+            <p>₹7,40,000</p>
+        </div>
+        <div class="distribution-card">
+            <div class="circle private-circle">
+                <span>35%</span>
+            </div>
+            <h3>Private Banks</h3>
+            <p>₹6,47,500</p>
+        </div>
+        <div class="distribution-card">
+            <div class="circle finance-circle">
+                <span>15%</span>
+            </div>
+            <h3>Finance Companies</h3>
+            <p>₹2,77,500</p>
+        </div>
+        <div class="distribution-card">
+            <div class="circle senior-circle">
+                <span>10%</span>
+            </div>
+            <h3>Senior Citizen FD</h3>
+            <p>₹1,85,000</p>
+        </div>
+    </div>
+</section>
+<section class="interest-summary">
+    <div class="section-title">
+        <h2>Interest Rate Summary</h2>
+        <p>Compare the interest rates across your active deposits.</p>
+    </div>
+    <div class="interest-grid">
+        <div class="interest-card">
+            <i class="fas fa-building-columns"></i>
+            <h3>State Bank</h3>
+            <h2>6.80%</h2>
+            <p>5 Year Deposit</p>
+        </div>
+        <div class="interest-card">
+            <i class="fas fa-landmark"></i>
+            <h3>HDFC Bank</h3>
+            <h2>7.10%</h2>
+            <p>3 Year Deposit</p>
+        </div>
+        <div class="interest-card">
+            <i class="fas fa-coins"></i>
+            <h3>ICICI Bank</h3>
+            <h2>7.25%</h2>
+            <p>2 Year Deposit</p>
+        </div>
+        <div class="interest-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Highest Rate</h3>
+            <h2>7.80%</h2>
+            <p>Finance Company FD</p>
+        </div>
+    </div>
+</section>
+<section class="maturity-calendar">
+    <div class="section-title">
+        <h2>Upcoming Maturity Schedule</h2>
+        <p>Fixed deposits that are nearing their maturity dates.</p>
+    </div>
+    <div class="calendar-grid">
+        <div class="calendar-card">
+            <h3>18 Aug 2026</h3>
+            <h2>₹3,00,000</h2>
+            <p>State Bank of India</p>
+        </div>
+        <div class="calendar-card">
+            <h3>05 Sep 2026</h3>
+            <h2>₹2,50,000</h2>
+            <p>HDFC Bank</p>
+        </div>
+        <div class="calendar-card">
+            <h3>21 Oct 2026</h3>
+            <h2>₹1,80,000</h2>
+            <p>ICICI Bank</p>
+        </div>
+        <div class="calendar-card">
+            <h3>15 Dec 2026</h3>
+            <h2>₹4,20,000</h2>
+            <p>Axis Bank</p>
+        </div>
+    </div>
+</section>
+<section class="active-fd">
+    <div class="section-title">
+        <h2>Active Fixed Deposits</h2>
+        <p>View all active fixed deposits,principal amount,maturity value and current status.</p>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Bank</th>
+                    <th>Principal</th>
+                    <th>Interest %</th>
+                    <th>Tenure</th>
+                    <th>Maturity Date</th>
+                    <th>Maturity Value</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>State Bank of India</td>
+                    <td>₹3,00,000</td>
+                    <td>6.80%</td>
+                    <td>5 Years</td>
+                    <td>18 Aug 2026</td>
+                    <td>₹4,15,000</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>HDFC Bank</td>
+                    <td>₹2,50,000</td>
+                    <td>7.10%</td>
+                    <td>3 Years</td>
+                    <td>05 Sep 2026</td>
+                    <td>₹3,06,000</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>ICICI Bank</td>
+                    <td>₹1,80,000</td>
+                    <td>7.25%</td>
+                    <td>2 Years</td>
+                    <td>21 Oct 2026</td>
+                    <td>₹2,08,000</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Axis Bank</td>
+                    <td>₹4,20,000</td>
+                    <td>7.40%</td>
+                    <td>5 Years</td>
+                    <td>15 Dec 2026</td>
+                    <td>₹5,95,000</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="interest-earned">
+    <div class="section-title">
+        <h2>Interest Earned Summary</h2>
+    </div>
+    <div class="interest-earned-grid">
+        <div class="earned-card">
+            <i class="fas fa-coins"></i>
+            <h3>This Month</h3>
+            <h2>₹12,450</h2>
+            <p>Interest Credited</p>
+        </div>
+        <div class="earned-card">
+            <i class="fas fa-calendar-days"></i>
+            <h3>This Year</h3>
+            <h2>₹1,18,500</h2>
+            <p>Total Interest</p>
+        </div>
+        <div class="earned-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Lifetime</h3>
+            <h2>₹2,48,600</h2>
+            <p>Interest Earned</p>
+        </div>
+        <div class="earned-card">
+            <i class="fas fa-sack-dollar"></i>
+            <h3>Expected Total</h3>
+            <h2>₹4,12,000</h2>
+            <p>Future Interest</p>
+        </div>
+    </div>
+</section>
+<section class="bank-analysis">
+    <div class="section-title">
+        <h2>Bank-wise FD Analysis</h2>
+    </div>
+    <div class="analysis-grid">
+        <div class="analysis-card">
+            <i class="fas fa-building-columns"></i>
+            <h3>State Bank</h3>
+            <h2>₹6.20L</h2>
+            <p>3 Active Deposits</p>
+        </div>
+        <div class="analysis-card">
+            <i class="fas fa-university"></i>
+            <h3>HDFC Bank</h3>
+            <h2>₹4.80L</h2>
+            <p>2 Active Deposits</p>
+        </div>
+        <div class="analysis-card">
+            <i class="fas fa-landmark"></i>
+            <h3>ICICI Bank</h3>
+            <h2>₹3.90L</h2>
+            <p>3 Active Deposits</p>
+        </div>
+        <div class="analysis-card">
+            <i class="fas fa-chart-pie"></i>
+            <h3>Others</h3>
+            <h2>₹3.60L</h2>
+            <p>4 Active Deposits</p>
+        </div>
+    </div>
+</section>
+<section class="renewal-reminders">
+    <div class="section-title">
+        <h2>Renewal Reminders</h2>
+    </div>
+    <div class="renewal-grid">
+        <div class="renewal-card">
+            <i class="fas fa-bell"></i>
+            <h3>18 Aug 2026</h3>
+            <h2>SBI FD Renewal</h2>
+            <p>₹3,00,000 matures in 12 days.</p>
+        </div>
+        <div class="renewal-card">
+            <i class="fas fa-bell"></i>
+            <h3>05 Sep 2026</h3>
+            <h2>HDFC FD Renewal</h2>
+            <p>₹2,50,000 matures in 30 days.</p>
+        </div>
+    </div>
+</section>
+<section class="fd-insights">
+    <div class="section-title">
+        <h2>AI Fixed Deposit Insights</h2>
+        <p>Smart recommendations to maximize returns and optimize your FD portfolio.</p>
+    </div>
+    <div class="insight-grid">
+        <div class="insight-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>Portfolio Growth</h3>
+            <h2>15.2%</h2>
+            <p>Your FD portfolio has grown steadily compared to last financial year.</p>
+        </div>
+        <div class="insight-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Best Investment</h3>
+            <h2>7.80%</h2>
+            <p>Highest interest rate available among your active deposits.</p>
+        </div>
+        <div class="insight-card">
+            <i class="fas fa-sack-dollar"></i>
+            <h3>Projected Value</h3>
+            <h2>₹24.15L</h2>
+            <p>Estimated maturity value of all active deposits.</p>
+        </div>
+        <div class="insight-card">
+            <i class="fas fa-shield-heart"></i>
+            <h3>Risk Level</h3>
+            <h2>Low</h2>
+            <p>Well-diversified FD portfolio with stable returns.</p>
+        </div>
+    </div>
+</section>
+<section class="fd-alerts">
+    <div class="section-title">
+        <h2>Deposit Notifications</h2>
+    </div>
+    <div class="notification-list">
+        <div class="notification-item">
+            <i class="fas fa-bell"></i>
+            <div>
+                <h3>FD Maturity Reminder</h3>
+                <p>SBI Fixed Deposit matures in 12 days.</p>
+            </div>
+            <span>Upcoming</span>
+        </div>
+        <div class="notification-item">
+            <i class="fas fa-circle-check"></i>
+            <div>
+                <h3>Interest Credited</h3>
+                <p>Monthly FD interest has been successfully credited.</p>
+            </div>
+            <span>Completed</span>
+        </div>
+        <div class="notification-item">
+            <i class="fas fa-arrow-rotate-right"></i>
+            <div>
+                <h3>Renewal Available</h3>
+                <p>Renew your HDFC Fixed Deposit for higher returns.</p>
+            </div>
+            <span>Action Required</span>
+        </div>
+    </div>
+</section>
+<section class="quick-actions">
+    <div class="section-title">
+        <h2>Quick Actions</h2>
+    </div>
+    <div class="action-grid">
+        <button>Open New FD</button>
+        <button>Renew Deposit</button>
+        <button>Download Certificate</button>
+        <button>Interest Report</button>
+    </div>
+</section>
+<footer>
+    <p>© 2026 FinanceHub.All Rights Reserved</p>
+</footer>
+</div>
+</body>
+</html>

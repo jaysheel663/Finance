@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financehub Expenses</title>
+    <link rel="stylesheet" href="expenses.css">
+</head>
+<body>
+    <aside class="sidebar">
+ 
+        <div class="logo">
+            <h2>Financehub</h2>
+        </div>
+        <ul>
+            <li>
+                <i class="fas fa-chart-line"></i>Dashboard</li>
+             <li class="active">
+                <i class="fas fa-money-bill-wave"></i>Expenses</li>
+            <li>
+                <i class="fas fa-wallet"></i>Income</li>
+            <li>
+                <i class="fas fa-chart-pie"></i>Analytics</li>
+            <li>
+                <i class="fas fa-file-invoice"></i>Reports</li>
+        </ul>
+    </aside>
+    <main class="main-content">
+        <div class="topbar">
+            <div>
+                <h1>Expense Management</h1>
+                <p>Track,analyze and optimize your spending habits.</p>
+            </div>
+            <div class="top-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+        <section class="expense-summary">
+            <div class="expense-card">
+                <h3>Total Expenses</h3>
+                <h1>₹72,500</h1>
+                <span>This Month</span>
+            </div>
+            <div class="expense-card">
+                <h3>Highest Category</h3>
+                <h1>Housing</h1>
+                <span>₹22,000 Spent</span>
+            </div>
+            <div class="expense-card">
+                <h3>Daily Average</h3>
+                <h1>₹2,416</h1>
+                <span>Current Month</span>
+            </div>
+            <div class="expense-card">
+                <h3>Budget Usage</h3>
+                <h1>82%</h1>
+                <span>Within Limit</span>
+            </div>
+        </section>
+        <section class="expense-table">
+            <div class="section-title">
+                <h2>Expense Transactions</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Payment Mode</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>22-Jun-2026</td>
+                        <td>House Rent</td>
+                        <td>Housing</td>
+                        <td>UPI</td>
+                        <td>₹12,000</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>21-Jun-2026</td>
+                        <td>Groceries</td>
+                        <td>Food</td>
+                        <td>Card</td>
+                        <td>₹3,500</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>20-Jun-2026</td>
+                        <td>Fuel</td>
+                        <td>Transport</td>
+                        <td>UPI</td>
+                        <td>₹2,000</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>18-Jun-2026</td>
+                        <td>Electricity Bill</td>
+                        <td>Utilities</td>
+                        <td>Net Banking</td>
+                        <td>₹2,200</td>
+                        <td>Paid</td>
+                    </tr>
+                    <tr>
+                        <td>17-Jun-2026</td>
+                        <td>Online Shopping</td>
+                        <td>Shopping</td>
+                        <td>Card</td>
+                        <td>₹4,500</td>
+                        <td>Paid</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="analytics-grid">
+            <div class="analytics-card">
+                <h2>Monthly Expense Analysis</h2>
+                <div class="expense-chart">
+                    <div class="bar housing"></div>
+                    <div class="bar food"></div>
+                    <div class="bar transport"></div>
+                    <div class="bar utilities"></div>
+                    <div class="bar shopping"></div>
+                </div>
+                <div class="chart-labels">
+                    <span>Housing</span>
+                    <span>Food</span>
+                    <span>Transport</span>
+                    <span>Utilities</span>
+                    <span>Shopping</span>
+                </div>
+            </div>
+            <div class="analytics-card">
+                <h2>Expense Distribution</h2>
+                <div class="pie-chart">
+                    <div class="pie-center">₹72.5K</div>
+                </div>
+                <p>Housing accounts for the largest share of monthly expenses.</p>
+            </div>
+        </section>
+        <section class="budget-monitor">
+            <div class="section-title">
+                <h2>Budget Monitoring</h2>
+            </div>
+            <div class="budget-item">
+                <div class="budget-header">
+                    <span>Housing Budget</span>
+                    <span>88%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar housing-progress"></div>
+                </div>
+            </div>
+            <div class="budget-item">
+                <div class="budget-header">
+                    <span>Food Budget</span>
+                    <span>72%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar food-progress"></div>
+                </div>
+            </div>
+            <div class="budget-item">
+                <div class="budget-header">
+                    <span>Transport Budget</span>
+                    <span>60%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar transport-progress"></div>
+                </div>
+            </div>
+            <div class="budget-item">
+                <div class="budget-header">
+                    <span>Shopping Budget</span>
+                    <span>94%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar shopping-progress"></div>
+                </div>
+            </div>
+        </section>
+         <section class="payment-analysis">
+            <div class="section-title">
+                <h2>Payment Method Analysis</h2>
+            </div>
+            <div class="payment-cards">
+                <div class="payment-card">
+                    <h3>UPI</h3>
+                    <h1>48%</h1>
+                    <p>Most Used Method</p>
+                </div>
+                <div class="payment-card">
+                    <h3>Credit Card</h3>
+                    <h1>30%</h1>
+                    <p>Online Transactions</p>
+                </div>
+                <div class="payment-card">
+                    <h3>Net Banking</h3>
+                    <h1>15%</h1>
+                    <p>Utility Payments</p>
+                </div>
+                <div class="payment-card">
+                    <h3>Cash</h3>
+                    <h1>7%</h1>
+                    <p>Offline Expenses</p>
+                </div>
+            </div>
+        </section>
+        <section class="insights-section">
+            <div class="section-title">
+                <h2>Expense Insights</h2>
+            </div>
+            <div class="insight-cards">
+                <div class="insight-card">
+                    <h3>Highest Spending</h3>
+                    <p>Housing remains the highest expense category this month.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Cost Saving Opportunity</h3>
+                    <p>Reducing dining expenses can improve monthly savings significantly.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>Budget Performance</h3>
+                    <p>Overall spending is within planned budget targets.</p>
+                </div>
+            </div>
+        </section>
+        <section class="alerts-section">
+            <div class="section-title">
+                <h2>Expense Alerts & Notifications</h2>
+            </div>
+            <div class="alert-container">
+                <div class="alert warning">Food expenses have reached 72% of budget.</div>
+                <div class="alert danger">Shopping budget is close to its limit.</div>
+                <div class="alert success">Utility expenses are under budget.</div>
+                <div class="alert info">Monthly spending reduced by 8% compared to last month.</div>
+            </div>
+        </section>
+        <section class="upcoming-bills">
+            <div class="section-title">
+                <h2>Upcoming Bills</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bill Name</th>
+                        <th>Due Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>                        
+                        <td>Electricity Bill</td>
+                        <td>25-Jun-2026</td>
+                        <td>₹2,200</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Internet Bill</td>
+                        <td>28-Jun-2026</td>
+                        <td>₹999</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Water Bill</td>
+                        <td>30-Jun-2026</td>
+                        <td>₹650</td>
+                        <td>Upcoming</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="recurring-expenses">
+            <div class="section-title">
+                <h2>Recurring Expenses</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense</th>
+                        <th>Frequency</th>
+                        <th>Amount</th>
+                        <th>Next Payment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>House Rent</td>
+                        <td>Monthly</td>
+                        <td>₹12,000</td>
+                        <td>01-Jul-2026</td>
+                    </tr>
+                    <tr>
+                        <td>Internet</td>
+                        <td>Monthly</td>
+                        <td>₹999</td>
+                        <td>28-Jun-2026</td>
+                    </tr>
+                    <tr>
+                        <td>Streaming Subscription</td>
+                        <td>Monthly</td>
+                        <td>₹499</td>
+                        <td>05-Jul-2026</td>
+                    </tr>
+                    <tr>
+                        <td>Gym Membership</td>
+                        <td>Monthly</td>
+                        <td>₹1,500</td>
+                        <td>10-Jul-2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="forecast-section">
+            <div class="section-title">
+                <h2>Expense Forecast</h2>
+            </div>
+            <div class="forecast-cards">
+                <div class="forecast-card">
+                    <h3>Current Month</h3>
+                    <h1>₹72,500</h1>
+                    <p>Total Expenses</p>
+                </div>
+                <div class="forecast-card">
+                    <h3>Projected Month End</h3>
+                    <h1>₹82,000</h1>
+                    <p>Expected Spending</p>
+                </div>
+                <div class="forecast-card">
+                    <h3>Potential Savings</h3>
+                    <h1>₹12,500</h1>
+                    <p>If Spending is Controlled</p>
+                </div>
+            </div>
+        </section>
+        <section class="quick-actions">
+            <div class="section-title">
+                <h2>Quick Actions</h2>
+            </div>
+            <div class="action-buttons">
+                <button>Add Expense</button>
+                <button>Upload Receipt</button>
+                <button>Export Expenses</button>
+                <button>Create Budget</button>
+                <button>Generate Report</button>
+                <button>View Analytics</button>
+            </div>
+        </section>
+        <footer>
+            <p>© 2026 Financehub Expense Management.All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>

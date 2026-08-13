@@ -1,119 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
-    <title>Statement|Financial Dashboard</title>
+    <title>FinanceHub Statement</title>
     <link rel="stylesheet" href="statement.css">
 </head>
 <body>
-<header class="dashboard-header">
-    <div class="header-left">
-        <h1>Financial Statement</h1>
-        <p>Review your recent financial transactions,income and expenses in one place.</p>
-    </div>
-    <div class="header-right">
-        <button class="secondary-btn" onclick="history.back()">
-            <i class="fas fa-arrow-left"></i>Back</button>
-        <button class="primary-btn">
-            <i class="fas fa-download"></i>Download Statement</button>
-    </div>
-</header>
-<main>
-<section class="section-title">
-    <h2>Transaction Statement</h2>
-    <p>Review your financial activity for the selected period.</p>
-</section>
-<section class="statement-summary">
-    <div class="summary-card">
-        <i class="fas fa-arrow-down"></i>
-        <h3>Total Income</h3>
-        <h2>₹75,000</h2>
-    </div>
-    <div class="summary-card">
-        <i class="fas fa-arrow-up"></i>
-        <h3>Total Expenses</h3>
-        <h2>₹42,500</h2>
-    </div>
-    <div class="summary-card">
-        <i class="fas fa-wallet"></i>
-        <h3>Net Balance</h3>
-        <h2>₹32,500</h2>
-    </div>
-</section>
-<section class="statement-section">
-    <div class="statement-card">
-        <div class="statement-header">
-            <div>
-                <h2>Transaction History</h2>
-                <p>August 2026</p>
+    <header class="header">
+        <div class="logo">
+            <h2>FinanceHub</h2>
+        </div>
+        <nav>
+            <a href="../dashboard/dashboard.html">Dashboard</a>
+            <a href="../financetools/reports.html">Reports</a>
+            <a href="../investments/investment.html">Investments</a>
+            <a href="../budgeting/budgetplanner.html">Budget Planner</a>
+            <a href="../incomeexpense/statement.html">Statements</a>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </header>
+    <section class="statement-banner">
+        <div class="banner-content">
+            <h1>Financial Statement Report</h1>
+            <p>View complete account activity,income records,expenses,balances and financial summaries.</p>
+            <button>Download Statement</button>
+        </div>
+         <div class="banner-image">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="Financial Statement">
             </div>
-            <select>
-                <option>August 2026</option>
-                <option>July 2026</option>
-                <option>June 2026</option>
-            </select>
+    </section>
+    <section class="summary-section">
+        <div class="summary-card">
+            <h3>Opening Balance</h3>
+            <h1>$8,000</h1>
         </div>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Description</th>
-                        <th>Category</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01 Aug</td>
-                        <td>Monthly Salary</td>
-                        <td>Income</td>
-                        <td>Credit</td>
-                        <td>+₹60,000</td>
-                    </tr>
-                    <tr>
-                        <td>03 Aug</td>
-                        <td>Electricity Bill</td>
-                        <td>Utilities</td>
-                        <td>Debit</td>
-                        <td>-₹3,500</td>
-                    </tr>
-                    <tr>
-                        <td>05 Aug</td>
-                        <td>Grocery Shopping</td>
-                        <td>Food</td>
-                        <td>Debit</td>
-                        <td>-₹5,000</td>
-                    </tr>
-                    <tr>
-                        <td>08 Aug</td>
-                        <td>Freelance Payment</td>
-                        <td>Other Income</td>
-                        <td>Credit</td>
-                        <td>+₹10,000</td>
-                    </tr>
-                    <tr>
-                        <td>10 Aug</td>
-                        <td>Internet Bill</td>
-                        <td>Utilities</td>
-                        <td>Debit</td>
-                        <td>-₹1,500</td>
-                    </tr>
-                    <tr>
-                        <td>12 Aug</td>
-                        <td>Investment</td>
-                        <td>Savings</td>
-                        <td>Debit</td>
-                        <td>-₹8,000</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="summary-card">
+            <h3>Total Credits</h3>
+            <h1>$12,300</h1>
         </div>
-    </div>
-</section>
-</main>
-<footer>
-    <p>© 2026 Financehub.All rights reserved.</p>
-</footer>
+        <div class="summary-card">
+            <h3>Total Debits</h3>
+            <h1>$3,706</h1>
+        </div>
+        <div class="summary-card">
+            <h3>Closing Balance</h3>
+            <h1>$16,594</h1>
+        </div>
+    </section>
+    <section class="statement-details">
+        <div class="section-title">
+            <h2>Statement Information</h2>
+        </div>
+        <div class="details-grid">
+            <div class="detail-box">
+                <span>Statement ID</span>
+                <h3>FH-2025-001</h3>
+            </div>
+            <div class="detail-box">
+                <span>Account Holder</span>
+                <h3>Jaysheel</h3>
+            </div>
+            <div class="detail-box">
+                <span>Statement Period</span>
+                <h3>January 2025</h3>
+            </div>
+            <div class="detail-box">
+                <span>Account Type</span>
+                <h3>Personal Finance</h3>
+            </div>
+        </div>
+    </section>
+    <section class="transaction-section">
+        <div class="section-title">
+            <h2>Transaction Statement</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01-Jan-2025</td>
+                    <td>Opening Balance</td>
+                    <td>Credit</td>
+                    <td>$8,000.00</td>
+                    <td>$8,000.00</td>
+                </tr>
+                <tr>
+                    <td>03-Jan-2025</td>
+                    <td>January Salary</td>
+                    <td>Credit</td>
+                    <td>$12,300.00</td>
+                    <td>$20,300.00</td>
+                </tr>
+                <tr>
+                    <td>05-Jan-2025</td>
+                    <td>Rent Payment</td>
+                    <td>Debit</td>
+                    <td>$1,800.00</td>
+                    <td>$18,500.00</td>
+                </tr>
+                <tr>
+                    <td>08-Jan-2025</td>
+                    <td>Food & Dining</td>
+                    <td>Debit</td>
+                    <td>$596.15</td>
+                    <td>$17,903.85</td>
+                </tr>
+                <tr>
+                    <td>10-Jan-2025</td>
+                    <td>Transportation</td>
+                    <td>Debit</td>
+                    <td>$142.00</td>
+                    <td>$17,761.85</td>
+                </tr>
+                <tr>
+                    <td>12-Jan-2025</td>
+                    <td>Utilities</td>
+                    <td>Debit</td>
+                    <td>$188.00</td>
+                    <td>$17,573.85</td>
+                </tr>
+                <tr>
+                    <td>15-Jan-2025</td>
+                    <td>Shopping</td>
+                    <td>Debit</td>
+                    <td>$219.49</td>
+                    <td>$17,354.36</td>
+                </tr>
+                <tr>
+                    <td>18-Jan-2025</td>
+                    <td>Healthcare</td>
+                    <td>Debit</td>
+                    <td>$122.40</td>
+                    <td>$17,231.96</td>
+                </tr>
+                <tr>
+                    <td>20-Jan-2025</td>
+                    <td>Entertainment</td>
+                    <td>Debit</td>
+                    <td>$75.98</td>
+                    <td>$17,155.98</td>
+                </tr>
+                <tr>
+                    <td>31-Jan-2025</td>
+                    <td>Closing Balance</td>
+                    <td>Balance</td>
+                    <td>-</td>
+                    <td>$16,593.48</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="income-summary">
+        <div class="section-title">
+            <h2>Income Summary</h2>
+        </div>
+        <div class="summary-grid">
+            <div class="info-card">
+                <h3>Salary Income</h3>
+                <h1>$12,300</h1>
+                <p>Primary Income Source</p>
+            </div>
+            <div class="info-card">
+                <h3>Other Income</h3>
+                <h1>$0</h1>
+                <p>No Additional Income</p>
+            </div>
+            <div class="info-card">
+                <h3>Total Income</h3>
+                <h1>$12,300</h1>
+                <p>January Earnings</p>
+            </div>
+        </div>
+    </section>
+    <section class="expense-summary">
+        <div class="section-title">
+            <h2>Expense Summary</h2>
+        </div>
+        <div class="summary-grid">
+            <div class="info-card">
+                <h3>Housing</h3>
+                <h1>$1,800</h1>
+            </div>
+            <div class="info-card">
+                <h3>Food & Dining</h3>
+                <h1>$596.15</h1>
+            </div>
+            <div class="info-card">
+                <h3>Transportation</h3>
+                <h1>$142.00</h1>
+            </div>
+            <div class="info-card">
+                <h3>Utilities</h3>
+                <h1>$188.00</h1>
+            </div>
+            <div class="info-card">
+                <h3>Healthcare</h3>
+                <h1>$122.40</h1>
+            </div>
+            <div class="info-card">
+                <h3>Shopping</h3>
+                <h1>$219.49</h1>
+            </div>
+        </div>
+    </section>
+    <section class="financial-overview">
+        <div class="section-title">
+            <h2>Financial Overview</h2>
+        </div>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <h3>Net Savings</h3>
+                <h1>$8,593.48</h1>
+                <p>Total amount saved this month.</p>
+            </div>
+            <div class="overview-card">
+                <h3>Savings Rate</h3>
+                <h1>69.87%</h1>
+                <p>Excellent financial discipline.</p>
+            </div>
+            <div class="overview-card">
+                <h3>Budget Status</h3>
+                <h1>Under Budget</h1>
+                <p>$343.48 remaining from planned budget.</p>
+            </div>
+            <div class="overview-card">
+                <h3>Financial Health</h3>
+                <h1>95/100</h1>
+                <p>Strong overall financial performance.</p>
+            </div>
+        </div>
+    </section>
+    <section class="expense-analysis">
+        <div class="section-title">
+            <h2>Expense Category Analysis</h2>
+        </div>
+        <div class="analysis-grid">
+            <div class="analysis-card">
+                <h3>Housing</h3>
+                <h1>48%</h1>
+                <p>Largest share of monthly expenses.</p>
+            </div>
+            <div class="analysis-card">
+                <h3>Food & Dining</h3>
+                <h1>16%</h1>
+                <p>Second highest spending category.</p>
+            </div>
+            <div class="analysis-card">
+                <h3>Utilities</h3>
+                <h1>5%</h1>
+                <p>Essential monthly services.</p>
+            </div>
+            <div class="analysis-card">
+                <h3>Shopping</h3>
+                <h1>6%</h1>
+                <p>Personal and household purchases.</p>
+            </div>
+        </div>
+    </section>
+    <section class="monthly-trends">
+        <div class="section-title">
+            <h2>Monthly Financial Trends</h2>
+        </div>
+        <div class="trend-container">
+            <div class="trend-card">
+                <h3>Income Trend</h3>
+                <p>Income remained stable throughout the statement period.</p>
+            </div>
+            <div class="trend-card">
+                <h3>Expense Trend</h3>
+                <p>Spending remained within planned budget targets.</p>
+            </div>
+            <div class="trend-card">
+                <h3>Savings Trend</h3>
+                <p>Savings increased significantly due to controlled spending.</p>
+            </div>
+        </div>
+    </section>
+    <section class="statement-notes">
+        <div class="section-title">
+            <h2>Statement Notes</h2>
+        </div>
+        <div class="notes-box">
+            <ul>
+                <li>All transactions shown are for the selected statement period.</li>
+                <li>Closing balance includes all cleared transactions.</li>
+                <li>Budget performance remained positive during this period.</li>
+                <li>Savings target exceeded monthly expectations.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="financial-insights">
+        <div class="section-title">
+            <h2>Financial Insights</h2>
+        </div>
+        <div class="insights-grid">
+            <div class="insight-card">
+                <h3>Total Savings Achieved</h3>
+                <p>Total savings for January reached $8,593.48.</p>
+            </div>
+            <div class="insight-card">
+                <h3>Budget Performance</h3>
+                <p>Overall budget remained $343.48 under planned spending.</p>
+            </div>
+            <div class="insight-card">
+                <h3>Overspending Alert</h3>
+                <p>Food,Healthcare and Shopping exceeded allocated budgets.</p>
+            </div>
+        </div>
+    </section>
+    <section class="export-section">
+        <div class="section-title">
+            <h2>Export & Download</h2>
+        </div>
+        <div class="export-buttons">
+            <button>Download PDF Statement</button>
+            <button>Export Excel Report</button>
+            <button>Print Statement</button>
+            <button>Email Statement</button>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 FinanceHub Financial Statement.All Rights Reserved.</p>
+ </footer>
 </body>
 </html>
